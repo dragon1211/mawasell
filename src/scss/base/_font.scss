@@ -94,5 +94,5 @@
 
 
 
-.lh-45{ line-height: 45px;}
-.lh-sm-22{ @include media-breakpoint-down(sm){line-height: 22px;}}
+.lh_45{ line-height: 45px;}
+.lh-sm_22{ @include media-breakpoint-down(sm){line-height: 22px;}}
