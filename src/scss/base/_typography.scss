@@ -1,43 +1,59 @@
-.mt-10{ margin-top: 10px;}
-.mt-15{ margin-top: 15px;}
-.mt-20{ margin-top: 20px;}
-.mt-25{ margin-top: 25px;}
-.mt-30{ margin-top: 30px;}
-.mt-35{ margin-top: 35px;}
-.mt-40{ margin-top: 40px;}
-.mt-45{ margin-top: 45px;}
-.mt-50{ margin-top: 50px;}
-.mt-55{ margin-top: 55px;}
-.mt-60{ margin-top: 60px;}
-.mt-65{ margin-top: 65px;}
-.mt-70{ margin-top: 70px;}
-.mt-75{ margin-top: 75px;}
-.mt-80{ margin-top: 80px;}
-.mt-85{ margin-top: 85px;}
-.mt-90{ margin-top: 90px;}
-.mt-95{ margin-top: 95px;}
-.mt-100{ margin-top: 100px;}
+.mt_10{ margin-top: 10px;}
+.mt_15{ margin-top: 15px;}
+.mt_20{ margin-top: 20px;}
+.mt_25{ margin-top: 25px;}
+.mt_30{ margin-top: 30px;}
+.mt_35{ margin-top: 35px;}
+.mt_40{ margin-top: 40px;}
+.mt_45{ margin-top: 45px;}
+.mt_50{ margin-top: 50px;}
+.mt_55{ margin-top: 55px;}
+.mt_60{ margin-top: 60px;}
+.mt_65{ margin-top: 65px;}
+.mt_70{ margin-top: 70px;}
+.mt_75{ margin-top: 75px;}
+.mt_80{ margin-top: 80px;}
+.mt_85{ margin-top: 85px;}
+.mt_90{ margin-top: 90px;}
+.mt_95{ margin-top: 95px;}
+.mt_100{ margin-top: 100px;}
 
-.mt-s-0 { @include media-breakpoint-down(sm){ margin-top: 0px !important;}}
-.mt-s-5 { @include media-breakpoint-down(sm){ margin-top: 5px !important;}}
-.mt-sm-10{ @include media-breakpoint-down(sm){ margin-top: 10px !important;}}
-.mt-sm-11{ @include media-breakpoint-down(sm){ margin-top: 11px !important;}}
-.mt-sm-12{ @include media-breakpoint-down(sm){ margin-top: 12px !important;}}
-.mt-sm-13{ @include media-breakpoint-down(sm){ margin-top: 13px !important;}}
-.mt-sm-14{ @include media-breakpoint-down(sm){ margin-top: 14px !important;}}
-.mt-sm-15{ @include media-breakpoint-down(sm){ margin-top: 15px !important;}}
-.mt-sm-16{ @include media-breakpoint-down(sm){ margin-top: 16px !important;}}
-.mt-sm-17{ @include media-breakpoint-down(sm){ margin-top: 17px !important;}}
-.mt-sm-18{ @include media-breakpoint-down(sm){ margin-top: 18px !important;}}
-.mt-sm-19{ @include media-breakpoint-down(sm){ margin-top: 19px !important;}}
-.mt-sm-20{ @include media-breakpoint-down(sm){ margin-top: 20px !important;}}
-.mt-sm-21{ @include media-breakpoint-down(sm){ margin-top: 21px !important;}}
-.mt-sm-22{ @include media-breakpoint-down(sm){ margin-top: 22px !important;}}
-.mt-sm-23{ @include media-breakpoint-down(sm){ margin-top: 23px !important;}}
-.mt-sm-24{ @include media-breakpoint-down(sm){ margin-top: 24px !important;}}
-.mt-sm-25{ @include media-breakpoint-down(sm){ margin-top: 25px !important;}}
-.mt-sm-26{ @include media-breakpoint-down(sm){ margin-top: 26px !important;}}
-.mt-sm-27{ @include media-breakpoint-down(sm){ margin-top: 27px !important;}}
-.mt-sm-28{ @include media-breakpoint-down(sm){ margin-top: 28px !important;}}
-.mt-sm-29{ @include media-breakpoint-down(sm){ margin-top: 29px !important;}}
-.mt-sm-30{ @include media-breakpoint-down(sm){ margin-top: 30px !important;}}
+
+.mb_0 {margin-bottom: 0px;}
+
+
+.mt-sm_0 { @include media-breakpoint-down(sm){ margin-top: 0px !important;}}
+.mt-sm_5 { @include media-breakpoint-down(sm){ margin-top: 5px !important;}}
+.mt-sm_10{ @include media-breakpoint-down(sm){ margin-top: 10px !important;}}
+.mt-sm_11{ @include media-breakpoint-down(sm){ margin-top: 11px !important;}}
+.mt-sm_12{ @include media-breakpoint-down(sm){ margin-top: 12px !important;}}
+.mt-sm_13{ @include media-breakpoint-down(sm){ margin-top: 13px !important;}}
+.mt-sm_14{ @include media-breakpoint-down(sm){ margin-top: 14px !important;}}
+.mt-sm_15{ @include media-breakpoint-down(sm){ margin-top: 15px !important;}}
+.mt-sm_16{ @include media-breakpoint-down(sm){ margin-top: 16px !important;}}
+.mt-sm_17{ @include media-breakpoint-down(sm){ margin-top: 17px !important;}}
+.mt-sm_18{ @include media-breakpoint-down(sm){ margin-top: 18px !important;}}
+.mt-sm_19{ @include media-breakpoint-down(sm){ margin-top: 19px !important;}}
+.mt-sm_20{ @include media-breakpoint-down(sm){ margin-top: 20px !important;}}
+.mt-sm_21{ @include media-breakpoint-down(sm){ margin-top: 21px !important;}}
+.mt-sm_22{ @include media-breakpoint-down(sm){ margin-top: 22px !important;}}
+.mt-sm_23{ @include media-breakpoint-down(sm){ margin-top: 23px !important;}}
+.mt-sm_24{ @include media-breakpoint-down(sm){ margin-top: 24px !important;}}
+.mt-sm_25{ @include media-breakpoint-down(sm){ margin-top: 25px !important;}}
+.mt-sm_26{ @include media-breakpoint-down(sm){ margin-top: 26px !important;}}
+.mt-sm_27{ @include media-breakpoint-down(sm){ margin-top: 27px !important;}}
+.mt-sm_28{ @include media-breakpoint-down(sm){ margin-top: 28px !important;}}
+.mt-sm_29{ @include media-breakpoint-down(sm){ margin-top: 29px !important;}}
+.mt-sm_30{ @include media-breakpoint-down(sm){ margin-top: 30px !important;}}
+
+
+
+.d-sm-none{
+    @include media-breakpoint-up(sm){ display: block !important;}
+    @include media-breakpoint-down(sm){ display: none !important;}
+}
+
+.d-sm-block{
+    @include media-breakpoint-up(sm){ display: none !important;}
+    @include media-breakpoint-down(sm){ display: block !important;}
+}

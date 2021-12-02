@@ -1,0 +1,151 @@
+@import '../../../node_modules/bootstrap/scss/mixins/_breakpoints.scss';
+
+.download-btn{
+    max-width: 656px;
+    width: 100%;
+    height: 113px;
+    background-color: #FF7500;
+    border-radius: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+    span{
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .circle{
+        position: absolute;
+        border-radius: 50%;
+        width: 83px;
+        height: 83px;
+        right: 23px;
+        background-color: white;
+        font-size: 30px;
+        color: #FF7500;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @include media-breakpoint-down(sm){
+        width: 247px;
+        height: 48px;
+        border-radius: 10px;
+        span{
+            font-size: 15px;
+        }
+        .circle{
+            width: 30px;
+            height: 30px;
+            font-size: 12px;
+        }
+    }
+    @media screen and (max-width: 300px) {
+        width: 100%;
+    }
+}
+
+
+.title{
+    font-family: "Noto Sans JP";
+    text-align: center;
+    .main-title{
+        font-weight: bold;
+        font-size: 90px;
+        margin-bottom: 0;
+    }
+    .sub-title{
+        font-weight: bold;
+        font-size: 45px;
+        margin-bottom: 0;
+        span{
+            color: $blue;
+        }
+    }
+
+    @include media-breakpoint-down(xl){
+        .main-title{font-size: 70px;}
+        .sub-title{font-size: 35px;}
+    }
+    @include media-breakpoint-down(lg){
+        .main-title{font-size: 50px;}
+        .sub-title{font-size: 28px;}
+    }
+    @include media-breakpoint-down(sm){
+        .main-title{font-size: 35px;}
+        .sub-title{font-size: 20px;}
+    }
+}
+
+.line-b-y{
+    background:rgba(0, 0, 0, 0) linear-gradient(transparent 60%, #FFFF00 0%) repeat scroll 0 0
+}
+
+.txt-blue{
+    color: $blue;
+}
+
+.txt-black{
+    color: black;
+}
+
+.txt-white{
+    color: white;
+}
+
+
+.txt_28{
+    @include media-breakpoint-up(xl){ font-size: 28px; }
+    @include media-breakpoint-down(xl){ font-size: 26px; }
+    @include media-breakpoint-down(lg){ font-size: 25px; }
+}
+
+.txt_30{
+    @include media-breakpoint-up(xl){ font-size: 30px; }
+    @include media-breakpoint-down(xl){ font-size: 25px; }
+    @include media-breakpoint-down(lg){ font-size: 25px; }
+}
+
+.txt_35{
+    @include media-breakpoint-up(xl){ font-size: 35px; }
+    @include media-breakpoint-down(xl){ font-size: 30px; }
+    @include media-breakpoint-down(lg){ font-size: 25px; }
+}
+
+.txt_40{
+    @include media-breakpoint-up(xl){ font-size: 40px; }
+    @include media-breakpoint-down(xl){ font-size: 35px; }
+    @include media-breakpoint-down(lg){ font-size: 30px; }
+}
+
+.txt_60{
+    @include media-breakpoint-up(xl){ font-size: 60px; }
+    @include media-breakpoint-down(xl){ font-size: 50px; }
+    @include media-breakpoint-down(lg){ font-size: 40px; }
+}
+.txt_70{
+    @include media-breakpoint-up(xl){ font-size: 70px; }
+    @include media-breakpoint-down(xl){ font-size: 55px; }
+    @include media-breakpoint-down(lg){ font-size: 40px; }
+}
+
+
+.txt_75{
+    @include media-breakpoint-up(xl){ font-size: 75px; }
+    @include media-breakpoint-down(xl){ font-size: 55px; }
+    @include media-breakpoint-down(lg){ font-size: 40px; }
+}
+
+
+.txt-sm_12{ @include media-breakpoint-down(sm){ font-size: 12px; } }
+.txt-sm_14{ @include media-breakpoint-down(sm){ font-size: 14px; } }
+.txt-sm_15{ @include media-breakpoint-down(sm){ font-size: 15px; } }
+.txt-sm_16{ @include media-breakpoint-down(sm){ font-size: 16px; } }
+.txt-sm_18{ @include media-breakpoint-down(sm){ font-size: 18px; } }
+.txt-sm_20{ @include media-breakpoint-down(sm){ font-size: 20px; } }
+.txt-sm_22{ @include media-breakpoint-down(sm){ font-size: 22px; } }
+.txt-sm_24{ @include media-breakpoint-down(sm){ font-size: 24px; } }
+.txt-sm_25{ @include media-breakpoint-down(sm){ font-size: 25px; } }
