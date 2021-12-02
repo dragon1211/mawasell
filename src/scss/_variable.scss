@@ -1,0 +1,49 @@
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-jp: 'Noto Sans JP';
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$blue: #0E96C9;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #FFFF00;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+$sp: 1200px;
+
+body{
+  font-size: 16px;
+  font-family: Noto Sans JP, "Hiragino Sans";
+}
+
+
+
+
+@import "../../node_modules/bootstrap/scss/mixins";
+
+@function px-vw($px){  
+  @return ($px * 100 / 1920) * 1vw;
+}
+
+@function px($px){
+  @return $px * 1px;
+}
