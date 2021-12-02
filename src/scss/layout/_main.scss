@@ -171,19 +171,8 @@
     }
 }
 
-.container{
-    padding-left: px-vw(200);
-    padding-right: px-vw(200);
-    max-width: 100%;
-    margin: 0;
-    @include media-breakpoint-down(sm){
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-}
 
-
-#top{
+section#top{
     min-height: 100vh;
     padding-top: px-vw(100);
     padding-bottom: 62px;
@@ -256,8 +245,7 @@
 }
 
 
-
-#issue{
+section#issue{
     padding-top: 150px;
     padding-bottom: 200px;
     background-color: #E9F3FF;
@@ -460,7 +448,6 @@ section#about{
 }
 
 
-
 section#reason{
     padding-top: 150px;
     padding-bottom: 200px;
@@ -632,13 +619,13 @@ section#service{
                 margin-bottom: 90px;
             }
             &:nth-child(odd){
-                margin-left: -200px;
-                padding-left: 200px;
+                margin-left: px-vw(-200);
+                padding-left: px-vw(200);
                 border-radius: 0 240px 240px 0;
             }
             &:nth-child(even){
-                margin-right: -200px;
-                padding-right: 200px;
+                margin-right: px-vw(-200);
+                padding-right: px-vw(200);
                 flex-direction: row-reverse;
                 border-radius: 240px 0 0 240px;
             }
@@ -666,6 +653,7 @@ section#service{
                 .p__link{
                     text-align: right;
                     text-decoration: none;
+                    @extend .bold;
                     &:hover{
                         cursor: pointer;
                     }
@@ -766,6 +754,57 @@ section#service{
                     object-fit: contain;
                     width: 100%;
                 }
+            }
+        }
+    }
+}
+
+
+section#price{
+    background-color: $blue;
+    padding-top: 60px;
+    padding-bottom: 90px;
+
+    .price-content{
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        @extend .txt-white;
+        @extend .bold;
+        .txt-wrap{
+            max-width: 800px;
+            h2{
+                line-height: 58px;
+                @extend .txt_40, .txt-sm_18;
+            }
+            p{ 
+                margin-top: 50px;
+                @extend .txt_30, .txt-sm_12; 
+            }
+        }
+    }
+
+    @include media-breakpoint-down(lg){
+        .price-content .txt-wrap{
+            h2{
+                text-align: center;
+                line-height: initial;
+                &:nth-child(1){
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(sm){
+        padding-top: 25px;
+        padding-bottom: 25px;
+        .price-content{
+            margin-top: 32px;
+            .txt-wrap{
+                h2:nth-child(1){
+                    margin-bottom: 18px;
+                }
+                p{ margin-top: 33px; }
             }
         }
     }
