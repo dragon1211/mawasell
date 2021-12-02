@@ -14392,7 +14392,7 @@ progress {
   font-size: 20px !important;
 }
 
-.bold, section#about .about-content .l-content .ttl-t1, section#about .about-content .l-content .ttl-t2, section#about .about-content .l-content .ttl-t3, section#about .about-content .l-content .ttl-t4, section#reason .reason-content .reason-item .reason-desp h1, section#reason .reason-content .reason-item .reason-desp .h1, section#service .abstract-item p, section#service .period-item .period-desp .p__title span, section#service .period-item .period-desp .p__sub_title, section#service .period-item .period-desp .p__link, section#price .price-content {
+.bold, section#about .about-content .l-content .ttl-t1, section#about .about-content .l-content .ttl-t2, section#about .about-content .l-content .ttl-t3, section#about .about-content .l-content .ttl-t4, section#reason .reason-content .reason-item .reason-desp h1, section#reason .reason-content .reason-item .reason-desp .h1, section#service .abstract-item p, section#service .period-item .period-desp .p__title span, section#service .period-item .period-desp .p__sub_title, section#service .period-item .period-desp .p__link, section#price .price-content, section#cost-cut .cost-cut-more h1, section#cost-cut .cost-cut-more .h1, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2 {
   font-weight: bold;
 }
 
@@ -14852,6 +14852,12 @@ progress {
   }
 }
 
+@media (max-width: 767.98px) {
+  .txt_25, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p {
+    font-size: 19px;
+  }
+}
+
 @media (min-width: 1200px) {
   .txt_28 {
     font-size: 28px;
@@ -14866,7 +14872,13 @@ progress {
 
 @media (max-width: 991.98px) {
   .txt_28 {
-    font-size: 25px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .txt_28 {
+    font-size: 22px;
   }
 }
 
@@ -14878,13 +14890,19 @@ progress {
 
 @media (max-width: 1199.98px) {
   .txt_30, .download-btn .circle, section#about .about-content .l-content .ttl-t2, section#about .about-content .l-content .ttl-t3, section#about .about-content .l-content .ttl-t4, section#price .price-content .txt-wrap p {
-    font-size: 25px;
+    font-size: 27px;
   }
 }
 
 @media (max-width: 991.98px) {
   .txt_30, .download-btn .circle, section#about .about-content .l-content .ttl-t2, section#about .about-content .l-content .ttl-t3, section#about .about-content .l-content .ttl-t4, section#price .price-content .txt-wrap p {
     font-size: 25px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .txt_30, .download-btn .circle, section#about .about-content .l-content .ttl-t2, section#about .about-content .l-content .ttl-t3, section#about .about-content .l-content .ttl-t4, section#price .price-content .txt-wrap p {
+    font-size: 23px;
   }
 }
 
@@ -14902,6 +14920,36 @@ progress {
 
 @media (max-width: 991.98px) {
   .txt_35, section#service .period-item .period-desp .p__sub_title {
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .txt_35, section#service .period-item .period-desp .p__sub_title {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .txt_38, section#cost-cut .cost-cut-more h3, section#cost-cut .cost-cut-more .h3 {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .txt_38, section#cost-cut .cost-cut-more h3, section#cost-cut .cost-cut-more .h3 {
+    font-size: 33px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .txt_38, section#cost-cut .cost-cut-more h3, section#cost-cut .cost-cut-more .h3 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .txt_38, section#cost-cut .cost-cut-more h3, section#cost-cut .cost-cut-more .h3 {
     font-size: 25px;
   }
 }
@@ -14924,21 +14972,81 @@ progress {
   }
 }
 
+@media (max-width: 767.98px) {
+  .txt_40, .download-btn span, section#reason .reason-content .reason-item .reason-desp h1, section#reason .reason-content .reason-item .reason-desp .h1, section#price .price-content .txt-wrap h2, section#price .price-content .txt-wrap .h2 {
+    font-size: 27px;
+  }
+}
+
 @media (min-width: 1200px) {
-  .txt_60, section#about .about-content .l-content .ttl-t1, section#service .period-item .period-desp .p__title span {
+  .txt_58, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2 {
+    font-size: 58px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .txt_58, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .txt_58, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2 {
+    font-size: 33px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .txt_58, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2 {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .txt_60, section#about .about-content .l-content .ttl-t1, section#service .period-item .period-desp .p__title span, section#cost-cut .cost-cut-more h1, section#cost-cut .cost-cut-more .h1 {
     font-size: 60px;
   }
 }
 
 @media (max-width: 1199.98px) {
-  .txt_60, section#about .about-content .l-content .ttl-t1, section#service .period-item .period-desp .p__title span {
+  .txt_60, section#about .about-content .l-content .ttl-t1, section#service .period-item .period-desp .p__title span, section#cost-cut .cost-cut-more h1, section#cost-cut .cost-cut-more .h1 {
     font-size: 50px;
   }
 }
 
 @media (max-width: 991.98px) {
-  .txt_60, section#about .about-content .l-content .ttl-t1, section#service .period-item .period-desp .p__title span {
-    font-size: 40px;
+  .txt_60, section#about .about-content .l-content .ttl-t1, section#service .period-item .period-desp .p__title span, section#cost-cut .cost-cut-more h1, section#cost-cut .cost-cut-more .h1 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .txt_60, section#about .about-content .l-content .ttl-t1, section#service .period-item .period-desp .p__title span, section#cost-cut .cost-cut-more h1, section#cost-cut .cost-cut-more .h1 {
+    font-size: 33px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .txt_65 {
+    font-size: 65px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .txt_65 {
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .txt_65 {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .txt_65 {
+    font-size: 35px;
   }
 }
 
@@ -14960,6 +15068,12 @@ progress {
   }
 }
 
+@media (max-width: 767.98px) {
+  .txt_70 {
+    font-size: 38px;
+  }
+}
+
 @media (min-width: 1200px) {
   .txt_75 {
     font-size: 75px;
@@ -14968,11 +15082,17 @@ progress {
 
 @media (max-width: 1199.98px) {
   .txt_75 {
-    font-size: 55px;
+    font-size: 58px;
   }
 }
 
 @media (max-width: 991.98px) {
+  .txt_75 {
+    font-size: 43px;
+  }
+}
+
+@media (max-width: 767.98px) {
   .txt_75 {
     font-size: 40px;
   }
@@ -14996,6 +15116,12 @@ progress {
   }
 }
 
+@media (max-width: 767.98px) {
+  .txt_80, section#reason .reason-content .reason-item .circle-num .cir span {
+    font-size: 43px;
+  }
+}
+
 @media (min-width: 1200px) {
   .txt_92 {
     font-size: 92px;
@@ -15011,6 +15137,12 @@ progress {
 @media (max-width: 991.98px) {
   .txt_92 {
     font-size: 60px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .txt_92 {
+    font-size: 50px;
   }
 }
 
@@ -15039,7 +15171,7 @@ progress {
 }
 
 @media (max-width: 575.98px) {
-  .txt-sm_16, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p {
+  .txt-sm_16, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p, section#cost-cut .cost-cut-more h3, section#cost-cut .cost-cut-more .h3 {
     font-size: 16px;
   }
 }
@@ -15051,7 +15183,7 @@ progress {
 }
 
 @media (max-width: 575.98px) {
-  .txt-sm_18, section#about .about-content .l-content .ttl-t1, section#service .period-item .period-desp .p__sub_title, section#price .price-content .txt-wrap h2, section#price .price-content .txt-wrap .h2 {
+  .txt-sm_18, section#about .about-content .l-content .ttl-t1, section#service .period-item .period-desp .p__sub_title, section#price .price-content .txt-wrap h2, section#price .price-content .txt-wrap .h2, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2 {
     font-size: 18px;
   }
 }
@@ -15063,7 +15195,7 @@ progress {
 }
 
 @media (max-width: 575.98px) {
-  .txt-sm_20, section#reason .reason-content .reason-item .reason-desp h1, section#reason .reason-content .reason-item .reason-desp .h1, section#service .period-item .period-desp .p__title span {
+  .txt-sm_20, section#reason .reason-content .reason-item .reason-desp h1, section#reason .reason-content .reason-item .reason-desp .h1, section#service .period-item .period-desp .p__title span, section#cost-cut .cost-cut-more h1, section#cost-cut .cost-cut-more .h1 {
     font-size: 20px;
   }
 }
@@ -15303,6 +15435,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
   }
 }
 
+@media (max-width: 767.98px) {
+  .txt_25, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p {
+    font-size: 19px;
+  }
+}
+
 @media (min-width: 1200px) {
   .txt_28 {
     font-size: 28px;
@@ -15317,7 +15455,13 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
 
 @media (max-width: 991.98px) {
   .txt_28 {
-    font-size: 25px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .txt_28 {
+    font-size: 22px;
   }
 }
 
@@ -15329,13 +15473,19 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
 
 @media (max-width: 1199.98px) {
   .txt_30, .download-btn .circle, section#about .about-content .l-content .ttl-t2, section#about .about-content .l-content .ttl-t3, section#about .about-content .l-content .ttl-t4, section#price .price-content .txt-wrap p {
-    font-size: 25px;
+    font-size: 27px;
   }
 }
 
 @media (max-width: 991.98px) {
   .txt_30, .download-btn .circle, section#about .about-content .l-content .ttl-t2, section#about .about-content .l-content .ttl-t3, section#about .about-content .l-content .ttl-t4, section#price .price-content .txt-wrap p {
     font-size: 25px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .txt_30, .download-btn .circle, section#about .about-content .l-content .ttl-t2, section#about .about-content .l-content .ttl-t3, section#about .about-content .l-content .ttl-t4, section#price .price-content .txt-wrap p {
+    font-size: 23px;
   }
 }
 
@@ -15353,6 +15503,36 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
 
 @media (max-width: 991.98px) {
   .txt_35, section#service .period-item .period-desp .p__sub_title {
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .txt_35, section#service .period-item .period-desp .p__sub_title {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .txt_38, section#cost-cut .cost-cut-more h3, section#cost-cut .cost-cut-more .h3 {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .txt_38, section#cost-cut .cost-cut-more h3, section#cost-cut .cost-cut-more .h3 {
+    font-size: 33px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .txt_38, section#cost-cut .cost-cut-more h3, section#cost-cut .cost-cut-more .h3 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .txt_38, section#cost-cut .cost-cut-more h3, section#cost-cut .cost-cut-more .h3 {
     font-size: 25px;
   }
 }
@@ -15375,21 +15555,81 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
   }
 }
 
+@media (max-width: 767.98px) {
+  .txt_40, .download-btn span, section#reason .reason-content .reason-item .reason-desp h1, section#reason .reason-content .reason-item .reason-desp .h1, section#price .price-content .txt-wrap h2, section#price .price-content .txt-wrap .h2 {
+    font-size: 27px;
+  }
+}
+
 @media (min-width: 1200px) {
-  .txt_60, section#about .about-content .l-content .ttl-t1, section#service .period-item .period-desp .p__title span {
+  .txt_58, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2 {
+    font-size: 58px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .txt_58, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .txt_58, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2 {
+    font-size: 33px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .txt_58, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2 {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .txt_60, section#about .about-content .l-content .ttl-t1, section#service .period-item .period-desp .p__title span, section#cost-cut .cost-cut-more h1, section#cost-cut .cost-cut-more .h1 {
     font-size: 60px;
   }
 }
 
 @media (max-width: 1199.98px) {
-  .txt_60, section#about .about-content .l-content .ttl-t1, section#service .period-item .period-desp .p__title span {
+  .txt_60, section#about .about-content .l-content .ttl-t1, section#service .period-item .period-desp .p__title span, section#cost-cut .cost-cut-more h1, section#cost-cut .cost-cut-more .h1 {
     font-size: 50px;
   }
 }
 
 @media (max-width: 991.98px) {
-  .txt_60, section#about .about-content .l-content .ttl-t1, section#service .period-item .period-desp .p__title span {
-    font-size: 40px;
+  .txt_60, section#about .about-content .l-content .ttl-t1, section#service .period-item .period-desp .p__title span, section#cost-cut .cost-cut-more h1, section#cost-cut .cost-cut-more .h1 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .txt_60, section#about .about-content .l-content .ttl-t1, section#service .period-item .period-desp .p__title span, section#cost-cut .cost-cut-more h1, section#cost-cut .cost-cut-more .h1 {
+    font-size: 33px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .txt_65 {
+    font-size: 65px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .txt_65 {
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .txt_65 {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .txt_65 {
+    font-size: 35px;
   }
 }
 
@@ -15411,6 +15651,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
   }
 }
 
+@media (max-width: 767.98px) {
+  .txt_70 {
+    font-size: 38px;
+  }
+}
+
 @media (min-width: 1200px) {
   .txt_75 {
     font-size: 75px;
@@ -15419,11 +15665,17 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
 
 @media (max-width: 1199.98px) {
   .txt_75 {
-    font-size: 55px;
+    font-size: 58px;
   }
 }
 
 @media (max-width: 991.98px) {
+  .txt_75 {
+    font-size: 43px;
+  }
+}
+
+@media (max-width: 767.98px) {
   .txt_75 {
     font-size: 40px;
   }
@@ -15447,6 +15699,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
   }
 }
 
+@media (max-width: 767.98px) {
+  .txt_80, section#reason .reason-content .reason-item .circle-num .cir span {
+    font-size: 43px;
+  }
+}
+
 @media (min-width: 1200px) {
   .txt_92 {
     font-size: 92px;
@@ -15462,6 +15720,12 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
 @media (max-width: 991.98px) {
   .txt_92 {
     font-size: 60px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .txt_92 {
+    font-size: 50px;
   }
 }
 
@@ -15490,7 +15754,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
 }
 
 @media (max-width: 575.98px) {
-  .txt-sm_16, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p {
+  .txt-sm_16, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p, section#cost-cut .cost-cut-more h3, section#cost-cut .cost-cut-more .h3 {
     font-size: 16px;
   }
 }
@@ -15502,7 +15766,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
 }
 
 @media (max-width: 575.98px) {
-  .txt-sm_18, section#about .about-content .l-content .ttl-t1, section#service .period-item .period-desp .p__sub_title, section#price .price-content .txt-wrap h2, section#price .price-content .txt-wrap .h2 {
+  .txt-sm_18, section#about .about-content .l-content .ttl-t1, section#service .period-item .period-desp .p__sub_title, section#price .price-content .txt-wrap h2, section#price .price-content .txt-wrap .h2, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2 {
     font-size: 18px;
   }
 }
@@ -15514,7 +15778,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
 }
 
 @media (max-width: 575.98px) {
-  .txt-sm_20, section#reason .reason-content .reason-item .reason-desp h1, section#reason .reason-content .reason-item .reason-desp .h1, section#service .period-item .period-desp .p__title span {
+  .txt-sm_20, section#reason .reason-content .reason-item .reason-desp h1, section#reason .reason-content .reason-item .reason-desp .h1, section#service .period-item .period-desp .p__title span, section#cost-cut .cost-cut-more h1, section#cost-cut .cost-cut-more .h1 {
     font-size: 20px;
   }
 }
@@ -15953,7 +16217,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
   font-size: 20px !important;
 }
 
-.bold, section#about .about-content .l-content .ttl-t1, section#about .about-content .l-content .ttl-t2, section#about .about-content .l-content .ttl-t3, section#about .about-content .l-content .ttl-t4, section#reason .reason-content .reason-item .reason-desp h1, section#reason .reason-content .reason-item .reason-desp .h1, section#service .abstract-item p, section#service .period-item .period-desp .p__title span, section#service .period-item .period-desp .p__sub_title, section#service .period-item .period-desp .p__link, section#price .price-content {
+.bold, section#about .about-content .l-content .ttl-t1, section#about .about-content .l-content .ttl-t2, section#about .about-content .l-content .ttl-t3, section#about .about-content .l-content .ttl-t4, section#reason .reason-content .reason-item .reason-desp h1, section#reason .reason-content .reason-item .reason-desp .h1, section#service .abstract-item p, section#service .period-item .period-desp .p__title span, section#service .period-item .period-desp .p__sub_title, section#service .period-item .period-desp .p__link, section#price .price-content, section#cost-cut .cost-cut-more h1, section#cost-cut .cost-cut-more .h1, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2 {
   font-weight: bold;
 }
 
@@ -17186,6 +17450,90 @@ section#price .price-content .txt-wrap p {
   }
   section#price .price-content .txt-wrap p {
     margin-top: 33px;
+  }
+}
+
+section#cost-cut {
+  background-image: url("/assets/img/grid.png");
+  background-repeat: repeat;
+  padding-top: 150px;
+  padding-bottom: 115px;
+}
+
+section#cost-cut .cost-cut-detail {
+  margin-top: 60px;
+  padding-left: 3.125vw;
+  padding-right: 3.125vw;
+}
+
+section#cost-cut .cost-cut-detail img {
+  width: 100%;
+}
+
+section#cost-cut .cost-cut-more {
+  margin-top: 60px;
+}
+
+section#cost-cut .cost-cut-more h1, section#cost-cut .cost-cut-more .h1 {
+  text-align: center;
+}
+
+section#cost-cut .cost-cut-more .bg-blue {
+  background-color: #0E96C9;
+  padding: 15px 30px 50px;
+  margin-top: 30px;
+}
+
+section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2 {
+  text-align: center;
+  color: white;
+}
+
+section#cost-cut .cost-cut-more h3, section#cost-cut .cost-cut-more .h3 {
+  margin-top: 10px;
+  text-align: center;
+  color: white;
+}
+
+section#cost-cut .download-btn-wrap {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+section#cost-cut .download-btn-wrap img {
+  width: initial;
+}
+
+section#cost-cut .download-btn-wrap .download-btn {
+  margin: initial;
+}
+
+@media (max-width: 1199.98px) {
+  section#cost-cut .cost-cut-detail {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  section#cost-cut {
+    padding-top: 45px;
+    padding-bottom: 35px;
+  }
+  section#cost-cut .cost-cut-detail {
+    margin-top: 42px;
+  }
+  section#cost-cut .cost-cut-more {
+    margin-top: 30px;
+  }
+  section#cost-cut .cost-cut-more .bg-blue {
+    margin-top: 15px;
+    padding: 15px 15px 20px;
   }
 }
 
