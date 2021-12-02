@@ -84,17 +84,10 @@
     background:rgba(0, 0, 0, 0) linear-gradient(transparent 60%, #FFFF00 0%) repeat scroll 0 0
 }
 
-.txt-blue{
-    color: $blue;
-}
-
-.txt-black{
-    color: black;
-}
-
-.txt-white{
-    color: white;
-}
+.txt-blue{ color: $blue; }
+.txt-black{color: black; }
+.txt-white{ color: white; }
+.txt-red{ color: #E83D1B; }
 
 
 .txt_28{
@@ -149,3 +142,15 @@
 .txt-sm_22{ @include media-breakpoint-down(sm){ font-size: 22px; } }
 .txt-sm_24{ @include media-breakpoint-down(sm){ font-size: 24px; } }
 .txt-sm_25{ @include media-breakpoint-down(sm){ font-size: 25px; } }
+
+
+
+.img-wraper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        width: 100%;
+        object-fit: contain;
+    }
+}

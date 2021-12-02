@@ -1,6 +1,8 @@
 @import '../variable';
 @import "../../../node_modules/bootstrap/scss/mixins";
-@import '../layout/layout';
+@import './layout';
+@import '../base/font';
+@import '../base/typography';
 
 #header{
     height: px-vw(100);
@@ -220,7 +222,7 @@
         }
     }
     
-    @include media-breakpoint-down(lg){
+    @include media-breakpoint-down(md){
         display: block;
         text-align: center;
         padding-top: 70px;
@@ -333,7 +335,7 @@
         margin-top: 145px;
     }
 
-    @include media-breakpoint-down(lg){
+    @include media-breakpoint-down(md){
         .quiz{
             flex-direction: column;
             &-item{
@@ -385,6 +387,75 @@
         }
         .txt-solve{
             margin-top: 46px;
+        }
+    }
+}
+
+
+section#about{
+    background-color: #FBFBF8;
+    padding-top: 150px;
+    padding-bottom: 200px;
+    .about{
+        margin-top: 120px;
+        display: flex;
+        .l-content{
+            width: px-vw(1020);
+            .ttl-t1{
+                @extend .txt_60;
+                @extend .txt-sm_18;
+                @extend .bold;
+            }
+            .ttl-t2, .ttl-t3, .ttl-t4{
+                @extend .txt_30;
+                @extend .txt-sm_12;
+                @extend .lh_60;
+                @extend .lh-sm_17;
+                @extend .bold;
+            }
+            .ttl-t3, .ttl-t4{
+                margin-top: 60px;
+            }
+        }
+        .r-content{
+            width: px-vw(500);
+        }
+    }
+
+    @include media-breakpoint-down(xxl){
+        .l-content br{ display: none;}
+    }
+    @include media-breakpoint-down(md){
+        padding-top: 70px;
+        padding-bottom: 85px;
+        .about{
+            flex-direction: column-reverse;
+            .l-content, .r-content{
+                width: 100%;
+            }
+            .l-content{
+                margin-top: 47px;
+            }
+            .r-content.img-wraper img{
+                width: 300px; 
+            }
+        }
+    }
+    @include media-breakpoint-down(sm){
+        .about{
+            margin-top: 29px;
+            .r-content.img-wraper img{
+                max-width: 250px; 
+                width: 100%;
+            }
+            .l-content{
+                margin-top: 47px;
+                text-align: center;
+                .ttl-t2, .ttl-t3, .ttl-t4{ 
+                    margin-top: 30px; 
+                    padding: 0px 20px;
+                }
+            }
         }
     }
 }
