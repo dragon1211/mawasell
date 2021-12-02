@@ -12,7 +12,10 @@
     position: relative;
     margin: auto;
     span{
-        font-size: 40px;
+        @extend .txt_40;
+        @extend .txt-sm_15;
+        color: white;
+        text-align: center;
         font-weight: bold;
     }
     .circle{
@@ -22,12 +25,21 @@
         height: 83px;
         right: 23px;
         background-color: white;
-        font-size: 30px;
+        @extend .txt_30;
+        @extend .txt-sm_12;
         color: #FF7500;
         font-weight: bold;
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    @include media-breakpoint-down(lg){
+        height: 90px;
+        .circle{
+            width: 70px;
+            height: 70px;
+        }
     }
 
     @include media-breakpoint-down(sm){
@@ -90,6 +102,12 @@
 .txt-red{ color: #E83D1B; }
 
 
+.txt_25{
+    @include media-breakpoint-up(xl){ font-size: 25px; }
+    @include media-breakpoint-down(xl){ font-size: 24px; }
+    @include media-breakpoint-down(lg){ font-size: 23px; }
+}
+
 .txt_28{
     @include media-breakpoint-up(xl){ font-size: 28px; }
     @include media-breakpoint-down(xl){ font-size: 26px; }
@@ -131,6 +149,20 @@
     @include media-breakpoint-down(xl){ font-size: 55px; }
     @include media-breakpoint-down(lg){ font-size: 40px; }
 }
+
+.txt_80{
+    @include media-breakpoint-up(xl){ font-size: 80px; }
+    @include media-breakpoint-down(xl){ font-size: 60px; }
+    @include media-breakpoint-down(lg){ font-size: 45px; }
+}
+
+.txt_92{
+    @include media-breakpoint-up(xl){ font-size: 92px; }
+    @include media-breakpoint-down(xl){ font-size: 80px; }
+    @include media-breakpoint-down(lg){ font-size: 60px; }
+}
+
+
 
 
 .txt-sm_12{ @include media-breakpoint-down(sm){ font-size: 12px; } }
