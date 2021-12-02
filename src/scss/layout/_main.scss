@@ -503,7 +503,9 @@ section#reason{
                 }
             }
             .reason-desp{
-                margin: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
                 h1{
                     @extend .txt_40;
                     @extend .txt-sm_20;
@@ -521,9 +523,7 @@ section#reason{
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                .img-wrap{
-                    min-width: 234px;
-                }
+                
             }
         }
     }
@@ -597,15 +597,176 @@ section#reason{
 section#service{
     padding-top: 150px;
     padding-bottom: 200px;
+    background-color: #FBFBF8;
 
     .abstract{
         margin-top: 60px;
+        margin-left: px-vw(160);
+        margin-right: px-vw(160);
         display: flex;
+        justify-content: space-between;
+        &-item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            p{
+                margin-top: 24px;
+                @extend .txt_25;
+                @extend .txt-sm_16;
+                @extend .bold;
+            }
+        }
     }
 
+    .period{
+        margin-top: 90px;
+        &-item{
+            min-height: 450px;
+            background-color: white;
+            box-shadow: 0 3px 20px #CBCBD4;
+            padding-top: 60px;
+            padding-bottom: 90px;
+            position: relative;
+            &:not(:last-child){
+                margin-bottom: 90px;
+            }
+            &:nth-child(odd){
+                margin-left: -200px;
+                padding-left: 200px;
+                border-radius: 0 240px 240px 0;
+            }
+            &:nth-child(even){
+                margin-right: -200px;
+                padding-right: 200px;
+                flex-direction: row-reverse;
+                border-radius: 240px 0 0 240px;
+            }
+            display: flex;
+            .period-desp{
+                width: 50%; 
+                .p__title span{
+                    padding: 0 50px;
+                    width: 325px;
+                    background-color: $blue;
+                    color: white;
+                    @extend .txt_60, .txt-sm_20;
+                    @extend .bold;
+                }  
+                .p__sub_title{
+                    margin-top: 25px;
+                    @extend .txt_35, .txt-sm_18;
+                    @extend .bold;
+                    span{ @extend .txt-red; }
+                }
+                p{
+                    margin-top: 25px;
+                    @extend .txt_25, .txt-sm_16;
+                }
+                .p__link{
+                    text-align: right;
+                    text-decoration: none;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+            .period-img-container{
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
 
+    @include media-breakpoint-down(xxl){
+        .abstract{
+            margin-left: 0; 
+            margin-right: 0;
+        }
+        .period-desp br{display: none;}
+        .period-img-container img{
+            max-width: 300px;
+        }
+    }
+    @include media-breakpoint-down(lg){
+        .abstract{
+            flex-direction: column;
+            &-item{
+                margin-bottom: 30px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .period{
+            &-item{
+                flex-direction: column-reverse; 
+                &:not(:last-child){
+                    margin-bottom: 60px;
+                }
+                &:nth-child(odd), &:nth-child(even){
+                    border-radius: 0px;
+                    padding: 90px 30px;
+                    margin-left: 0px;
+                    margin-right: 0px;
+                }
+                &:nth-child(even){
+                    flex-direction: column-reverse;
+                }
+                .period-desp{
+                    width: 100%;
+                    .p__title{
+                        text-align: center;
+                        position: absolute;
+                        top: 70px;
+                        width: 100%;
+                        margin: -30px;
+                    }
+                }
+                .period-img-container{ width: 100%;}
+            }
+        }
+    }
     @include media-breakpoint-down(sm){
         padding-top: 70px;
         padding-bottom: 30px;
+        .abstract{
+            &-item{
+                img{
+                    max-height: 150px;
+                    object-fit: contain;
+                    width: 100%;
+                }
+            }
+        }
+        .period{
+            margin-top: 45px;
+            &-item{
+                &:not(:last-child){
+                    margin-bottom: 35px;
+                }
+                &:nth-child(even), &:nth-child(odd){
+                    padding: 75px 15px 35px;
+                }
+                .period-desp{
+                    .p__title{
+                        margin: 0 -15px;
+                        top: 30px;
+                        span{
+                            padding: 0 10px;
+                        }
+                    }
+                    .p__sub_title{ margin-top: 15px; }
+                    p{ margin-top: 10px; }
+                }
+                .period-img-container img{
+                    max-height: 150px;
+                    object-fit: contain;
+                    width: 100%;
+                }
+            }
+        }
     }
 }
