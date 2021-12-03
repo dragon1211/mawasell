@@ -1,6 +1,16 @@
 body {
   font-size: 16px;
-  font-family: Noto Sans JP, "Hiragino Sans";
+  font-family: "Noto Sans JP", "Noto Sans JP Bold", "Noto Sans JP Regular";
+}
+
+@font-face {
+  font-family: "Noto Sans JP Bold";
+  src: url(../fonts/NotoSansJP-Bold.otf);
+}
+
+@font-face {
+  font-family: "Noto Sans JP Regular";
+  src: url(../fonts/NotoSansJP-Regular.otf);
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
@@ -14187,25 +14197,25 @@ fieldset:disabled .btn {
 }
 
 @media (min-width: 1200px) {
-  .txt_25, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p, section#case .case-content .case-item .case-company {
+  .txt_25, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p, section#case .case-content .case-item .case-company, section#faq .faq-content .faq-item .question, section#faq .faq-content .faq-item .answer {
     font-size: 25px;
   }
 }
 
 @media (max-width: 1199.98px) {
-  .txt_25, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p, section#case .case-content .case-item .case-company {
+  .txt_25, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p, section#case .case-content .case-item .case-company, section#faq .faq-content .faq-item .question, section#faq .faq-content .faq-item .answer {
     font-size: 23px;
   }
 }
 
 @media (max-width: 991.98px) {
-  .txt_25, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p, section#case .case-content .case-item .case-company {
+  .txt_25, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p, section#case .case-content .case-item .case-company, section#faq .faq-content .faq-item .question, section#faq .faq-content .faq-item .answer {
     font-size: 21px;
   }
 }
 
 @media (max-width: 767.98px) {
-  .txt_25, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p, section#case .case-content .case-item .case-company {
+  .txt_25, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p, section#case .case-content .case-item .case-company, section#faq .faq-content .faq-item .question, section#faq .faq-content .faq-item .answer {
     font-size: 19px;
   }
 }
@@ -14553,7 +14563,7 @@ fieldset:disabled .btn {
 }
 
 @media (max-width: 575.98px) {
-  .txt-sm_16, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p, section#cost-cut .cost-cut-more h3, section#cost-cut .cost-cut-more .h3, section#case .case-content .case-item dl, section#case .case-content .case-item .before .bg-blue, section#case .case-content .case-item .after .bg-red, section#case .case-content .case-item .after p {
+  .txt-sm_16, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p, section#cost-cut .cost-cut-more h3, section#cost-cut .cost-cut-more .h3, section#case .case-content .case-item dl, section#case .case-content .case-item .before .bg-blue, section#case .case-content .case-item .after .bg-red, section#case .case-content .case-item .after p, section#faq .faq-content .faq-item .question, section#faq .faq-content .faq-item .answer {
     font-size: 16px;
   }
 }
@@ -14638,7 +14648,17 @@ fieldset:disabled .btn {
 
 body {
   font-size: 16px;
-  font-family: Noto Sans JP, "Hiragino Sans";
+  font-family: "Noto Sans JP", "Noto Sans JP Bold", "Noto Sans JP Regular";
+}
+
+@font-face {
+  font-family: "Noto Sans JP Bold";
+  src: url(../fonts/NotoSansJP-Bold.otf);
+}
+
+@font-face {
+  font-family: "Noto Sans JP Regular";
+  src: url(../fonts/NotoSansJP-Regular.otf);
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
@@ -14836,25 +14856,25 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
 }
 
 @media (min-width: 1200px) {
-  .txt_25, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p, section#case .case-content .case-item .case-company {
+  .txt_25, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p, section#case .case-content .case-item .case-company, section#faq .faq-content .faq-item .question, section#faq .faq-content .faq-item .answer {
     font-size: 25px;
   }
 }
 
 @media (max-width: 1199.98px) {
-  .txt_25, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p, section#case .case-content .case-item .case-company {
+  .txt_25, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p, section#case .case-content .case-item .case-company, section#faq .faq-content .faq-item .question, section#faq .faq-content .faq-item .answer {
     font-size: 23px;
   }
 }
 
 @media (max-width: 991.98px) {
-  .txt_25, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p, section#case .case-content .case-item .case-company {
+  .txt_25, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p, section#case .case-content .case-item .case-company, section#faq .faq-content .faq-item .question, section#faq .faq-content .faq-item .answer {
     font-size: 21px;
   }
 }
 
 @media (max-width: 767.98px) {
-  .txt_25, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p, section#case .case-content .case-item .case-company {
+  .txt_25, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p, section#case .case-content .case-item .case-company, section#faq .faq-content .faq-item .question, section#faq .faq-content .faq-item .answer {
     font-size: 19px;
   }
 }
@@ -15202,7 +15222,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
 }
 
 @media (max-width: 575.98px) {
-  .txt-sm_16, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p, section#cost-cut .cost-cut-more h3, section#cost-cut .cost-cut-more .h3, section#case .case-content .case-item dl, section#case .case-content .case-item .before .bg-blue, section#case .case-content .case-item .after .bg-red, section#case .case-content .case-item .after p {
+  .txt-sm_16, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p, section#cost-cut .cost-cut-more h3, section#cost-cut .cost-cut-more .h3, section#case .case-content .case-item dl, section#case .case-content .case-item .before .bg-blue, section#case .case-content .case-item .after .bg-red, section#case .case-content .case-item .after p, section#faq .faq-content .faq-item .question, section#faq .faq-content .faq-item .answer {
     font-size: 16px;
   }
 }
@@ -16008,19 +16028,30 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
 }
 
 .pc-nav .nav-btn {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  list-style: none;
-  margin: auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .pc-nav .nav-btn li {
   width: 13.02083vw;
   height: 3.125vw;
   border-radius: 1.5625vw;
-  text-align: center;
-  padding-top: 0.26042vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .pc-nav .nav-btn li.white-outline-btn {
@@ -16910,7 +16941,7 @@ section#price .price-content .txt-wrap p {
 }
 
 section#cost-cut {
-  background-image: url("../../../assets/img/mawasell_grid.png");
+  background-image: url("../img/mawasell_grid.png");
   background-repeat: repeat;
   padding-top: 150px;
   padding-bottom: 115px;
@@ -17307,7 +17338,7 @@ section#case .case-content .case-item .after .bg-red {
 section#step {
   padding-top: 150px;
   padding-bottom: 200px;
-  background-image: url("../../../assets/img/mawasell_grid.png");
+  background-image: url("../img/mawasell_grid.png");
   background-repeat: repeat;
 }
 
@@ -17513,7 +17544,7 @@ section#step .download-btn-wrap {
             align-items: center;
   }
   section#step .step-content .step-list .step-item {
-    max-width: 500px;
+    max-width: 600px;
     width: 100%;
     margin-left: 0;
     margin-right: 0;
@@ -17604,6 +17635,106 @@ section#step .download-btn-wrap {
   }
   section#step .download-btn-wrap {
     margin-top: 48px;
+  }
+}
+
+section#faq {
+  padding-top: 150px;
+  padding-bottom: 200px;
+  background-color: #E9F3FF;
+}
+
+section#faq .faq-content {
+  max-width: 1220px;
+  width: 100%;
+  margin: 60px auto 0;
+}
+
+section#faq .faq-content .faq-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+section#faq .faq-content .faq-item dl {
+  margin-bottom: 0;
+}
+
+section#faq .faq-content .faq-item dl dt {
+  float: left;
+}
+
+section#faq .faq-content .faq-item dl dd {
+  padding-left: 50px;
+  margin-bottom: 0px;
+}
+
+section#faq .faq-content .faq-item .question {
+  padding: 40px 90px 40px 50px;
+  background-color: #0E96C9;
+  border-radius: 5px;
+  font-weight: bold;
+  color: white;
+  position: relative;
+}
+
+section#faq .faq-content .faq-item .question dl:after {
+  content: "";
+  border-color: white transparent transparent transparent;
+  border-style: solid;
+  border-width: 10px;
+  right: 40px;
+  position: absolute;
+  top: calc(50% - 3px);
+}
+
+section#faq .faq-content .faq-item .answer {
+  padding: 40px 90px 50px 50px;
+  background-color: white;
+  -webkit-box-shadow: 0 3px 6px #A5BFE1;
+          box-shadow: 0 3px 6px #A5BFE1;
+}
+
+section#faq .faq-content .faq-item .answer dl dt {
+  color: #e3342f;
+}
+
+section#faq .faq-content .faq-item .answer dl dd {
+  color: #183264;
+}
+
+@media (max-width: 575.98px) {
+  section#faq {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  section#faq .faq-content {
+    margin-top: 48px;
+  }
+  section#faq .faq-content .faq-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  section#faq .faq-content .faq-item dl dd {
+    padding-left: 30px;
+  }
+  section#faq .faq-content .faq-item .question {
+    padding: 18px 45px 18px 15px;
+  }
+  section#faq .faq-content .faq-item .question dl:after {
+    border-width: 7px;
+    right: 15px;
+  }
+  section#faq .faq-content .faq-item .answer {
+    padding: 20px 45px 25px 15px;
+  }
+}
+
+footer {
+  height: 300px;
+  background-color: #11315A;
+}
+
+@media (max-width: 575.98px) {
+  footer {
+    height: 150px;
   }
 }
 

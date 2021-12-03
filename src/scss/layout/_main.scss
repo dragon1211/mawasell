@@ -45,15 +45,16 @@
     }
 
     .nav-btn{
-        display: inline-flex;
-        list-style: none;
-        margin: auto 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         li{
             width: px-vw(250);
             height: px-vw(60);
             border-radius: px-vw(30);
-            text-align: center;
-            padding-top: px-vw(5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
             &.white-outline-btn{
                 border: px-vw(3) solid $blue;
                 margin-right: px-vw(10);
@@ -810,7 +811,7 @@ section#price{
 
 
 section#cost-cut{
-    background-image: url('../../../assets/img/mawasell_grid.png');
+    background-image: url('../img/mawasell_grid.png');
     background-repeat: repeat;
 
     padding-top: 150px;
@@ -1163,7 +1164,7 @@ section#case{
 section#step{
     padding-top: 150px;
     padding-bottom: 200px;
-    background-image: url('../../../assets/img/mawasell_grid.png');
+    background-image: url('../img/mawasell_grid.png');
     background-repeat: repeat;
     
     .step-content{
@@ -1305,7 +1306,7 @@ section#step{
                 flex-direction: column;
                 align-items: center;
                 .step-item{
-                    max-width: 500px;
+                    max-width: 600px;
                     width: 100%;
                     margin-left: 0;
                     margin-right: 0;
@@ -1382,5 +1383,93 @@ section#step{
         .download-btn-wrap{
             margin-top: 48px;
         }
+    }
+}
+
+
+
+
+section#faq{
+    padding-top: 150px;
+    padding-bottom: 200px;
+    background-color: #E9F3FF;
+
+    .faq-content{
+        max-width: 1220px;
+        width: 100%;
+        margin: 60px auto 0;
+        .faq-item{
+            &:not(:last-child){
+                margin-bottom: 30px;
+            }
+            dl{
+                margin-bottom: 0;
+                dt{float: left;}
+                dd{
+                    padding-left: 50px;
+                    margin-bottom: 0px;
+                }
+            }
+            .question{
+                padding: 40px 90px 40px 50px;
+                background-color: $blue;
+                border-radius: 5px;
+                font-weight: bold;
+                color: white;
+                @extend .txt_25, .txt-sm_16;
+                position: relative;
+                dl:after{
+                    content: "";
+                    border-color: white transparent transparent transparent;
+                    border-style: solid;
+                    border-width: 10px;
+                    right: 40px;
+                    position: absolute;
+                    top: calc(50% - 3px);
+                }
+            }
+            .answer{
+                padding: 40px 90px 50px 50px;
+                background-color: white;
+                box-shadow: 0 3px 6px #A5BFE1;
+                @extend .txt_25, .txt-sm_16;
+                dl dt{ color: $red;}
+                dl dd{ color: #183264;}
+            }
+        }
+    }
+
+    @include media-breakpoint-down(sm){
+        padding-top: 50px;
+        padding-bottom: 50px;
+        .faq-content{
+            margin-top: 48px;
+            .faq-item{
+                &:not(:last-child){
+                    margin-bottom: 20px;
+                }
+                dl dd{ padding-left: 30px;}
+                .question{
+                    padding: 18px 45px 18px 15px;
+                    dl:after{
+                        border-width: 7px;
+                        right: 15px;
+                    }
+                }
+                .answer{
+                    padding: 20px 45px 25px 15px;
+                }
+            }
+        }
+    }
+}
+
+
+
+footer{
+    height: 300px;
+    background-color: #11315A;
+    @include media-breakpoint-down(sm){
+        height: 150px;
     }
 }
