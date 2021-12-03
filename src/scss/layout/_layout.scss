@@ -1,5 +1,17 @@
 @import '../../../node_modules/bootstrap/scss/mixins/_breakpoints.scss';
 
+.container{
+    padding-left: px-vw(200);
+    padding-right: px-vw(200);
+    max-width: 100%;
+    margin: 0;
+    @include media-breakpoint-down(sm){
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
 .download-btn{
     max-width: 656px;
     width: 100%;
