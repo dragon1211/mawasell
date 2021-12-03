@@ -14145,7 +14145,7 @@ fieldset:disabled .btn {
   background: rgba(0, 0, 0, 0) linear-gradient(transparent 60%, #FFFF00 0%) repeat scroll 0 0;
 }
 
-.txt-blue, section#grant .grant-content .grant-desp h1, section#grant .grant-content .grant-desp .h1 {
+.txt-blue, section#grant .grant-content .grant-desp h1, section#grant .grant-content .grant-desp .h1, section#case .case-content .case-item .case-company {
   color: #0E96C9;
 }
 
@@ -14162,25 +14162,49 @@ fieldset:disabled .btn {
 }
 
 @media (min-width: 1200px) {
-  .txt_25, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p {
+  .txt_20, section#case .case-content .case-item dl, section#case .case-content .case-item .before .bg-blue, section#case .case-content .case-item .after .bg-red, section#case .case-content .case-item .after p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .txt_20, section#case .case-content .case-item dl, section#case .case-content .case-item .before .bg-blue, section#case .case-content .case-item .after .bg-red, section#case .case-content .case-item .after p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .txt_20, section#case .case-content .case-item dl, section#case .case-content .case-item .before .bg-blue, section#case .case-content .case-item .after .bg-red, section#case .case-content .case-item .after p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .txt_20, section#case .case-content .case-item dl, section#case .case-content .case-item .before .bg-blue, section#case .case-content .case-item .after .bg-red, section#case .case-content .case-item .after p {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .txt_25, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p, section#case .case-content .case-item .case-company {
     font-size: 25px;
   }
 }
 
 @media (max-width: 1199.98px) {
-  .txt_25, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p {
+  .txt_25, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p, section#case .case-content .case-item .case-company {
     font-size: 23px;
   }
 }
 
 @media (max-width: 991.98px) {
-  .txt_25, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p {
+  .txt_25, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p, section#case .case-content .case-item .case-company {
     font-size: 21px;
   }
 }
 
 @media (max-width: 767.98px) {
-  .txt_25, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p {
+  .txt_25, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p, section#case .case-content .case-item .case-company {
     font-size: 19px;
   }
 }
@@ -14522,7 +14546,7 @@ fieldset:disabled .btn {
 }
 
 @media (max-width: 575.98px) {
-  .txt-sm_16, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p, section#cost-cut .cost-cut-more h3, section#cost-cut .cost-cut-more .h3 {
+  .txt-sm_16, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p, section#cost-cut .cost-cut-more h3, section#cost-cut .cost-cut-more .h3, section#case .case-content .case-item dl, section#case .case-content .case-item .before .bg-blue, section#case .case-content .case-item .after .bg-red, section#case .case-content .case-item .after p {
     font-size: 16px;
   }
 }
@@ -14534,7 +14558,7 @@ fieldset:disabled .btn {
 }
 
 @media (max-width: 575.98px) {
-  .txt-sm_18, section#about .about-content .l-content .ttl-t1, section#service .period-item .period-desp .p__sub_title, section#price .price-content .txt-wrap h2, section#price .price-content .txt-wrap .h2, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2, section#grant .grant-content .grant-desp h1 span.bg-blue, section#grant .grant-content .grant-desp .h1 span.bg-blue, section#grant .grant-content h1.bg-blue, section#grant .grant-content .bg-blue.h1 {
+  .txt-sm_18, section#about .about-content .l-content .ttl-t1, section#service .period-item .period-desp .p__sub_title, section#price .price-content .txt-wrap h2, section#price .price-content .txt-wrap .h2, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2, section#grant .grant-content .grant-desp h1 span.bg-blue, section#grant .grant-content .grant-desp .h1 span.bg-blue, section#grant .grant-content h1.bg-blue, section#grant .grant-content .bg-blue.h1, section#case .case-content .case-item .case-company {
     font-size: 18px;
   }
 }
@@ -14763,7 +14787,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
   background: rgba(0, 0, 0, 0) linear-gradient(transparent 60%, #FFFF00 0%) repeat scroll 0 0;
 }
 
-.txt-blue, section#grant .grant-content .grant-desp h1, section#grant .grant-content .grant-desp .h1 {
+.txt-blue, section#grant .grant-content .grant-desp h1, section#grant .grant-content .grant-desp .h1, section#case .case-content .case-item .case-company {
   color: #0E96C9;
 }
 
@@ -14780,25 +14804,49 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
 }
 
 @media (min-width: 1200px) {
-  .txt_25, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p {
+  .txt_20, section#case .case-content .case-item dl, section#case .case-content .case-item .before .bg-blue, section#case .case-content .case-item .after .bg-red, section#case .case-content .case-item .after p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .txt_20, section#case .case-content .case-item dl, section#case .case-content .case-item .before .bg-blue, section#case .case-content .case-item .after .bg-red, section#case .case-content .case-item .after p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .txt_20, section#case .case-content .case-item dl, section#case .case-content .case-item .before .bg-blue, section#case .case-content .case-item .after .bg-red, section#case .case-content .case-item .after p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .txt_20, section#case .case-content .case-item dl, section#case .case-content .case-item .before .bg-blue, section#case .case-content .case-item .after .bg-red, section#case .case-content .case-item .after p {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .txt_25, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p, section#case .case-content .case-item .case-company {
     font-size: 25px;
   }
 }
 
 @media (max-width: 1199.98px) {
-  .txt_25, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p {
+  .txt_25, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p, section#case .case-content .case-item .case-company {
     font-size: 23px;
   }
 }
 
 @media (max-width: 991.98px) {
-  .txt_25, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p {
+  .txt_25, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p, section#case .case-content .case-item .case-company {
     font-size: 21px;
   }
 }
 
 @media (max-width: 767.98px) {
-  .txt_25, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p {
+  .txt_25, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p, section#case .case-content .case-item .case-company {
     font-size: 19px;
   }
 }
@@ -15140,7 +15188,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
 }
 
 @media (max-width: 575.98px) {
-  .txt-sm_16, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p, section#cost-cut .cost-cut-more h3, section#cost-cut .cost-cut-more .h3 {
+  .txt-sm_16, section#reason .reason-content .reason-item .reason-desp p, section#service .abstract-item p, section#service .period-item .period-desp p, section#cost-cut .cost-cut-more h3, section#cost-cut .cost-cut-more .h3, section#case .case-content .case-item dl, section#case .case-content .case-item .before .bg-blue, section#case .case-content .case-item .after .bg-red, section#case .case-content .case-item .after p {
     font-size: 16px;
   }
 }
@@ -15152,7 +15200,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
 }
 
 @media (max-width: 575.98px) {
-  .txt-sm_18, section#about .about-content .l-content .ttl-t1, section#service .period-item .period-desp .p__sub_title, section#price .price-content .txt-wrap h2, section#price .price-content .txt-wrap .h2, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2, section#grant .grant-content .grant-desp h1 span.bg-blue, section#grant .grant-content .grant-desp .h1 span.bg-blue, section#grant .grant-content h1.bg-blue, section#grant .grant-content .bg-blue.h1 {
+  .txt-sm_18, section#about .about-content .l-content .ttl-t1, section#service .period-item .period-desp .p__sub_title, section#price .price-content .txt-wrap h2, section#price .price-content .txt-wrap .h2, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2, section#grant .grant-content .grant-desp h1 span.bg-blue, section#grant .grant-content .grant-desp .h1 span.bg-blue, section#grant .grant-content h1.bg-blue, section#grant .grant-content .bg-blue.h1, section#case .case-content .case-item .case-company {
     font-size: 18px;
   }
 }
@@ -16836,6 +16884,9 @@ section#price .price-content .txt-wrap p {
   section#price .price-content {
     margin-top: 32px;
   }
+  section#price .price-content .txt-wrap h2, section#price .price-content .txt-wrap .h2 {
+    line-height: initial;
+  }
   section#price .price-content .txt-wrap h2:nth-child(1), section#price .price-content .txt-wrap .h2:nth-child(1) {
     margin-bottom: 18px;
   }
@@ -17059,6 +17110,137 @@ section#grant .grant-content h2, section#grant .grant-content .h2 {
   }
   section#grant .grant-content h2, section#grant .grant-content .h2 {
     margin-top: 15px;
+  }
+}
+
+section#case {
+  padding-top: 150px;
+  padding-bottom: 200px;
+  background-color: #FBFBF8;
+}
+
+section#case .case-content {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section#case .case-content .case-item {
+  max-width: 480px;
+  padding: 25px 25px 50px;
+  background-color: white;
+  border: 5px solid #0E96C9;
+  border-radius: 25px;
+  -webkit-box-shadow: 0 3px 6px #00458D;
+          box-shadow: 0 3px 6px #00458D;
+  margin-bottom: 30px;
+}
+
+section#case .case-content .case-item .case-image img {
+  width: 100%;
+}
+
+section#case .case-content .case-item .case-company {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #192C3A;
+}
+
+section#case .case-content .case-item dl {
+  margin-bottom: 5px;
+}
+
+section#case .case-content .case-item dl span.cir-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #0E96C9;
+  margin-top: 6px;
+  margin-right: 5px;
+  float: left;
+}
+
+section#case .case-content .case-item dl span.squ-icon {
+  width: 20px;
+  height: 20px;
+  background-color: #0E96C9;
+  margin-top: 6px;
+  margin-right: 5px;
+  float: left;
+}
+
+section#case .case-content .case-item dl dt {
+  font-weight: normal;
+  float: left;
+}
+
+section#case .case-content .case-item dl dd {
+  margin-bottom: 0;
+}
+
+section#case .case-content .case-item dl dd::before {
+  content: ':';
+}
+
+section#case .case-content .case-item .abs {
+  margin-top: 15px;
+}
+
+section#case .case-content .case-item .abs dl dd {
+  padding-left: 125px;
+}
+
+section#case .case-content .case-item .before .bg-blue {
+  background-color: #0E96C9;
+  color: white;
+  padding-left: 25px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+section#case .case-content .case-item .before dd {
+  padding-left: 25px;
+}
+
+section#case .case-content .case-item .before dd::before {
+  content: none;
+}
+
+section#case .case-content .case-item .after .bg-red {
+  background-color: #e3342f;
+  color: white;
+  padding-left: 25px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 575.98px) {
+  section#case {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  section#case .case-content {
+    margin-top: 50px;
+  }
+  section#case .case-content .case-item {
+    padding: 15px 15px 30px;
+    border-radius: 10px;
+    border-width: 1px;
+  }
+  section#case .case-content .case-item:last-child {
+    margin-bottom: 0;
+  }
+  section#case .case-content .case-item dl span.squ-icon, section#case .case-content .case-item dl span.cir-icon {
+    width: 15px;
+    height: 15px;
+  }
+  section#case .case-content .case-item .abs dl dd {
+    padding-left: 95px;
   }
 }
 

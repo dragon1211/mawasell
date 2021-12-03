@@ -800,9 +800,8 @@ section#price{
         .price-content{
             margin-top: 32px;
             .txt-wrap{
-                h2:nth-child(1){
-                    margin-bottom: 18px;
-                }
+                h2{ line-height: initial;}
+                h2:nth-child(1){ margin-bottom: 18px; }
                 p{ margin-top: 33px; }
             }
         }
@@ -1001,6 +1000,129 @@ section#grant{
             }
             p{ margin-top: 10px; text-align: left;}
             h2{ margin-top: 15px;}
+        }
+    }
+}
+
+
+
+section#case{
+    padding-top: 150px;
+    padding-bottom: 200px;
+    background-color: #FBFBF8;
+
+    .case-content{
+        margin-top: 60px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .case-item{
+            max-width: 480px;
+            padding: 25px 25px 50px;
+            background-color: white;
+            border: 5px solid #0E96C9;
+            border-radius: 25px;
+            box-shadow: 0 3px 6px #00458D;
+            margin-bottom: 30px;
+
+            .case-image img{
+                width: 100%;
+            }
+            .case-company{
+                @extend .txt_25, .txt-sm_18;
+                @extend .txt-blue;
+                padding-top: 10px;
+                padding-bottom: 5px;
+                border-bottom: 1px solid #192C3A;
+            }
+            dl{
+                @extend .txt_20;
+                @extend .txt-sm_16;
+                margin-bottom: 5px;
+                span.cir-icon{
+                    width: 20px; height: 20px;
+                    border-radius: 50%;
+                    background-color: $blue;
+                    margin-top: 6px;
+                    margin-right: 5px;
+                    float: left;
+                }
+                span.squ-icon{
+                    width: 20px; height: 20px;
+                    background-color: $blue;
+                    margin-top: 6px;
+                    margin-right: 5px;
+                    float: left;
+                }
+                dt{
+                    font-weight: normal; 
+                    float: left;
+                }
+                dd{
+                    margin-bottom: 0;
+                    &::before{
+                        content:':'
+                    }
+                }
+            }
+            .abs{ 
+                margin-top: 15px;
+                dl dd{
+                    padding-left: 125px;
+                }
+            }
+            .before{ 
+                .bg-blue{
+                    background-color: $blue;
+                    color: white;
+                    padding-left: 25px;
+                    margin-top: 20px;
+                    margin-bottom: 15px;
+                    @extend .txt_20;
+                    @extend .txt-sm_16;    
+                }
+                dd{ 
+                    padding-left: 25px;
+                    &::before{
+                        content: none;
+                    }
+                }
+            }
+            .after{
+                .bg-red{
+                    background-color: $red;
+                    color: white;
+                    padding-left: 25px;
+                    @extend .txt_20;
+                    margin-top: 20px;
+                    margin-bottom: 15px;
+                    @extend .txt-sm_16;  
+                }
+                p{
+                    @extend .txt_20;
+                    @extend .txt-sm_16;
+                }
+            }
+        }
+    }
+    @include media-breakpoint-down(sm){
+        padding-top: 50px;
+        padding-bottom: 50px;
+        .case-content{
+            margin-top: 50px;
+            .case-item{
+                padding: 15px 15px 30px;
+                border-radius: 10px;
+                border-width: 1px;
+                &:last-child{margin-bottom: 0;}
+                dl{
+                    span.squ-icon, span.cir-icon{
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+                .abs dl dd{ padding-left: 95px; }
+            }
         }
     }
 }
