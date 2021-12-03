@@ -117,6 +117,12 @@
 .txt-white{ color: white; }
 .txt-red{ color: #E83D1B; }
 
+.txt_20{
+    @include media-breakpoint-up(xl){ font-size: 20px; }
+    @include media-breakpoint-down(xl){ font-size: 20px; }
+    @include media-breakpoint-down(lg){ font-size: 20px; }
+    @include media-breakpoint-down(md){ font-size: 20px; }
+}
 
 .txt_25{
     @include media-breakpoint-up(xl){ font-size: 25px; }
