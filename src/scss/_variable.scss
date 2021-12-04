@@ -32,7 +32,17 @@ $sp: 1200px;
 
 body{
   font-size: 16px;
-  font-family: Noto Sans JP, "Hiragino Sans";
+  font-family: "Noto Sans JP", "Noto Sans JP Bold", "Noto Sans JP Regular";
+}
+
+@font-face {
+  font-family: "Noto Sans JP Bold";
+  src: url(../fonts/NotoSansJP-Bold.otf);
+}
+
+@font-face {
+  font-family: "Noto Sans JP Regular";
+  src: url(../fonts/NotoSansJP-Regular.otf);
 }
 
 h1, h2, h3, h4, h5, h6, p{
