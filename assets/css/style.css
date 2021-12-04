@@ -13714,7 +13714,7 @@ fieldset:disabled .btn {
   font-size: 20px !important;
 }
 
-.bold, section#about .about-content .l-content .ttl-t1, section#about .about-content .l-content .ttl-t2, section#about .about-content .l-content .ttl-t3, section#about .about-content .l-content .ttl-t4, section#reason .reason-content .reason-item .reason-desp h1, section#reason .reason-content .reason-item .reason-desp .h1, section#service .abstract-item p, section#service .period-item .period-desp .p__title span, section#service .period-item .period-desp .p__sub_title, section#service .period-item .period-desp .p__link, section#price .price-content, section#cost-cut .cost-cut-more h1, section#cost-cut .cost-cut-more .h1, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2, section#grant .g__title, section#grant .grant-content .grant-desp h1, section#grant .grant-content .grant-desp .h1, section#grant .grant-content .grant-desp h1 span.bg-blue, section#grant .grant-content .grant-desp .h1 span.bg-blue, section#grant .grant-content h1.bg-blue, section#grant .grant-content .bg-blue.h1, section#grant .grant-content h2, section#grant .grant-content .h2 {
+.bold, section#about .about-content .l-content .ttl-t1, section#about .about-content .l-content .ttl-t2, section#about .about-content .l-content .ttl-t3, section#about .about-content .l-content .ttl-t4, section#reason .reason-content .reason-item .reason-desp h1, section#reason .reason-content .reason-item .reason-desp .h1, section#service .abstract-item p, section#service .period-item .period-desp .p__title span, section#service .period-item .period-desp .p__sub_title, section#service .period-item .period-desp .p__link, section#price .price-content, section#cost-cut .cost-cut-more h1, section#cost-cut .cost-cut-more .h1, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2, section#grant .g__title, section#grant .grant-content .grant-desp h1, section#grant .grant-content .grant-desp .h1, section#grant .grant-content .grant-desp h1 span.bg-blue, section#grant .grant-content .grant-desp .h1 span.bg-blue, section#grant .grant-content h1.bg-blue, section#grant .grant-content .bg-blue.h1, section#grant .grant-content h2, section#grant .grant-content .h2, section#step .step-item .step-desp .s__title, section#step .step-item .step-abs, section#step .arrow-period span {
   font-weight: bold;
 }
 
@@ -14072,7 +14072,8 @@ fieldset:disabled .btn {
 
 @media (max-width: 575.98px) {
   .download-btn {
-    width: 247px;
+    max-width: 300px;
+    width: 100%;
     height: 48px;
     border-radius: 10px;
   }
@@ -14145,7 +14146,7 @@ fieldset:disabled .btn {
   background: rgba(0, 0, 0, 0) linear-gradient(transparent 60%, #FFFF00 0%) repeat scroll 0 0;
 }
 
-.txt-blue, section#grant .grant-content .grant-desp h1, section#grant .grant-content .grant-desp .h1, section#case .case-content .case-item .case-company {
+.txt-blue, section#grant .grant-content .grant-desp h1, section#grant .grant-content .grant-desp .h1, section#case .case-content .case-item .case-company, section#step .arrow-period span {
   color: #0E96C9;
 }
 
@@ -14157,7 +14158,7 @@ fieldset:disabled .btn {
   color: white;
 }
 
-.txt-red, section#reason .reason-content .reason-item .reason-desp h1, section#reason .reason-content .reason-item .reason-desp .h1, section#service .period-item .period-desp .p__sub_title span {
+.txt-red, section#reason .reason-content .reason-item .reason-desp h1, section#reason .reason-content .reason-item .reason-desp .h1, section#service .period-item .period-desp .p__sub_title span, section#step .step-item .step-desp .s__title {
   color: #E83D1B;
 }
 
@@ -14257,27 +14258,33 @@ fieldset:disabled .btn {
   }
 }
 
-@media (min-width: 1200px) {
-  .txt_35, section#service .period-item .period-desp .p__sub_title {
+@media (min-width: 1400px) {
+  .txt_35, section#service .period-item .period-desp .p__sub_title, section#step .step-item .step-desp .s__title, section#step .arrow-period span {
     font-size: 35px;
   }
 }
 
-@media (max-width: 1199.98px) {
-  .txt_35, section#service .period-item .period-desp .p__sub_title {
+@media (max-width: 1399.98px) {
+  .txt_35, section#service .period-item .period-desp .p__sub_title, section#step .step-item .step-desp .s__title, section#step .arrow-period span {
     font-size: 30px;
   }
 }
 
-@media (max-width: 991.98px) {
-  .txt_35, section#service .period-item .period-desp .p__sub_title {
+@media (max-width: 1199.98px) {
+  .txt_35, section#service .period-item .period-desp .p__sub_title, section#step .step-item .step-desp .s__title, section#step .arrow-period span {
     font-size: 27px;
   }
 }
 
+@media (max-width: 991.98px) {
+  .txt_35, section#service .period-item .period-desp .p__sub_title, section#step .step-item .step-desp .s__title, section#step .arrow-period span {
+    font-size: 25px;
+  }
+}
+
 @media (max-width: 767.98px) {
-  .txt_35, section#service .period-item .period-desp .p__sub_title {
-    font-size: 24px;
+  .txt_35, section#service .period-item .period-desp .p__sub_title, section#step .step-item .step-desp .s__title, section#step .arrow-period span {
+    font-size: 20px;
   }
 }
 
@@ -14570,7 +14577,7 @@ fieldset:disabled .btn {
 }
 
 @media (max-width: 575.98px) {
-  .txt-sm_20, section#reason .reason-content .reason-item .reason-desp h1, section#reason .reason-content .reason-item .reason-desp .h1, section#service .period-item .period-desp .p__title span, section#cost-cut .cost-cut-more h1, section#cost-cut .cost-cut-more .h1, section#grant .g__title, section#grant .grant-content .grant-desp h1, section#grant .grant-content .grant-desp .h1, section#grant .grant-content .grant-desp h1 span.line-b-y, section#grant .grant-content .grant-desp .h1 span.line-b-y, section#grant .grant-content h2, section#grant .grant-content .h2 {
+  .txt-sm_20, section#reason .reason-content .reason-item .reason-desp h1, section#reason .reason-content .reason-item .reason-desp .h1, section#service .period-item .period-desp .p__title span, section#cost-cut .cost-cut-more h1, section#cost-cut .cost-cut-more .h1, section#grant .g__title, section#grant .grant-content .grant-desp h1, section#grant .grant-content .grant-desp .h1, section#grant .grant-content .grant-desp h1 span.line-b-y, section#grant .grant-content .grant-desp .h1 span.line-b-y, section#grant .grant-content h2, section#grant .grant-content .h2, section#step .step-item .step-desp .s__title, section#step .arrow-period span {
     font-size: 20px;
   }
 }
@@ -14714,7 +14721,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
 
 @media (max-width: 575.98px) {
   .download-btn {
-    width: 247px;
+    max-width: 300px;
+    width: 100%;
     height: 48px;
     border-radius: 10px;
   }
@@ -14787,7 +14795,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
   background: rgba(0, 0, 0, 0) linear-gradient(transparent 60%, #FFFF00 0%) repeat scroll 0 0;
 }
 
-.txt-blue, section#grant .grant-content .grant-desp h1, section#grant .grant-content .grant-desp .h1, section#case .case-content .case-item .case-company {
+.txt-blue, section#grant .grant-content .grant-desp h1, section#grant .grant-content .grant-desp .h1, section#case .case-content .case-item .case-company, section#step .arrow-period span {
   color: #0E96C9;
 }
 
@@ -14799,7 +14807,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
   color: white;
 }
 
-.txt-red, section#reason .reason-content .reason-item .reason-desp h1, section#reason .reason-content .reason-item .reason-desp .h1, section#service .period-item .period-desp .p__sub_title span {
+.txt-red, section#reason .reason-content .reason-item .reason-desp h1, section#reason .reason-content .reason-item .reason-desp .h1, section#service .period-item .period-desp .p__sub_title span, section#step .step-item .step-desp .s__title {
   color: #E83D1B;
 }
 
@@ -14899,27 +14907,33 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
   }
 }
 
-@media (min-width: 1200px) {
-  .txt_35, section#service .period-item .period-desp .p__sub_title {
+@media (min-width: 1400px) {
+  .txt_35, section#service .period-item .period-desp .p__sub_title, section#step .step-item .step-desp .s__title, section#step .arrow-period span {
     font-size: 35px;
   }
 }
 
-@media (max-width: 1199.98px) {
-  .txt_35, section#service .period-item .period-desp .p__sub_title {
+@media (max-width: 1399.98px) {
+  .txt_35, section#service .period-item .period-desp .p__sub_title, section#step .step-item .step-desp .s__title, section#step .arrow-period span {
     font-size: 30px;
   }
 }
 
-@media (max-width: 991.98px) {
-  .txt_35, section#service .period-item .period-desp .p__sub_title {
+@media (max-width: 1199.98px) {
+  .txt_35, section#service .period-item .period-desp .p__sub_title, section#step .step-item .step-desp .s__title, section#step .arrow-period span {
     font-size: 27px;
   }
 }
 
+@media (max-width: 991.98px) {
+  .txt_35, section#service .period-item .period-desp .p__sub_title, section#step .step-item .step-desp .s__title, section#step .arrow-period span {
+    font-size: 25px;
+  }
+}
+
 @media (max-width: 767.98px) {
-  .txt_35, section#service .period-item .period-desp .p__sub_title {
-    font-size: 24px;
+  .txt_35, section#service .period-item .period-desp .p__sub_title, section#step .step-item .step-desp .s__title, section#step .arrow-period span {
+    font-size: 20px;
   }
 }
 
@@ -15212,7 +15226,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
 }
 
 @media (max-width: 575.98px) {
-  .txt-sm_20, section#reason .reason-content .reason-item .reason-desp h1, section#reason .reason-content .reason-item .reason-desp .h1, section#service .period-item .period-desp .p__title span, section#cost-cut .cost-cut-more h1, section#cost-cut .cost-cut-more .h1, section#grant .g__title, section#grant .grant-content .grant-desp h1, section#grant .grant-content .grant-desp .h1, section#grant .grant-content .grant-desp h1 span.line-b-y, section#grant .grant-content .grant-desp .h1 span.line-b-y, section#grant .grant-content h2, section#grant .grant-content .h2 {
+  .txt-sm_20, section#reason .reason-content .reason-item .reason-desp h1, section#reason .reason-content .reason-item .reason-desp .h1, section#service .period-item .period-desp .p__title span, section#cost-cut .cost-cut-more h1, section#cost-cut .cost-cut-more .h1, section#grant .g__title, section#grant .grant-content .grant-desp h1, section#grant .grant-content .grant-desp .h1, section#grant .grant-content .grant-desp h1 span.line-b-y, section#grant .grant-content .grant-desp .h1 span.line-b-y, section#grant .grant-content h2, section#grant .grant-content .h2, section#step .step-item .step-desp .s__title, section#step .arrow-period span {
     font-size: 20px;
   }
 }
@@ -15657,7 +15671,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
   font-size: 20px !important;
 }
 
-.bold, section#about .about-content .l-content .ttl-t1, section#about .about-content .l-content .ttl-t2, section#about .about-content .l-content .ttl-t3, section#about .about-content .l-content .ttl-t4, section#reason .reason-content .reason-item .reason-desp h1, section#reason .reason-content .reason-item .reason-desp .h1, section#service .abstract-item p, section#service .period-item .period-desp .p__title span, section#service .period-item .period-desp .p__sub_title, section#service .period-item .period-desp .p__link, section#price .price-content, section#cost-cut .cost-cut-more h1, section#cost-cut .cost-cut-more .h1, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2, section#grant .g__title, section#grant .grant-content .grant-desp h1, section#grant .grant-content .grant-desp .h1, section#grant .grant-content .grant-desp h1 span.bg-blue, section#grant .grant-content .grant-desp .h1 span.bg-blue, section#grant .grant-content h1.bg-blue, section#grant .grant-content .bg-blue.h1, section#grant .grant-content h2, section#grant .grant-content .h2 {
+.bold, section#about .about-content .l-content .ttl-t1, section#about .about-content .l-content .ttl-t2, section#about .about-content .l-content .ttl-t3, section#about .about-content .l-content .ttl-t4, section#reason .reason-content .reason-item .reason-desp h1, section#reason .reason-content .reason-item .reason-desp .h1, section#service .abstract-item p, section#service .period-item .period-desp .p__title span, section#service .period-item .period-desp .p__sub_title, section#service .period-item .period-desp .p__link, section#price .price-content, section#cost-cut .cost-cut-more h1, section#cost-cut .cost-cut-more .h1, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2, section#grant .g__title, section#grant .grant-content .grant-desp h1, section#grant .grant-content .grant-desp .h1, section#grant .grant-content .grant-desp h1 span.bg-blue, section#grant .grant-content .grant-desp .h1 span.bg-blue, section#grant .grant-content h1.bg-blue, section#grant .grant-content .bg-blue.h1, section#grant .grant-content h2, section#grant .grant-content .h2, section#step .step-item .step-desp .s__title, section#step .step-item .step-abs, section#step .arrow-period span {
   font-weight: bold;
 }
 
@@ -16896,7 +16910,7 @@ section#price .price-content .txt-wrap p {
 }
 
 section#cost-cut {
-  background-image: url("/assets/img/grid.png");
+  background-image: url("../../../assets/img/mawasell_grid.png");
   background-repeat: repeat;
   padding-top: 150px;
   padding-bottom: 115px;
@@ -17124,21 +17138,30 @@ section#case .case-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 section#case .case-content .case-item {
-  max-width: 480px;
-  padding: 25px 25px 50px;
+  width: 33.33%;
+  padding: 25px 20px 50px;
   background-color: white;
   border: 5px solid #0E96C9;
   border-radius: 25px;
   -webkit-box-shadow: 0 3px 6px #00458D;
           box-shadow: 0 3px 6px #00458D;
   margin-bottom: 30px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+section#case .case-content .case-item:first-child {
+  margin-left: 0;
+}
+
+section#case .case-content .case-item:last-child {
+  margin-right: 0;
 }
 
 section#case .case-content .case-item .case-image img {
@@ -17219,6 +17242,41 @@ section#case .case-content .case-item .after .bg-red {
   margin-bottom: 15px;
 }
 
+@media (max-width: 1399.98px) {
+  section#case .case-content .case-item {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  section#case .case-content .case-item .abs dl dd {
+    padding-left: 110px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  section#case .case-content .case-item .abs dl dd {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 991.98px) {
+  section#case .case-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section#case .case-content .case-item {
+    width: 100%;
+    max-width: 600px;
+  }
+  section#case .case-content .case-item .abs dl dd {
+    padding-left: 120px;
+  }
+}
+
 @media (max-width: 575.98px) {
   section#case {
     padding-top: 50px;
@@ -17231,6 +17289,8 @@ section#case .case-content .case-item .after .bg-red {
     padding: 15px 15px 30px;
     border-radius: 10px;
     border-width: 1px;
+    margin-left: 0;
+    margin-right: 0;
   }
   section#case .case-content .case-item:last-child {
     margin-bottom: 0;
@@ -17241,6 +17301,309 @@ section#case .case-content .case-item .after .bg-red {
   }
   section#case .case-content .case-item .abs dl dd {
     padding-left: 95px;
+  }
+}
+
+section#step {
+  padding-top: 150px;
+  padding-bottom: 200px;
+  background-image: url("../../../assets/img/mawasell_grid.png");
+  background-repeat: repeat;
+}
+
+section#step .step-content {
+  margin-top: 60px;
+}
+
+section#step .step-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+section#step .step-item {
+  width: 33.33%;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+section#step .step-item:first-child {
+  margin-left: 0;
+}
+
+section#step .step-item:last-child {
+  margin-right: 0;
+}
+
+section#step .step-item .step-desp {
+  border-radius: 33px;
+  -webkit-box-shadow: 0 3px 6px #C5C8E6;
+          box-shadow: 0 3px 6px #C5C8E6;
+  background-color: white;
+  padding: 28px 30px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+section#step .step-item .step-desp .circle-num {
+  width: 40px;
+  height: 40px;
+  background-color: #0E96C9;
+  color: white;
+  font-size: 25px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section#step .step-item .step-desp .s__title {
+  margin-top: 5px;
+  text-align: center;
+}
+
+section#step .step-item .step-desp img {
+  margin-top: 20px;
+  max-height: 250px;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+section#step .step-item .step-desp:after {
+  border-color: transparent transparent transparent #00A0E9;
+  border-style: solid;
+  border-width: 20px;
+  content: "";
+  right: -60px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+section#step .step-item .step-abs {
+  padding: 10px 20px;
+  color: white;
+  background-color: rgba(14, 150, 201, 0.6);
+  margin-top: 30px;
+  text-align: center;
+  position: relative;
+  font-size: 1.82292vw;
+}
+
+section#step .step-item .step-abs:after {
+  border-color: transparent transparent transparent rgba(14, 150, 201, 0.6);
+  border-style: solid;
+  border-width: 15px 20px;
+  content: "";
+  right: -60px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+section#step .step-item:last-child .step-desp::after {
+  display: none;
+}
+
+section#step .step-item:last-child .step-abs::after {
+  display: none;
+}
+
+section#step .arrow-period {
+  text-align: center;
+  position: relative;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section#step .arrow-period .line {
+  width: 35%;
+  background: rgba(14, 150, 201, 0.6);
+  height: 7px;
+  float: left;
+  content: "";
+}
+
+section#step .arrow-period .line:first-child {
+  margin-left: 35px;
+}
+
+section#step .arrow-period .line:last-child {
+  margin-right: 35px;
+}
+
+section#step .arrow-period:before {
+  border-color: transparent rgba(14, 150, 201, 0.6) transparent transparent;
+  border-style: solid;
+  border-width: 15px 35px;
+  content: "";
+  left: 0px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+section#step .arrow-period:after {
+  border-color: transparent transparent transparent rgba(14, 150, 201, 0.6);
+  border-style: solid;
+  border-width: 15px 35px;
+  content: "";
+  right: -70px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+section#step .download-btn-wrap {
+  margin-top: 85px;
+}
+
+@media (max-width: 991.98px) {
+  section#step .step-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section#step .step-content .step-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section#step .step-content .step-list .step-item {
+    max-width: 500px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  section#step .step-content .step-list .step-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  section#step .step-content .step-list .step-item .step-desp:after {
+    display: none;
+  }
+  section#step .step-content .step-list .step-item .step-abs {
+    margin-top: 15px;
+    font-size: 20px;
+  }
+  section#step .step-content .step-list .step-item .step-abs:after {
+    border-color: rgba(14, 150, 201, 0.6) transparent transparent transparent;
+    border-style: solid;
+    border-width: 15px;
+    content: "";
+    left: 50%;
+    margin-left: -15px;
+    right: 50%;
+    position: absolute;
+    top: 100%;
+    -webkit-transform: none;
+            transform: none;
+  }
+  section#step .step-content .arrow-period {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 15px;
+  }
+  section#step .step-content .arrow-period span {
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+    text-orientation: upright;
+    letter-spacing: 10px;
+  }
+  section#step .step-content .arrow-period .line {
+    width: 4px;
+    background: rgba(14, 150, 201, 0.6);
+    height: 40%;
+    float: left;
+    content: "";
+    margin-left: 0;
+    margin-right: 0;
+  }
+  section#step .step-content .arrow-period .line:first-child {
+    margin-top: 25px;
+  }
+  section#step .step-content .arrow-period .line:last-child {
+    margin-bottom: 25px;
+  }
+  section#step .step-content .arrow-period:before {
+    border-color: transparent transparent rgba(14, 150, 201, 0.6) transparent;
+    border-style: solid;
+    border-width: 25px 10px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    top: 0;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  section#step .step-content .arrow-period:after {
+    border-color: rgba(14, 150, 201, 0.6) transparent transparent transparent;
+    border-style: solid;
+    border-width: 25px 10px;
+    left: 50%;
+    right: 50%;
+    position: absolute;
+    top: 100%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 575.98px) {
+  section#step {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+  section#step .step-content {
+    margin-top: 48px;
+  }
+  section#step .download-btn-wrap {
+    margin-top: 48px;
   }
 }
 
