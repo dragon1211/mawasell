@@ -90,10 +90,6 @@
 
 .bold { font-weight: bold;}
 
-
-
-
-
 .lh_45{ 
     @include media-breakpoint-up(xxl){ line-height: 45px;} 
     @include media-breakpoint-down(xxl){ line-height: initial;}
@@ -102,6 +98,19 @@
     @include media-breakpoint-up(xxl){ line-height: 60px;} 
     @include media-breakpoint-down(xxl){ line-height: initial;}
 }
+.lh_38{
+    @include media-breakpoint-up(xxl){ line-height: 38px;} 
+    @include media-breakpoint-down(xxl){ line-height: initial;}
+}
+
+.lh_35{
+    @include media-breakpoint-up(xxl){ line-height: 35px;} 
+    @include media-breakpoint-down(xxl){ line-height: initial;}
+}
 
 .lh-sm_22{ @include media-breakpoint-down(sm){line-height: 22px;}}
 .lh-sm_17{ @include media-breakpoint-down(sm){line-height: 17px;}}
+
+.lh-sm_init{@include media-breakpoint-down(sm){line-height: initial;}}
+
+.lh-init{line-height: initial;}
