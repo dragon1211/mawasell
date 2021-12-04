@@ -1,8 +1,8 @@
 @import '../../../node_modules/bootstrap/scss/mixins/_breakpoints.scss';
 
 .container{
-    padding-left: px-vw(200);
-    padding-right: px-vw(200);
+    padding-left: px-vw(300);
+    padding-right: px-vw(300);
     max-width: 100%;
     margin: 0;
     @include media-breakpoint-down(sm){
@@ -13,14 +13,15 @@
 
 
 .download-btn{
-    max-width: 656px;
+    max-width: 400px;
     width: 100%;
-    height: 113px;
+    height: 70px;
     background-color: #FF7500;
     &:hover{
         background-color: #cf6304;
+        transition: .2s;
     }
-    border-radius: 19px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,7 +29,7 @@
     margin: auto;
     cursor: pointer;
     span{
-        @extend .txt_40;
+        @extend .txt_20;
         @extend .txt-sm_15;
         color: white;
         text-align: center;
@@ -37,11 +38,11 @@
     .circle{
         position: absolute;
         border-radius: 50%;
-        width: 83px;
-        height: 83px;
-        right: 23px;
+        width: 50px;
+        height: 50px;
+        right: 20px;
         background-color: white;
-        @extend .txt_30;
+        @extend .txt_20;
         @extend .txt-sm_12;
         color: #FF7500;
         font-weight: bold;
@@ -83,12 +84,13 @@
     text-align: center;
     .main-title{
         font-weight: bold;
-        font-size: 90px;
+        font-size: 55px;
         margin-bottom: 0;
+        font-family: Arial, Helvetica, sans-serif;
     }
     .sub-title{
         font-weight: bold;
-        font-size: 45px;
+        font-size: 30px;
         margin-bottom: 0;
         span{
             color: $blue;
@@ -107,6 +109,11 @@
         .main-title{font-size: 35px;}
         .sub-title{font-size: 20px;}
     }
+
+    @media (max-width: 374px) {
+        .main-title{font-size: 28px}
+        .sub-title{font-size: 16px;}
+    }
 }
 
 .line-b-y{
@@ -117,6 +124,20 @@
 .txt-black{color: black; }
 .txt-white{ color: white; }
 .txt-red{ color: #E83D1B; }
+
+.txt_16{
+    @include media-breakpoint-up(xl){ font-size: 16px; }
+    @include media-breakpoint-down(xl){ font-size: 15px; }
+    @include media-breakpoint-down(lg){ font-size: 15px; }
+    @include media-breakpoint-down(md){ font-size: 14px; }
+}
+
+.txt_18{
+    @include media-breakpoint-up(xl){ font-size: 18px; }
+    @include media-breakpoint-down(xl){ font-size: 17px; }
+    @include media-breakpoint-down(lg){ font-size: 17px; }
+    @include media-breakpoint-down(md){ font-size: 16px; }
+}
 
 .txt_20{
     @include media-breakpoint-up(xl){ font-size: 20px; }
@@ -134,8 +155,8 @@
 
 .txt_28{
     @include media-breakpoint-up(xl){ font-size: 28px; }
-    @include media-breakpoint-down(xl){ font-size: 26px; }
-    @include media-breakpoint-down(lg){ font-size: 24px; }
+    @include media-breakpoint-down(xl){ font-size: 25px; }
+    @include media-breakpoint-down(lg){ font-size: 25px; }
     @include media-breakpoint-down(md){ font-size: 22px; }
 
 }
@@ -150,10 +171,10 @@
 
 .txt_35{
     @include media-breakpoint-up(xxl){ font-size: 35px; }
-    @include media-breakpoint-down(xxl){ font-size: 30px; }
+    @include media-breakpoint-down(xxl){ font-size: 32px; }
     @include media-breakpoint-down(xl){ font-size: 27px; }
     @include media-breakpoint-down(lg){ font-size: 25px; }
-    @include media-breakpoint-down(md){ font-size: 20px; }
+    @include media-breakpoint-down(md){ font-size: 24px; }
 
 }
 .txt_38{
@@ -165,8 +186,15 @@
 .txt_40{
     @include media-breakpoint-up(xl){ font-size: 40px; }
     @include media-breakpoint-down(xl){ font-size: 35px; }
-    @include media-breakpoint-down(lg){ font-size: 30px; }
-    @include media-breakpoint-down(md){ font-size: 27px; }
+    @include media-breakpoint-down(lg){ font-size: 35px; }
+    @include media-breakpoint-down(md){ font-size: 30px; }
+}
+
+.txt_45{
+    @include media-breakpoint-up(xl){ font-size: 45px; }
+    @include media-breakpoint-down(xl){ font-size: 43px; }
+    @include media-breakpoint-down(lg){ font-size: 40px; }
+    @include media-breakpoint-down(md){ font-size: 38px; }
 }
 
 .txt_50{
@@ -251,6 +279,8 @@
 .txt-sm_23{ @include media-breakpoint-down(sm){ font-size: 23px; } }
 .txt-sm_24{ @include media-breakpoint-down(sm){ font-size: 24px; } }
 .txt-sm_25{ @include media-breakpoint-down(sm){ font-size: 25px; } }
+.txt-sm_28{ @include media-breakpoint-down(sm){ font-size: 28px; } }
+.txt-sm_30{ @include media-breakpoint-down(sm){ font-size: 30px; } }
 .txt-sm_40{ @include media-breakpoint-down(sm){ font-size: 40px; } }
 
 

@@ -11,21 +11,27 @@
     広告代理店から自社集客に切り替えることで、無駄な固定費を削減しながらスピード感と柔軟性を持った安定した広告運用を実現できます。">
     <link href='https://fonts.googleapis.com/css?family=Noto Sans JP' rel='stylesheet'>
     <link href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
+    <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
     
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="./assets/css/animate.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
     
     <header class="header" id="header" data-scroll-header>
         <div class="logo-wrapper">
-            <a href="#"><img src="./assets/img/mawasell_logo.jpg" alt="logo.png"></a>
+            <a href="#">
+                <picture>
+                    <source media="(max-width: 374px) and (min-width: 266px)" srcset="./assets/img/mawasell_logo_text.png">
+                    <source media="(max-width: 265px)" srcset="./assets/img/mawasell_logo_icon.png">
+                    <img src="./assets/img/mawasell_logo.png" alt="mawasell">
+                </picture>
+            </a>
         </div>
-        <div class="pc-nav">
+        <div id="pc-nav">
             <div class="nav-list">
                 <li><a class="item-link" href="#about">マワセルとは</a></li>
                 <li><a class="item-link" href="#reason">選ばれる理由</a></li>
@@ -34,57 +40,67 @@
             </div>
             <div class="nav-btn">
                 <li class="white-outline-btn"><a href="#">お問い合わせ</a></li>
-                <li class="blue-fill-btn"><a href="#">資料ダウンロード</a></li>
             </div>
         </div>
-        <div class="sp-nav">
-            <div class="nav-mail" tabindex="0">
-                <div class="mail-wrap">
-                    <img src="./assets/img/mawasell_mail-box.png" alt="mail">
-                </div>
-                <div class="toggler-name">お問い合せ</div>
-            </div>
-            <div class="nav-toggler" tabindex="0">
-                <div class="icon-wrap">
+     
+        
+        <div id="sp-nav">
+            <div class="bg"></div>
+            <div class="nav-toggler">
+                <div class="icon-wrap" tabindex="0">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </div>
                 <div class="toggler-name">MENU</div>
             </div>
+            <div id="nav-content" tabindex="0">
+                <ul>
+                    <li><a href="#about">マワセルとは</a></li>
+                    <li><a href="#reason">選ばれる理由</a></li>
+                    <li><a href="#service">研修内容</a></li>
+                    <li><a href="#step">導入までの流れ</a></li>
+                    <li><a href="#">お問い合わせ</a></li>
+                </ul>
+            </div>
         </div>
+
+
     </header>
     
     <main>
 
         <section class="container" id="top">
-            <h3 class="txt_35 txt-sm_14 mt_95 mt-sm_26 bold">SNS広告運用にお困りの経営者、運用担当者の方へ</h3>
+            <h3 class="text1 wow fadeIn"  data-wow-duration="1" data-wow-delay=".5s">SNS広告運用にお困りの経営者、<br class="d-none">運用担当者の方へ</h3>
             <div class="sns">
                 <div class="sns-description">
-                    <h2 class="txt_40 txt-sm_18 mt_40 mt-sm_17 txt-white bold">最短３ヶ月で自社に<br>
+                    <h2 class="text2 wow fadeIn"  data-wow-duration="1" data-wow-delay=".7s">最短３ヶ月で自社に<br>
                         SNS広告運用のプロを作る</h2>
-                    <div class="mb-0 mt_55 mt-sm_29 bold">
-                        <h1 class="sub-title txt_40 txt-sm_20">オンラインビジネス特化型</h1>
-                        <h1 class="txt_75 txt-sm_25 txt-white">
+                    <div class="text3 wow fadeIn"  data-wow-duration="1" data-wow-delay=".9s">
+                        <h1 class="sub-title">オンラインビジネス特化型</h1>
+                        <h1 class="main-title">
                             SNS広告運用<br>
-                            <span class="txt_70 txt-sm_25">インハウス化支援サービス</span>
+                            インハウス化支援サービス
                         </h1>
                     </div>
-                    <div class="img-wrap sp">
+                    <div class="img-wrap sp wow bounceIn"  data-wow-duration="1" data-wow-delay="1.0s">
                         <img src="./assets/img/mawasell_sec1.png" alt="sns.png">
                     </div>
-                    <h4 class="mt_45 txt_28 txt-sm_12 txt-white bold lh_45 lh-sm_22">
-                        マワセルは社内でSNS広告運用担当者を育てたい<br>
-                        企業様・個人事業主様向け内製化支援サービスです。<br>
+                    <div class="medal-img-wrap wow fadeIn"  data-wow-duration="1" data-wow-delay="1.1s">
+                        <img src="./assets/img/mawasell_medal.png" alt="mawasell">
+                    </div>
+                    <h4 class="text4 wow fadeIn"  data-wow-duration="1" data-wow-delay="1.3s">
+                        マワセルは社内でSNS広告運用担当者を育てたい<br class="d-none d-xl-block">
+                        企業様・個人事業主様向け内製化支援サービスです。<br class="d-none d-xl-block">
                         最短３ヶ月でSNS広告の運用スキルが身につきます。
                     </h4>
                 </div>
-                <div class="img-wrap pc">
+                <div class="img-wrap pc wow bounceIn"  data-wow-duration="1" data-wow-delay="1.5s">
                     <img src="./assets/img/mawasell_sec1.png" alt="sns.png">
                 </div>
             </div>
             
-            <div class="download-btn-wrap">
+            <div class="download-btn-wrap wow fadeIn"  data-wow-duration="1" data-wow-delay="1.7s">
                 <div class="download-btn">
                     <span>資料ダウンロード</span>
                     <div class="circle">無料</div>
@@ -93,42 +109,44 @@
         </section>
 
         <section class="container" id="issue">
-            <div class="title">
+            <div class="title wow fadeIn"  data-wow-duration="1" data-wow-delay=".3s">
                 <h1 class="main-title">ISSUE</h1>
                 <h2 class="sub-title">こんな<span>集客のお悩み</span>ありませんか？</h2>
             </div>
             <div class="quiz">
-                <div class="quiz-item">
-                    <div class="quiz-mark txt_30 txt-sm_16">広告代理店の<br class="d-sm-none">運用手数料が高い！</div>
+                <div class="quiz-item wow fadeIn"  data-wow-duration="1" data-wow-delay=".5s">
+                    <div class="quiz-mark">広告代理店の<br class="d-sm-none">運用手数料が高い！</div>
                     <div class="quiz-img-wrap"><img src="./assets/img/mawasell_issue_1.png" alt="issue-1.png"></div>
                     <h6 class="quiz-desp">自社集客に切り替えて<br>高い固定費を削減したい。</h6>
                     <div class="arrow-bottom"></div>
                 </div>
-                <div class="quiz-item">
-                    <div class="quiz-mark txt_30 txt-sm_16">SNS投稿を頑張っているが<br>集客できない！</div>
+                <div class="quiz-item wow fadeIn"  data-wow-duration="1" data-wow-delay=".7s">
+                    <div class="quiz-mark">SNS投稿を頑張っているが<br>集客できない！</div>
                     <div class="quiz-img-wrap"><img src="./assets/img/mawasell_issue_2.png" alt="issue-2.png"></div>
                     <h6 class="quiz-desp">労働時間を少なくして<br>有料の安定した集客に切り替えたい。</h6>
                     <div class="arrow-bottom"></div>
                 </div>
-                <div class="quiz-item">
-                    <div class="quiz-mark txt_30 txt-sm_16">号外広告・アフィリエイター<br>頼りの現状を打破したい！</div>
+                <div class="quiz-item wow fadeIn"  data-wow-duration="1" data-wow-delay=".9s">
+                    <div class="quiz-mark">号外広告・アフィリエイター<br>頼りの現状を打破したい！</div>
                     <div class="quiz-img-wrap"><img src="./assets/img/mawasell_issue_3.png" alt="issue-2.png"></div>
                     <h6 class="quiz-desp">他社リストに依存せず<br>自社で新規集客をしたい。</h6>
                     <div class="arrow-bottom"></div>
                 </div>
             </div>
-            <h1 class="txt_60 txt-sm_22 text-center bold txt-solve"><span class="line-b-y">そのお悩み<span class="txt-blue">マワセル</span>が<br class="d-sm-block">解決します！</br></h1>
+            <h1 class="txt-solve wow fadeIn"  data-wow-duration="1" data-wow-delay=".3s">
+                <span class="line-b-y">そのお悩み<span class="txt-blue">マワセル</span>が<br class="d-sm-block">解決します！</br>
+            </h1>
         </section>
 
         <section class="container" id="about">
-            <div class="title">
+            <div class="title wow fadeIn"  data-wow-duration="1" data-wow-delay=".3s">
                 <h1 class="main-title">ABOUT Mawasell</h1>
                 <h2 class="sub-title"><span>マワセル</span>とは?</h2>
             </div>
             <div class="about-content">
-                <div class="l-content">
+                <div class="l-content wow fadeIn"  data-wow-duration="1" data-wow-delay=".5s">
                     <h1 class="ttl-t1">SNS広告のインハウス化を実現</h1>
-                    <h6 class="ttl-t2">マワセルはSNS広告の知識がない社員様でもSNS広告の運用スキルが<br>
+                    <h6 class="ttl-t2">マワセルはSNS広告の知識がない社員様でもSNS広告の運用スキルが
                         <span class="txt-red">最短３ヶ月でプロレベルまで上達するオンライン研修サービスです。</span></h6>
                     <h6 class="ttl-t3">
                         オンラインビジネスに特化した現役の広告代理店担当者が<br>
@@ -141,19 +159,19 @@
                         安定した広告運用を実現できます。
                     </h6>
                 </div>
-                <div class="r-content img-wraper">
+                <div class="r-content img-wraper wow bounceIn"  data-wow-duration="1" data-wow-delay=".7s">
                     <img src="./assets/img/mawasell_about.png" alt="about.png">
                 </div>
             </div>
         </section>
 
         <section class="container" id="reason">
-            <div class="title">
+            <div class="title wow fadeIn"  data-wow-duration="1" data-wow-delay=".3s">
                 <h1 class="main-title">REASON</h1>
                 <h2 class="sub-title">マワセルが選ばれる<span>３つの理由</span></h2>
             </div>
             <div class="reason-content">
-                <div class="reason-item">
+                <div class="reason-item wow fadeInDown"  data-wow-duration="1" data-wow-delay=".5s">
                     <div class="circle-num">
                         <div class="cir"><span>1</span></div>
                     </div>
@@ -167,7 +185,7 @@
                         <img src="./assets/img/mawasell_reason_1.png" alt="mawasell">
                     </div>
                 </div>
-                <div class="reason-item">
+                <div class="reason-item wow fadeInDown"  data-wow-duration="1" data-wow-delay=".7s">
                     <div class="circle-num">
                         <div class="cir"><span>2</span></div>
                     </div>
@@ -180,7 +198,7 @@
                         <img src="./assets/img/mawasell_reason_2.png" alt="mawasell">
                     </div>
                 </div>
-                <div class="reason-item">
+                <div class="reason-item wow fadeInDown"  data-wow-duration="1" data-wow-delay=".9s">
                     <div class="circle-num">
                         <div class="cir"><span>3</span></div>
                     </div>
@@ -196,28 +214,28 @@
         </section>
 
         <section class="container" id="service">
-            <div class="title">
+            <div class="title wow fadeIn"  data-wow-duration="1" data-wow-delay=".3s">
                 <h1 class="main-title">SERVICE</h1>
                 <h2 class="sub-title"><span>プログラム</span>の内容</h2>
             </div>
         
             <div class="abstract">
-                <div class="abstract-item">
+                <div class="abstract-item wow bounceIn"  data-wow-duration="1" data-wow-delay=".5s">
                     <img src="./assets/img/mawasell_service_abstract_1.png" alt="mawasell">
                     <p>オンラインコンサルティング</p>
                 </div>
-                <div class="abstract-item">
+                <div class="abstract-item wow bounceIn"  data-wow-duration="1" data-wow-delay=".7s">
                     <img src="./assets/img/mawasell_service_abstract_2.png" alt="mawasell">
                     <p>Eラーニング（録画で復習）</p>
                 </div>
-                <div class="abstract-item">
+                <div class="abstract-item wow bounceIn"  data-wow-duration="1" data-wow-delay=".9s">
                     <img src="./assets/img/mawasell_service_abstract_3.png" alt="mawasell">
                     <p>チャットワーク質問</p>
                 </div>
             </div>
 
             <div class="period">
-                <div class="period-item">
+                <div class="period-item wow bounceInLeft"  data-wow-duration="1" data-wow-delay=".3s">
                     <div class="period-desp">
                         <h1 class="p__title"><span>1ヶ月目</span></h1>
                         <h2 class="p__sub_title"><span>研修1回目</span>　基礎知識・目標設定</h2>
@@ -232,7 +250,7 @@
                         <img src="./assets/img/mawasell_service_period_1.png" alt="mawasell">
                     </div>
                 </div>
-                <div class="period-item">
+                <div class="period-item wow bounceInRight"  data-wow-duration="1" data-wow-delay=".5s">
                     <div class="period-desp">
                         <h1 class="p__title"><span>2ヶ月目</span></h1>
                         <h2 class="p__sub_title"><span>研修3回目</span>　管理画面の理解・広告準備</h2>
@@ -245,7 +263,7 @@
                         <img src="./assets/img/mawasell_service_period_2.png" alt="mawasell">
                     </div>
                 </div>
-                <div class="period-item">
+                <div class="period-item wow bounceInLeft"  data-wow-duration="1" data-wow-delay=".7s">
                     <div class="period-desp">
                         <h1 class="p__title"><span>3ヶ月目</span></h1>
                         <h2 class="p__sub_title"><span>研修5回目</span>　実践コンサルティング</h2>
@@ -259,16 +277,18 @@
                     </div>
                 </div>
             </div>
-            <h4 class="text-center mt-4 txt_30 txt-sm_14 bold">研修時間の目安：1回1.5~2時間<br class="d-lg-none">（状況により変動あり）</h4>
+            <h4 class="text-center mt-4 txt_20 txt-sm_16 bold wow fadeIn"  data-wow-duration="1" data-wow-delay=".9s">
+                研修時間の目安：1回1.5~2時間<br class="d-lg-none">（状況により変動あり）
+            </h4>
         </section>
 
 
         <section class="container" id="price">
-            <div class="title">
+            <div class="title wow fadeIn"  data-wow-duration="1" data-wow-delay=".3s">
                 <h1 class="main-title txt-white">PRICE</h1>
                 <h2 class="sub-title txt-white">サービス料金</h2>
             </div>
-            <div class="price-content">
+            <div class="price-content wow fadeIn"  data-wow-duration="1" data-wow-delay=".5s">
                 <div class="txt-wrap">
                     <h2><span class="d-block d-lg-none">-マワセル-</span><span class="d-none d-lg-inline-block">マワセル</span>SNS広告インハウス化支援サービス</h2>
                     <h2>初期費用  0円<br>
@@ -281,25 +301,25 @@
 
 
         <section class="container" id="cost-cut">
-            <div class="title">
+            <div class="title  wow fadeIn"  data-wow-duration="1" data-wow-delay=".3s">
                 <h1 class="main-title">COST CUT</h1>
                 <h2 class="sub-title">経費削減<span>シュミレーション</span></h2>
             </div>
-            <div class="cost-cut-detail">
+            <div class="cost-cut-detail wow bounceInUp"  data-wow-duration="10" data-wow-delay=".7s">
                 <picture>
                     <source media="(max-width: 1399px) and (min-width: 768px)" srcset="./assets/img/mawasell_cost_xl.png">
                     <source media="(max-width: 767px) and (min-width: 435px)" srcset="./assets/img/mawasell_cost_lg.png">
                     <source media="(max-width: 434px)" srcset="./assets/img/mawasell_cost_sm.png">
                     <img src="./assets/img/mawasell_cost_pc.png" alt="Mawasell" decoding="async">
                 </picture>
-                <div class="cost-cut-more">
+                <div class="cost-cut-more wow bounceInUp"  data-wow-duration="1" data-wow-delay=".3s">
                     <h1>さらに！</h1>
                     <div class="bg-blue">
                         <h2>サイドビジネスを展開可能</h2>
                         <h3>運用ノウハウを活用し、コンサルや運用<br class="d-md-none">代行事業を立ち上げることも可能!</h3>
                     </div>
                 </div>
-                <div class="download-btn-wrap d-none d-xl-flex">
+                <div class="download-btn-wrap d-none d-xl-flex wow bounceInUp"  data-wow-duration="1" data-wow-delay=".5s">
                     <img src="./assets/img/mawasell_download_1.png" alt="Mawasell">
                     <div class="download-btn">
                         <span>資料ダウンロード</span>
@@ -311,11 +331,11 @@
         </section>
 
         <section class="container" id="grant">
-            <h1 class="g__title">
+            <h1 class="g__title wow bounceIn"  data-wow-duration="1" data-wow-delay=".3s">
                 さらに今なら！<br>
                 <span class="txt-red">助成金を受け取れる可能性が</span><br class="d-none d-sm-block">あります
             </h1>
-            <div class="grant-content">
+            <div class="grant-content wow bounceIn"  data-wow-duration="1" data-wow-delay=".6s">
                 <div class="grant-desp">
                     <h1>令和3年度<span class="bg-blue d-none d-lg-inline-block">中小企業人材スキルアップ支援事業</span><br>
                         <span class="line-b-y">オンラインスキルアップ助成金</span>
@@ -342,18 +362,18 @@
                     </table>
                 </div>
                 <p>※申請方法･条件等は「東京都はたらくネット」HPをご覧ください。</p>
-                <h2><span class="txt-red">最大<span class="txt_70 txt-sm_40">27</span>万円</span>の助成金が<br class="d-none d-sm-block">もらえます!</h2>
+                <h2><span class="txt-red">最大<span class="txt_50 txt-sm_28">27</span>万円</span>の助成金が<br class="d-none d-sm-block">もらえます!</h2>
             </div>
         </section>
 
 
         <section class="container" id="case">
-            <div class="title">
+            <div class="title wow fadeIn"  data-wow-duration="1" data-wow-delay=".3s">
                 <h1 class="main-title">COST CUT</h1>
                 <h2 class="sub-title">導入事例</h2>
             </div>
             <div class="case-content">
-                <div class="case-item">
+                <div class="case-item wow fadeIn"  data-wow-duration="1" data-wow-delay=".5s">
                     <div class="case-image">
                         <img src="./assets/img/mawasell_case_1.png" alt="mawasell">
                     </div>
@@ -417,7 +437,7 @@
                     </div>
                 </div>
 
-                <div class="case-item">
+                <div class="case-item wow fadeIn"  data-wow-duration="1" data-wow-delay=".7s">
                     <div class="case-image">
                         <img src="./assets/img/mawasell_case_2.png" alt="mawasell">
                     </div>
@@ -488,7 +508,7 @@
                     </div>
                 </div>
 
-                <div class="case-item">
+                <div class="case-item wow fadeIn"  data-wow-duration="1" data-wow-delay=".9s">
                     <div class="case-image">
                         <img src="./assets/img/mawasell_case_3.png" alt="mawasell">
                     </div>
@@ -560,12 +580,12 @@
         </section>
 
         <section class="container" id="step">
-            <div class="title">
+            <div class="title wow fadeIn"  data-wow-duration="1" data-wow-delay=".3s">
                 <h1 class="main-title">STEP</h1>
                 <h2 class="sub-title">受講までの流れ</h2>
             </div>    
             <div class="step-content">
-                <div class="step-list">
+                <div class="step-list wow fadeIn"  data-wow-duration="1" data-wow-delay=".5s">
                     <div class="step-item">
                         <div class="step-desp">
                             <span class="circle-num">1</span>
@@ -575,32 +595,32 @@
                         <h2 class="step-abs">START</h2>
                     </div>
     
-                    <div class="step-item">
+                    <div class="step-item wow fadeIn"  data-wow-duration="1" data-wow-delay=".7s">
                         <div class="step-desp">
                             <span class="circle-num">2</span>
                             <h1 class="s__title">商材ヒアリング<br>研修スタート</h1>
-                            <img src="./assets/img/mawasell_step_1.png" alt="mawasell">
+                            <img src="./assets/img/mawasell_step_2.png" alt="mawasell">
                         </div>
                         <h2 class="step-abs">月2回のトレーニング研修</h2>
                     </div>
     
-                    <div class="step-item">
+                    <div class="step-item wow fadeIn"  data-wow-duration="1" data-wow-delay=".9s">
                         <div class="step-desp">
                             <span class="circle-num">3</span>
                             <h1 class="s__title">研修終了<br>インハウス化完了</h1>
-                            <img src="./assets/img/mawasell_step_1.png" alt="mawasell">
+                            <img src="./assets/img/mawasell_step_3.png" alt="mawasell">
                         </div>
                         <h2 class="step-abs">GOAL</h2>
                     </div>
                 </div>
-                <div class="arrow-period">
+                <div class="arrow-period wow fadeIn"  data-wow-duration="1" data-wow-delay="1.1s">
                     <div class="line"></div>
                     <span>約3ヶ月間</span>
                     <div class="line"></div>
                 </div>
             </div>
                  
-            <div class="download-btn-wrap">
+            <div class="download-btn-wrap wow bounceIn"  data-wow-duration="1" data-wow-delay="1.3s">
                 <div class="download-btn">
                     <span>資料ダウンロード</span>
                     <div class="circle">無料</div>
@@ -609,12 +629,12 @@
         </section>
 
         <section class="container" id="faq">
-            <div class="title">
+            <div class="title wow fadeIn"  data-wow-duration="1" data-wow-delay=".3s">
                 <h1 class="main-title">FAQ</h1>
                 <h2 class="sub-title">よくある質問</h2>
             </div>    
             <div class="faq-content">
-                <div class="faq-item">
+                <div class="faq-item wow fadeInLeft"  data-wow-duration="1" data-wow-delay=".5s">
                     <div class="question">
                        <dl>
                            <dt>Q</dt>
@@ -632,7 +652,7 @@
                      </div>
                 </div>
 
-                <div class="faq-item">
+                <div class="faq-item wow fadeInLeft"  data-wow-duration="1" data-wow-delay=".6s">
                     <div class="question">
                        <dl>
                            <dt>Q</dt>
@@ -647,7 +667,7 @@
                      </div>
                 </div>
 
-                <div class="faq-item">
+                <div class="faq-item wow fadeInLeft"  data-wow-duration="1" data-wow-delay=".7s">
                     <div class="question">
                        <dl>
                            <dt>Q</dt>
@@ -664,7 +684,7 @@
                      </div>
                 </div>
 
-                <div class="faq-item">
+                <div class="faq-item wow fadeInLeft"  data-wow-duration="1" data-wow-delay=".8s">
                     <div class="question">
                        <dl>
                            <dt>Q</dt>
@@ -683,7 +703,7 @@
                      </div>
                 </div>
 
-                <div class="faq-item">
+                <div class="faq-item wow fadeInLeft"  data-wow-duration="1" data-wow-delay=".9s">
                     <div class="question">
                        <dl>
                            <dt>Q</dt>
@@ -700,7 +720,7 @@
                      </div>
                 </div>
 
-                <div class="faq-item">
+                <div class="faq-item wow fadeInLeft"  data-wow-duration="1" data-wow-delay="1.0s">
                     <div class="question">
                        <dl>
                            <dt>Q</dt>
@@ -719,7 +739,7 @@
                      </div>
                 </div>
 
-                <div class="faq-item">
+                <div class="faq-item wow fadeInLeft"  data-wow-duration="1" data-wow-delay="1.1s">
                     <div class="question">
                        <dl>
                            <dt>Q</dt>
@@ -741,10 +761,36 @@
     </main>
 
     <footer>
+        <div class="img-wrap">
+            <picture>
+                <source media="(max-width: 450px)" srcset="./assets/img/mawasell_logo_col.jpg">
+                <img src="./assets/img/mawasell_logo.png" alt="Mawasell" decoding="async">
+            </picture>
+        </div>
+        <div class="r-content">
+            <ul>
+                <li><a href="https://fastackle.net/">運営会社</a></li>
+                <li><a href="http://mawasell.com/policy/">プライバシーポリシー</a></li>
+                <li><a href="http://mawasell.com/check2/">特定商取引法について</a></li>
+            </ul>
+            <p>詳しい研修内容はこちらのポップアップが入っていない</p>
+        </div>
     </footer>
-</body>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+     <!--========== END FOOTER ==========-->
+
+        <!-- Back To Top -->
+        <!-- <a href="javascript:void(0);" class="js-back-to-top back-to-top">Top</a> -->
+
+        <script src="./assets/js/jquery.min.js" type="text/javascript"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="./assets/js/jquery.wow.min.js" type="text/javascript"></script>
+        <script src="./assets/js/wow.min.js" type="text/javascript"></script>
+
+        <script src="./assets/js/custom.js" type="text/javascript"></script>
+
+    </body>
+
 
 
 </html>

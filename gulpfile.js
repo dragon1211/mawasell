@@ -200,4 +200,3 @@ gulp.task('faviconResize', done => {
   }
   done();
 });
-

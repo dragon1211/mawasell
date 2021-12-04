@@ -25,14 +25,15 @@ $grid-breakpoints: (
   md: 768px,
   lg: 992px,
   xl: 1200px,
-  xxl: 1400px
+  xxl: 1400px,
+  xxxl: 1600px
 );
 
 $sp: 1200px;
 
 body{
   font-size: 16px;
-  font-family: "Noto Sans JP", "Noto Sans JP Bold", "Noto Sans JP Regular";
+  font-family: "Noto Sans JP", "Noto Sans JP Bold", "Noto Sans JP Regular", "Noto Sans CJK JP", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
 }
 
 @font-face {
@@ -45,12 +46,22 @@ body{
   src: url(../fonts/NotoSansJP-Regular.otf);
 }
 
+@font-face {
+  font-family: 'UD Digi Kyokasho N-B';
+  src: url(../fonts/UDDigiKyokashoN-B.ttc);
+}
+
 h1, h2, h3, h4, h5, h6, p{
   margin-bottom: 0px;
+  line-height: initial;
 }
 
 @function px-vw($px){  
   @return ($px * 100 / 1920) * 1vw;
+}
+
+@function px-vh($px){  
+  @return ($px * 100 / 1080) * 1vh;
 }
 
 @function px($px){
