@@ -70,9 +70,72 @@
     
     <main>
         <section class="container" id="contact">
-            <div class="title wow fadeIn"  data-wow-duration="1" data-wow-delay=".3s">
+            <div class="title">
                 <h1 class="main-title">CONTACT</h1>
                 <h2 class="sub-title"><span>お問い合わせ</span></h2>
+            </div>
+            <div class="contact-content">
+                <h5 class="c__title">下記フォームよりお問い合わせ下さい。<br>
+                    1～2営業日中にスタッフよりご連絡させて頂きます。<br>
+                    <span class="txt-red">＊は必須項目です。</span>
+                </h5>
+                <form class="contact-form">
+                    <div class="edit-input">
+                        <p class="edit-title necessary">会社名</p>
+                        <p class="edit-sub-title">お手数ですが正式名称でご記入をお願いします。</p>
+                        <input type="text" id="company" name="company" placeholder="例）ABCD株式会社">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <div class="edit-input">
+                                <p class="edit-title necessary">姓</p>
+                                <input type="text" id="last_name" name="last_name"  placeholder="例）山本">
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <div class="edit-input">
+                                <p class="edit-title necessary">名</p>
+                                <input type="text" id="first_name" name="first_name" placeholder="例）太郎">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="edit-input">
+                        <p class="edit-title necessary">Eメール</p>
+                        <input type="email" id="email" name="email" placeholder="例）info@abcd.com">
+                    </div>
+
+                    <div class="edit-input">
+                        <p class="edit-title necessary">電話番号</p>
+                        <p class="edit-sub-title">お手数ですが正式名称でご記入をお願いします。</p>
+                        <input type="text" id="tel" name="tel" placeholder="例）03-0000-0000">
+                    </div>
+
+                    <div class="edit-input">
+                        <p class="edit-title">サービス導入検討時期</p>
+                        <select name="period" id="period">
+                            <option value="今すぐ導入したい">今すぐ導入したい</option>
+                            <option value="１〜2ヶ月以内">１〜2ヶ月以内</option>
+                            <option value="３〜6ヶ月以内">３〜6ヶ月以内</option>
+                            <option value="未定">未定</option>
+                        </select>
+                    </div>
+
+                    <div class="edit-input">
+                        <p class="edit-title">部署名</p>
+                        <input type="text" id="office" name="office">
+                    </div>
+
+                    <div class="edit-input">
+                        <p class="edit-title">お問い合わせ・ご相談内容</p>
+                        <textarea id="content" name="content"></textarea>
+                    </div>
+
+                    <div class="edit-input">
+                        <button type="submit">送信する</button>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
