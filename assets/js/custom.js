@@ -3,16 +3,14 @@ $(document).ready(function(){
         if($(this).next('.answer').hasClass('cc')){
             $('.answer').slideUp();
             $('.answer').removeClass('cc');
+            $('.question').removeClass('rotate');
         }
         else {
             $('.answer').slideUp();
             $('.answer').removeClass('cc');
+            $('.question').removeClass('rotate');
             $(this).next('.answer').slideDown(); 
             $(this).next('.answer').addClass('cc');
-        }
-        if($(this).hasClass('rotate')){
-            $(this).removeClass('rotate');
-        }else{
             $(this).addClass('rotate');
         }
     });

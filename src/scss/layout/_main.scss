@@ -41,6 +41,9 @@
             display: inline-flex;
             margin: auto 0;
             list-style: none;
+            li{
+                margin-right: px-vw(35);
+            }
         }
         
         .item-link{
@@ -48,7 +51,23 @@
             @extend .txt_16, .txt-sm_14;
             color: $blue;
             font-family:"Noto Sans JP";
-            margin-right: px-vw(35);
+            transition: .3s;
+            &::after{
+                display: block;
+                content: '';
+                border-bottom: 2px solid transparent;
+                border-image: linear-gradient(to right, $blue, $blue);
+                border-image-slice: 1;
+                transform: scaleX(0);
+                transition: transform 250ms ease-in-out;
+                transform-origin: 100% 50%;
+            }
+            &:hover::after{
+                transform: scaleX(1);
+                transform-origin: 0 50%;
+                align-items: center;
+            
+            }
         }
     
         .nav-btn{
@@ -66,8 +85,7 @@
                     border: 1px solid $blue;
                     margin-right: px-vw(10);
                     a{
-                        @extend .item-link;
-                        margin: auto 0;
+                        text-decoration: none;
                     }
                     &:hover{
                         background-color: #c3ebfa;
@@ -77,7 +95,6 @@
                     background-color: $blue;
                     color: white;
                     a{
-                        @extend .item-link;
                         color: white;
                         margin: 0;
                     }
@@ -287,13 +304,14 @@ section#top{
                 background-color: white;
                 @extend .txt_35, .txt-sm_20;
                 @extend .bold;
-                font-family: "Hiragino Sans";
+                font-family: 'Noto Sans CJK JP', sans-serif;
             }
             .main-title{
                 @extend .txt_45, .txt-sm_25;
                 @extend .txt-white;
-                @extend .lh_60, .lh-sm_init, .bold;
-                font-family: "Hiragino Sans";
+                line-height: 1.2;
+                @extend .lh-sm_init, .bold;
+                font-family: 'Noto Sans CJK JP', sans-serif;
             }
         }
         .img-wrap{
@@ -311,7 +329,7 @@ section#top{
 
         .medal-img-wrap{
             margin-top: 15px;
-            img{ max-width: 400px; width: 100%;}
+            img{ max-width: 600px; width: 100%;}
         }
     }
 
@@ -443,7 +461,7 @@ section#issue{
         margin-top: 120px;
         @extend .txt_40, .txt-sm_22;
         @extend .text-center, .bold; 
-        font-family: 'UD Digi Kyokasho N-B';
+        font-family: 'Noto Sans CJK JP', sans-serif;
     }
 
     @include media-breakpoint-down(lg){
@@ -1318,7 +1336,7 @@ section#step{
     background-repeat: repeat;
     
     .step-content{
-        margin-top: 60px;
+        margin-top: 30px;
     }
 
     .step-list{
@@ -1655,6 +1673,24 @@ footer{
                     text-decoration: none;
                     color: black; 
                     font-weight: bold;
+                    &.item-link{
+                        &::after{
+                            display: block;
+                            content: '';
+                            border-bottom: 2px solid transparent;
+                            border-image: linear-gradient(to right, black, black);
+                            border-image-slice: 1;
+                            transform: scaleX(0);
+                            transition: transform 250ms ease-in-out;
+                            transform-origin: 100% 50%;
+                        }
+                        &:hover::after{
+                            transform: scaleX(1);
+                            transform-origin: 0 50%;
+                            align-items: center;
+                        
+                        }
+                    }
                 }
             } 
         }
@@ -1686,6 +1722,129 @@ footer{
 }
 
 
+section#contact{
+    padding-top: px-vw(150);
+    padding-bottom: px-vw(200);
+    background-color: #FBFBF8;
+    .contact-content{
+        margin-top: 30px;
+        .c__title{ 
+            text-align: center;
+            @extend .txt_20, .txt-sm_16;
+            @extend .bold;
+        }
+
+        .contact-form{
+            margin: 30px auto 0;
+            min-height: 500px;
+            max-width: 900px;
+            width: 100%;
+            background: white;
+            box-shadow: 0 3px 10px rgba(0,0,0, 0.3);
+            padding: 50px px-vw(150) 150px;
+        }
+
+        .edit-input{
+            padding-top: 30px;
+            input, select, textarea{
+                width: 100%;
+                height: 50px;
+                padding: 15px 25px;
+                border: 1px solid #dddddd;
+                border-radius: 5px;
+                background-color: #F3F4F5;
+                &:focus{
+                    outline-offset: 0px !important;
+                    outline: none !important;
+                    border: 1px solid $blue !important;
+                }
+            }
+            select{ padding-top: 5px; padding-bottom: 5px;}
+            textarea{
+                height: 200px;
+                resize: none;
+            }
+            .edit-title{
+                margin-bottom: 7px;
+                position: relative;
+                @extend .txt_18, .txt-sm_16;
+                @extend .bold;
+
+                &.necessary{
+                    &::after{
+                        content: '＊';
+                        @extend .txt-red;
+                        @extend .bold;
+                        font-size: 15px;
+                        position: absolute;
+                        top: -5px;
+                    }
+                }
+            }
+            .edit-sub-title{
+                margin-bottom: 3px;
+                @extend .txt_16, .txt-sm_14;
+                @extend .txt-blue;
+            }
+
+            button{
+                padding: 7px 50px;
+                margin-bottom: 30px;
+                border: none;
+                color: white;
+                width: 100%;
+                min-height: 50px;
+                @extend .txt_18, .txt-sm_16;
+                background: linear-gradient(#0E96C9, #00458D);
+                &:hover{
+                    background: #0E96C9;
+                }
+                &:focus{
+                    background: #00458D;
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(lg){
+        padding-top: 90px;
+        padding-bottom: 100px;
+        .contact-form{
+            padding-left: px-vw(100) !important;
+            padding-right: px-vw(100) !important;   
+        }
+    }
+
+    @include media-breakpoint-down(sm){
+        .contact-form{
+            padding-top: px-vw(100) !important;
+        }
+    }
+
+    @media (max-width: 374px){
+        .c__title{
+            font-size: 15px !important;
+        }
+        .contact-form{
+            padding: 15px !important;
+            .edit-input{
+                .edit-title{
+                    margin-bottom: 7px !important;
+                }
+                input, textarea, select{ padding: 5px 10px !important;}
+                .edit-sub-title{
+                    font-size: 11px !important;
+                    font-weight: normal !important;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
 
 @media (max-width: 374px) {
     .text3{
@@ -1694,8 +1853,7 @@ footer{
             margin-right: 0 !important;
         }
         .main-title{
-            font-size: 22px !important;
-            margin-top: 5px !important;
+            font-size: 21px !important;
         }
     }
     .text1 br{display: block !important;}
@@ -1750,158 +1908,4 @@ footer{
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-.py-60 {
-    background-color: #F0F9E0
-}
-
-@media only screen and (max-width: 768px) {
-    .py-60 h2 {
-        padding: 52px 0;
-    }
-}
-
-.py-60 h2 {
-    font-family: 'NotoSansJP-Bold';
-    padding-top: 85px;
-    padding-bottom: 40px;
-    font-size: 36px;
-    color: #000;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-@media only screen and (max-width: 768px) {
-    .py-60 h2 {
-        padding: 50px 0 2px 0;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .py-60 .text-control-1 h2 {
-        margin-bottom: 16px;
-    }
-}
-
-.py-60 .q-mark {
-    font-family: Roboto-bold;
-    color: #80CC39;
-    padding: 18px 0 18px 18px;
-    font-size: 39px;
-}
-
-.py-60 .A-mark {
-    font-family: Roboto-bold;
-    color: #FBB03B;
-    padding: 18px 0 18px 18px;
-    font-size: 39px;
-}
-
-.py-60 .question {
-    font-family: Roboto;
-    font-size: 20px;
-    color: #5c5c5c;
-    line-height: 1.5;
-    padding: 20px;
-    margin-bottom: 0;
-}
-
-.py-60 .material-icons.drop {
-    padding: 20px;
-    font-size: 3rem;
-    color: #707070;
-    transition: transform 0.5s ease-in-out;
-}
-
-.py-60 .answer {
-    font-size: 16px;
-    color: #5c5c5c;
-    padding: 16px;
-    padding-left: 52px;
-    padding-bottom: 32px;
-    background-color: #fff;
-    overflow: hidden;
-}
-
-.py-60 .accordion {
-    background-color: #fff;
-    color: #444;
-    cursor: pointer;
-    width: 100%;
-    margin-bottom: 20px;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-    border-radius: 4px;
-}
-
-@media only screen and (max-width: 768px) {
-    .py-60 .accordion {
-        margin-bottom: 16px;
-    }
-}
-
-.py-60 .question-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: background-color 0.25s ease-in-out;
-}
-
-.py-60 .answer-wrapper {
-    display: none;
-}
-
-.py-60 .icon-expend {
-    transform: rotateX(180deg);
-    transition: transform 0.75s ease-in-out;
-}
-
-.py-60 .active,
-.py-60 .accordion:hover .question-wrapper {
-    background-color: #80cc39;
-}
-
-.py-60 .active p,
-.py-60 .accordion:hover .question-wrapper p {
-    color: white;
-}
-
-.py-60 .accordion:hover .q-mark,
-.py-60 .active .q-mark {
-    color: white
-}
-
-.py-60 .container {
-    width: 100%;
-    padding-right: 20px;
-    padding-left: 20px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-bottom: 100px;
-}
-
-@media only screen and (min-width: 768px) {
-    .py-60 .container {
-        max-width: 768px;
-    }
-}
-
-@media only screen and (min-width: 992px) {
-    .py-60 .container {
-        max-width: 1144px;
-    }
-}
-
 
