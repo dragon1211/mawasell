@@ -19296,10 +19296,17 @@ section#faq .faq-content .faq-item .question dl:after {
   right: 40px;
   position: absolute;
   top: calc(50% - 3px);
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 section#faq .faq-content .faq-item .question:hover {
   cursor: pointer;
+}
+
+section#faq .faq-content .faq-item .question.rotate dl:after {
+  border-color: transparent transparent white transparent;
+  top: calc(50% - 15px);
 }
 
 section#faq .faq-content .faq-item .answer {

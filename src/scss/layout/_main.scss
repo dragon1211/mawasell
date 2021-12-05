@@ -1577,8 +1577,15 @@ section#faq{
                     right: 40px;
                     position: absolute;
                     top: calc(50% - 3px);
+                    transition: .5s;
                 }
                 &:hover{ cursor: pointer; }
+                &.rotate{
+                    dl:after{
+                        border-color:  transparent transparent white transparent ;
+                        top: calc(50% - 15px);
+                    }
+                }
             }
             .answer{
                 display: none;
