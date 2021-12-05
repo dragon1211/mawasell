@@ -46,6 +46,11 @@ body{
   src: url(../fonts/NotoSansJP-Regular.otf);
 }
 
+@font-face {
+  font-family: 'UD Digi Kyokasho N-B';
+  src: url(../fonts/UDDigiKyokashoN-B.ttc);
+}
+
 h1, h2, h3, h4, h5, h6, p{
   margin-bottom: 0px;
   line-height: initial;
