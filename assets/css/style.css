@@ -19503,6 +19503,11 @@ footer .r-content p {
   }
 }
 
+section#contact {
+  padding-top: 7.8125vw;
+  padding-bottom: 10.41667vw;
+}
+
 @media (max-width: 374px) {
   .text3 .sub-title {
     margin-left: 0 !important;
@@ -19554,164 +19559,6 @@ footer .r-content p {
   }
   .step-content .step-abs {
     font-size: 16px !important;
-  }
-}
-
-.py-60 {
-  background-color: #F0F9E0;
-}
-
-@media only screen and (max-width: 768px) {
-  .py-60 h2, .py-60 .h2 {
-    padding: 52px 0;
-  }
-}
-
-.py-60 h2, .py-60 .h2 {
-  font-family: 'NotoSansJP-Bold';
-  padding-top: 85px;
-  padding-bottom: 40px;
-  font-size: 36px;
-  color: #000;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-@media only screen and (max-width: 768px) {
-  .py-60 h2, .py-60 .h2 {
-    padding: 50px 0 2px 0;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .py-60 .text-control-1 h2, .py-60 .text-control-1 .h2 {
-    margin-bottom: 16px;
-  }
-}
-
-.py-60 .q-mark {
-  font-family: Roboto-bold;
-  color: #80CC39;
-  padding: 18px 0 18px 18px;
-  font-size: 39px;
-}
-
-.py-60 .A-mark {
-  font-family: Roboto-bold;
-  color: #FBB03B;
-  padding: 18px 0 18px 18px;
-  font-size: 39px;
-}
-
-.py-60 .question {
-  font-family: Roboto;
-  font-size: 20px;
-  color: #5c5c5c;
-  line-height: 1.5;
-  padding: 20px;
-  margin-bottom: 0;
-}
-
-.py-60 .material-icons.drop {
-  padding: 20px;
-  font-size: 3rem;
-  color: #707070;
-  -webkit-transition: -webkit-transform 0.5s ease-in-out;
-  transition: -webkit-transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-}
-
-.py-60 .answer {
-  font-size: 16px;
-  color: #5c5c5c;
-  padding: 16px;
-  padding-left: 52px;
-  padding-bottom: 32px;
-  background-color: #fff;
-  overflow: hidden;
-}
-
-.py-60 .accordion {
-  background-color: #fff;
-  color: #444;
-  cursor: pointer;
-  width: 100%;
-  margin-bottom: 20px;
-  text-align: left;
-  border: none;
-  outline: none;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-  border-radius: 4px;
-}
-
-@media only screen and (max-width: 768px) {
-  .py-60 .accordion {
-    margin-bottom: 16px;
-  }
-}
-
-.py-60 .question-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: background-color 0.25s ease-in-out;
-  transition: background-color 0.25s ease-in-out;
-}
-
-.py-60 .answer-wrapper {
-  display: none;
-}
-
-.py-60 .icon-expend {
-  -webkit-transform: rotateX(180deg);
-          transform: rotateX(180deg);
-  -webkit-transition: -webkit-transform 0.75s ease-in-out;
-  transition: -webkit-transform 0.75s ease-in-out;
-  transition: transform 0.75s ease-in-out;
-  transition: transform 0.75s ease-in-out, -webkit-transform 0.75s ease-in-out;
-}
-
-.py-60 .active,
-.py-60 .accordion:hover .question-wrapper {
-  background-color: #80cc39;
-}
-
-.py-60 .active p,
-.py-60 .accordion:hover .question-wrapper p {
-  color: white;
-}
-
-.py-60 .accordion:hover .q-mark,
-.py-60 .active .q-mark {
-  color: white;
-}
-
-.py-60 .container {
-  width: 100%;
-  padding-right: 20px;
-  padding-left: 20px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-bottom: 100px;
-}
-
-@media only screen and (min-width: 768px) {
-  .py-60 .container {
-    max-width: 768px;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .py-60 .container {
-    max-width: 1144px;
   }
 }
 
