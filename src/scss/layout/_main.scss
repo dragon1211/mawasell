@@ -9,7 +9,7 @@
     min-height: 70px;
     display: flex;
     justify-content: space-between;
-    z-index: 10000;
+    z-index: 5;
     position: fixed;
     width: 100vw;
     background-color: white;
@@ -100,6 +100,19 @@
                     }
                     &:hover{
                         background-color: #2caddb;
+                    }
+                }
+                &.yellow-fill-btn{
+                    background-color: #FF7500;
+                    color: white;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        margin: 0;
+                    }
+                    &:hover{
+                        background-color: #cf6304;
+                        transition: .2s;
                     }
                 }
             }
@@ -274,7 +287,7 @@ section#top{
 
     .text1{
         @extend .txt_25, .txt-sm_14, .bold; 
-        margin-top: px-vh(80);
+        margin-top: px-vh(45);
         @extend .mt-sm_25;
     }
 
@@ -286,19 +299,21 @@ section#top{
 
     .text3{
         margin-top: px-vh(40);
-        @extend .mt-sm_29;
     }
 
     .text4{
         @extend .txt_20, .txt-sm_14, .txt-white, .bold, .lh_35, .lh-sm_init;
-        margin-top: px-vh(45);
+        margin-top: px-vh(60);
     }
+
+    .comment{font-size: 14px; text-align: center;}
 
     .sns{
         display: flex;
         justify-content: space-between;
         .sns-description{
             .sub-title{
+                margin-top: px-vh(40);
                 color: $blue;
                 max-width: 500px;
                 background-color: white;
@@ -315,7 +330,7 @@ section#top{
             }
         }
         .img-wrap{
-            max-width: px-vw(500);
+            max-width: px-vw(550);
             width: 100%;
             float: right;
             display: flex;
@@ -328,15 +343,15 @@ section#top{
         }
 
         .medal-img-wrap{
-            margin-top: 15px;
-            img{ max-width: 600px; width: 100%;}
+            margin-top: 25px;
+            img{ max-width: 550px; width: 100%;}
         }
     }
 
     .download-btn-wrap{
-        margin-top: px-vh(50);
+        margin-top: px-vh(80);
         @include media-breakpoint-down(sm){
-            margin-top: 29px;
+            margin-top: 30px;
         }
     }
 
@@ -363,6 +378,7 @@ section#top{
                 }
                 &.pc{display: none;}
             }
+            .medal-img-wrap{margin-top: 0;}
         }
     }
     @include media-breakpoint-down(sm){
@@ -372,12 +388,14 @@ section#top{
         padding-right: 20px;
         .img-wrap{
             height: 250px;
-            margin-top: -20px;
             img{
                 height: 100%;
                 object-fit: contain;
             }
         }
+        .comment{font-size: 13px;}
+        .text3{ margin-top: 20px;}
+        .text4{margin-top: 20px;}
     }
 }
 
@@ -816,12 +834,29 @@ section#service{
                     @extend .txt_18, .txt-sm_16;
                 }
                 .p__link{
-                    text-align: right;
+                    margin-top: 20px;
+                    float: right;
                     text-decoration: none;
                     color: black;
                     @extend .bold;
+                    &::after{
+                        display: block;
+                        content: '';
+                        border-bottom: 2px solid transparent;
+                        border-image: linear-gradient(to right, $blue, $blue);
+                        border-image-slice: 1;
+                        transform: scaleX(0);
+                        transition: transform 250ms ease-in-out;
+                        transform-origin: 100% 50%;
+                    }
                     &:hover{
-                        cursor: pointer;
+                        color: $blue;
+                        transition: .3s;
+                    }
+                    &:hover::after{
+                        transform: scaleX(1);
+                        transform-origin: 0 50%;
+                        align-items: center;
                     }
                 }
             }
@@ -1688,7 +1723,6 @@ footer{
                             transform: scaleX(1);
                             transform-origin: 0 50%;
                             align-items: center;
-                        
                         }
                     }
                 }
