@@ -1876,7 +1876,104 @@ section#contact{
 }
 
 
+section#modal{
 
+    .modal-header{
+        border-bottom: none;
+    }
+
+    .modal-body{
+        padding-top: 0;
+        background: url(../img/mawasell_modal_bg.png) 100% 100% no-repeat;
+        background-size: 300px 250px;
+    }
+
+    .m__title{
+        padding: 0 50px;
+        text-align: center;
+        background-color: $blue;
+        color: white;
+        @extend .txt_30, .txt-sm_18;
+        @extend .bold;
+    }
+    
+    .modal-service-content{
+        display: flex;
+        justify-content: center;
+        margin: 30px 20px;
+        .modal-service-pane{
+            padding: 30px px_vw(40) 40px px_vw(30);
+            border: 2px solid $blue;
+            max-width: 480px;
+            width: 100%;
+            &:first-child{
+                margin-right: px_vw(40);
+            }
+            border-radius: 20px;
+            .m__sub__title{
+                text-align: center;
+                @extend .txt_22, .txt-sm_18;
+                @extend .bold;
+            }
+            .m__sub__desp{
+                margin-top: 30px;
+                @extend .txt_18, .txt-sm_15;
+                @extend .bold;
+            }
+
+            .modal-service-list{
+                margin-top: 30px;
+                .item{
+                    @extend .txt_16, .txt-sm_15;
+                    @extend .bold;
+                    margin-bottom: 5px;
+                    dt{float: left;}
+                    dd{
+                        margin-bottom: 0;
+                        padding-left: 20px;
+                    }
+                }
+            }
+        }
+
+
+        @include media-breakpoint-down(lg){
+            flex-direction: column;
+            align-items: center;
+            .modal-service-pane{
+                &:first-child{
+                    margin-right: 0;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+
+
+
+    @include media-breakpoint-up(sm){
+        .modal-dialog{
+            max-width: 100% !important;
+        }
+    }
+
+    @include media-breakpoint-down(sm){
+        .modal-dialog{
+            margin-right: 0;
+            margin-left: 0;
+        }
+        .modal-service-content{
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 20px;
+            .modal-service-pane{
+                border-radius: 10px;
+                .m__sub__desp{margin-top: 15px;}
+                .modal-service-list{margin-top: 15px;}
+            }
+        }
+    }
+}
 
 
 
