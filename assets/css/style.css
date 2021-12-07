@@ -15209,6 +15209,13 @@ fieldset:disabled .btn {
   margin: 0;
 }
 
+@media (max-width: 991.98px) {
+  .container {
+    padding-left: 10.41667vw;
+    padding-right: 10.41667vw;
+  }
+}
+
 @media (max-width: 575.98px) {
   .container {
     padding-left: 20px;
@@ -16014,6 +16021,13 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
   padding-right: 15.625vw;
   max-width: 100%;
   margin: 0;
+}
+
+@media (max-width: 991.98px) {
+  .container {
+    padding-left: 10.41667vw;
+    padding-right: 10.41667vw;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -17883,22 +17897,23 @@ section#top .text3 {
 
 section#top .text4 {
   line-height: initial;
-  margin-top: 3.7037vh;
+  margin-top: 2.31481vh;
 }
 
 section#top .comment {
   font-size: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  text-align: left;
+  margin-bottom: 0;
+  margin-left: 20px;
 }
 
-section#top .comment span {
-  max-width: 135px;
-  width: 33.33%;
-  text-align: center;
+section#top .comment dt {
+  float: left;
+}
+
+section#top .comment dd {
+  padding-left: 40px;
+  margin-bottom: 0;
 }
 
 section#top .sns {
@@ -17913,17 +17928,18 @@ section#top .sns {
 section#top .sns .sns-description .sub-title {
   color: #0E96C9;
   background-color: white;
-  padding: 0 15px;
+  padding: 3px 15px;
   font-family: 'Hiragino Sans', sans-serif;
 }
 
 section#top .sns .sns-description .main-title {
+  margin-top: 5px;
   line-height: 1.2;
   font-family: 'Hiragino Sans', sans-serif;
 }
 
 section#top .sns .img-wrap {
-  max-width: 23.4375vw;
+  max-width: 31.25vw;
   width: 100%;
   float: right;
   display: -webkit-box;
@@ -17985,14 +18001,15 @@ section#top .download-btn-wrap {
     text-align: center;
   }
   section#top .sns .img-wrap.sp img {
-    max-width: 400px;
+    max-width: 350px;
     width: 100%;
   }
   section#top .sns .img-wrap.pc {
     display: none;
   }
   section#top .sns .medal-img-wrap {
-    margin-top: 0;
+    max-width: 500px;
+    margin: 0 auto;
   }
   section#top .text1 br {
     display: block !important;
@@ -18007,7 +18024,7 @@ section#top .download-btn-wrap {
     padding-right: 20px;
   }
   section#top .img-wrap {
-    height: 250px;
+    height: 230px;
   }
   section#top .img-wrap img {
     height: 100%;
@@ -18017,6 +18034,9 @@ section#top .download-btn-wrap {
   section#top .main-title {
     margin-top: 5px !important;
     line-height: 1.3 !important;
+  }
+  section#top .medal-img-wrap {
+    max-width: 400px !important;
   }
 }
 
@@ -18238,6 +18258,10 @@ section#about .about-content .r-content.img-wraper {
 }
 
 @media (max-width: 991.98px) {
+  section#about {
+    padding-top: 90px;
+    padding-bottom: 50px;
+  }
   section#about .about-content {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -18264,10 +18288,6 @@ section#about .about-content .r-content.img-wraper {
 }
 
 @media (max-width: 575.98px) {
-  section#about {
-    padding-top: 90px;
-    padding-bottom: 50px;
-  }
   section#about .about-content {
     margin-top: 29px;
   }
@@ -18384,6 +18404,10 @@ section#reason .reason-content .reason-item .reason-img-container img {
 }
 
 @media (max-width: 991.98px) {
+  section#reason {
+    padding-top: 90px;
+    padding-bottom: 50px;
+  }
   section#reason .reason-content {
     margin-top: 75px;
   }
@@ -18423,10 +18447,6 @@ section#reason .reason-content .reason-item .reason-img-container img {
 }
 
 @media (max-width: 575.98px) {
-  section#reason {
-    padding-top: 90px;
-    padding-bottom: 50px;
-  }
   section#reason .reason-content .reason-item {
     padding: 40px 15px 30px;
     margin-left: 15px;
@@ -18625,6 +18645,10 @@ section#service .period-item .period-img-container img {
 }
 
 @media (max-width: 991.98px) {
+  section#service {
+    padding-top: 90px;
+    padding-bottom: 50px;
+  }
   section#service .abstract {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -18674,10 +18698,6 @@ section#service .period-item .period-img-container img {
 }
 
 @media (max-width: 575.98px) {
-  section#service {
-    padding-top: 90px;
-    padding-bottom: 50px;
-  }
   section#service .abstract-item img {
     max-height: 150px;
     -o-object-fit: contain;
@@ -19171,7 +19191,7 @@ section#step {
 }
 
 section#step .step-content {
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 section#step .step-list {
@@ -19356,7 +19376,12 @@ section#step .download-btn-wrap {
 }
 
 @media (max-width: 991.98px) {
+  section#step {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
   section#step .step-content {
+    margin-top: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -19473,13 +19498,6 @@ section#step .download-btn-wrap {
 }
 
 @media (max-width: 575.98px) {
-  section#step {
-    padding-top: 90px;
-    padding-bottom: 50px;
-  }
-  section#step .step-content {
-    margin-top: 48px;
-  }
   section#step .download-btn-wrap {
     margin-top: 48px;
   }
@@ -19755,6 +19773,26 @@ section#contact .contact-content .edit-input input:not(input[type="submit"]):foc
   border: 1px solid #0E96C9 !important;
 }
 
+section#contact .contact-content .edit-input input:not(input[type="submit"])::-webkit-input-placeholder, section#contact .contact-content .edit-input select::-webkit-input-placeholder, section#contact .contact-content .edit-input textarea::-webkit-input-placeholder {
+  color: #dddcdc;
+}
+
+section#contact .contact-content .edit-input input:not(input[type="submit"])::-moz-placeholder, section#contact .contact-content .edit-input select::-moz-placeholder, section#contact .contact-content .edit-input textarea::-moz-placeholder {
+  color: #dddcdc;
+}
+
+section#contact .contact-content .edit-input input:not(input[type="submit"]):-ms-input-placeholder, section#contact .contact-content .edit-input select:-ms-input-placeholder, section#contact .contact-content .edit-input textarea:-ms-input-placeholder {
+  color: #dddcdc;
+}
+
+section#contact .contact-content .edit-input input:not(input[type="submit"])::-ms-input-placeholder, section#contact .contact-content .edit-input select::-ms-input-placeholder, section#contact .contact-content .edit-input textarea::-ms-input-placeholder {
+  color: #dddcdc;
+}
+
+section#contact .contact-content .edit-input input:not(input[type="submit"])::placeholder, section#contact .contact-content .edit-input select::placeholder, section#contact .contact-content .edit-input textarea::placeholder {
+  color: #dddcdc;
+}
+
 section#contact .contact-content .edit-input select {
   padding-top: 5px;
   padding-bottom: 5px;
@@ -19852,8 +19890,21 @@ section#modal .modal-header {
 
 section#modal .modal-body {
   padding-top: 0;
-  background: url(../img/mawasell_modal_bg.png) 100% 100% no-repeat;
-  background-size: 300px 250px;
+}
+
+section#modal #service_modal_1 .modal-body {
+  background: url(../img/mawasell_modal_bg_1.png) 100% 100% no-repeat;
+  background-size: 250px 200px;
+}
+
+section#modal #service_modal_2 .modal-body {
+  background: url(../img/mawasell_modal_bg_2.png) 100% 100% no-repeat;
+  background-size: 200px 250px;
+}
+
+section#modal #service_modal_3 .modal-body {
+  background: url(../img/mawasell_modal_bg_3.png) 100% 100% no-repeat;
+  background-size: 250px 200px;
 }
 
 section#modal .m__title {
@@ -19972,7 +20023,7 @@ section#modal .modal-service-content .modal-service-pane .modal-service-list .it
     margin-right: 0 !important;
   }
   .text3 .main-title {
-    font-size: 21px !important;
+    font-size: 23px !important;
   }
   .text1 br {
     display: block !important;

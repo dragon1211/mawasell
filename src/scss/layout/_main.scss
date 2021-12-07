@@ -306,19 +306,17 @@ section#top{
         @extend .txt_20, .txt-sm_14;
         @extend .txt-white, .bold;
         line-height: initial;
-        margin-top: px-vh(40);
+        margin-top: px-vh(25);
         @extend .mt-sm_14; 
     }
 
     .comment{
-        font-size: 10px; 
-        display: flex;
-        justify-content: space-around;
-        span{
-            max-width: 135px;
-            width: 33.33%;
-            text-align: center;
-        }
+        font-size: 10px;
+        text-align: left; 
+        margin-bottom: 0; 
+        margin-left: 20px;
+        dt{float: left;}
+        dd{padding-left: 40px; margin-bottom: 0;}
     }
 
     .sns{
@@ -328,12 +326,13 @@ section#top{
             .sub-title{
                 color: $blue;
                 background-color: white;
-                padding: 0 15px;
+                padding: 3px 15px;
                 @extend .txt_35, .txt-sm_20;
                 @extend .bold;
                 font-family: 'Hiragino Sans', sans-serif;
             }
             .main-title{
+                margin-top: 5px;
                 @extend .txt_45, .txt-sm_25;
                 @extend .txt-white;
                 line-height: 1.2;
@@ -342,7 +341,7 @@ section#top{
             }
         }
         .img-wrap{
-            max-width: px-vw(450);
+            max-width: px-vw(600);
             width: 100%;
             float: right;
             display: flex;
@@ -385,11 +384,14 @@ section#top{
                     display: block;
                     float: none;
                     text-align: center;
-                    img{max-width: 400px; width: 100%;}
+                    img{max-width: 350px; width: 100%;}
                 }
                 &.pc{display: none;}
             }
-            .medal-img-wrap{margin-top: 0;}
+            .medal-img-wrap{
+                max-width: 500px;
+                margin: 0 auto;
+            }
         }
         .text1 br{display: block !important;}
     }
@@ -399,7 +401,7 @@ section#top{
         padding-left: 20px;
         padding-right: 20px;
         .img-wrap{
-            height: 250px;
+            height: 230px;
             img{
                 height: 100%;
                 object-fit: contain;
@@ -410,7 +412,7 @@ section#top{
             margin-top: 5px !important;
             line-height: 1.3 !important;
         }    
-         
+        .medal-img-wrap{max-width: 400px !important;}
     }
     @media (max-width: 319px){
         .text1 br{display: none !important;}
@@ -603,6 +605,8 @@ section#about{
         .l-content br{ display: none;}
     }
     @include media-breakpoint-down(lg){
+        padding-top: 90px;
+        padding-bottom: 50px;
         .about-content{
             flex-direction: column-reverse;
             .l-content, .r-content{
@@ -625,8 +629,6 @@ section#about{
         }
     }
     @include media-breakpoint-down(sm){
-        padding-top: 90px;
-        padding-bottom: 50px;
         .about-content{
             margin-top: 29px;
             .l-content{
@@ -720,6 +722,8 @@ section#reason{
     }
 
     @include media-breakpoint-down(lg){
+        padding-top: 90px;
+        padding-bottom: 50px;
         .reason-content{
             margin-top: 75px;
         }
@@ -753,8 +757,6 @@ section#reason{
 
 
     @include media-breakpoint-down(sm){
-        padding-top: 90px;
-        padding-bottom: 50px;
         .reason-content .reason-item{
             padding: 40px 15px 30px;
             margin-left: 15px;
@@ -903,6 +905,8 @@ section#service{
         }
     }
     @include media-breakpoint-down(lg){
+        padding-top: 90px;
+        padding-bottom: 50px;
         .abstract{
             flex-direction: column;
             &-item{
@@ -942,8 +946,6 @@ section#service{
         }
     }
     @include media-breakpoint-down(sm){
-        padding-top: 90px;
-        padding-bottom: 50px;
         .abstract{
             &-item{
                 img{
@@ -1394,7 +1396,7 @@ section#step{
     background-repeat: repeat;
     
     .step-content{
-        margin-top: 30px;
+        margin-top: 60px;
     }
 
     .step-list{
@@ -1528,7 +1530,10 @@ section#step{
         margin-top: 50px;
     }
     @include media-breakpoint-down(lg){
+        padding-top: 80px;
+        padding-bottom: 50px;
         .step-content {
+            margin-top: 30px;
             display: flex;
             flex-direction: row-reverse;
             justify-content: center;
@@ -1611,11 +1616,6 @@ section#step{
         }
     }
     @include media-breakpoint-down(sm){
-        padding-top: 90px;
-        padding-bottom: 50px;
-        .step-content{
-            margin-top: 48px;
-        }
         .download-btn-wrap{
             margin-top: 48px;
         }
@@ -1825,6 +1825,9 @@ section#contact{
                     outline: none !important;
                     border: 1px solid $blue !important;
                 }
+                &::placeholder{
+                    color: rgb(221, 220, 220);
+                }
             }
             select{ padding-top: 5px; padding-bottom: 5px;}
             textarea{
@@ -1922,10 +1925,22 @@ section#modal{
         border-bottom: none;
     }
 
+    
     .modal-body{
         padding-top: 0;
-        background: url(../img/mawasell_modal_bg.png) 100% 100% no-repeat;
-        background-size: 300px 250px;
+    }
+    
+    #service_modal_1 .modal-body{
+        background: url(../img/mawasell_modal_bg_1.png) 100% 100% no-repeat;
+        background-size: 250px 200px;
+    }
+    #service_modal_2 .modal-body{
+        background: url(../img/mawasell_modal_bg_2.png) 100% 100% no-repeat;
+        background-size: 200px 250px;
+    }
+    #service_modal_3 .modal-body{
+        background: url(../img/mawasell_modal_bg_3.png) 100% 100% no-repeat;
+        background-size: 250px 200px;
     }
 
     .m__title{
@@ -2035,7 +2050,7 @@ section#modal{
             margin-right: 0 !important;
         }
         .main-title{
-            font-size: 21px !important;
+            font-size: 23px !important;
         }
     }
     .text1 br{display: block !important;}
