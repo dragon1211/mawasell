@@ -79,61 +79,62 @@
                     1～2営業日中にスタッフよりご連絡させて頂きます。<br>
                     <span class="txt-red">＊は必須項目です。</span>
                 </h5>
-                <form class="contact-form">
+                <form class="contact-form" action="https://ai-tenbai.com/fy">
+                    <input type="hidden" name="Publisher_Id" value="101450" />
+                    <input type="hidden" name="Form_Cd" value="bfM0q0" />
+                    <input type="hidden" name="charcode" value="auto" />
+
                     <div class="edit-input">
-                        <p class="edit-title necessary">会社名</p>
-                        <p class="edit-sub-title">お手数ですが正式名称でご記入をお願いします。</p>
-                        <input type="text" id="company" name="company" placeholder="例）ABCD株式会社">
+                        <label for="email" class="edit-title necessary">メールアドレス</label>
+                        <input type="email" id="email" name="Mail" placeholder="例）info@abcd.com" required>
                     </div>
 
                     <div class="row">
                         <div class="col-12 col-lg-6">
                             <div class="edit-input">
-                                <p class="edit-title necessary">姓</p>
-                                <input type="text" id="last_name" name="last_name"  placeholder="例）山本">
+                                <label for="last_name" class="edit-title necessary">姓</label>
+                                <input type="text" id="last_name" name="NameSei"  placeholder="例）山本" required>
                             </div>
                         </div>
                         <div class="col-12 col-lg-6">
                             <div class="edit-input">
-                                <p class="edit-title necessary">名</p>
-                                <input type="text" id="first_name" name="first_name" placeholder="例）太郎">
+                                <label for="first_name" class="edit-title necessary">名</label>
+                                <input type="text" id="first_name" name="NameMei" placeholder="例）太郎" required>
                             </div>
                         </div>
                     </div>
 
                     <div class="edit-input">
-                        <p class="edit-title necessary">Eメール</p>
-                        <input type="email" id="email" name="email" placeholder="例）info@abcd.com">
+                        <label for="company" class="edit-title necessary">会社名</label>
+                        <input type="text" id="company" name="Company_Name" placeholder="例）ABCD株式会社" required>
                     </div>
 
                     <div class="edit-input">
-                        <p class="edit-title necessary">電話番号</p>
-                        <p class="edit-sub-title">お手数ですが正式名称でご記入をお願いします。</p>
-                        <input type="text" id="tel" name="tel" placeholder="例）03-0000-0000">
+                        <label for="tel" class="edit-title necessary">電話番号</label>
+                        <input type="text" id="tel" name="Tel0" placeholder="例）03-0000-0000" required>
                     </div>
 
                     <div class="edit-input">
-                        <p class="edit-title">サービス導入検討時期</p>
-                        <select name="period" id="period">
+                        <label for="period" class="edit-title">サービス導入検討時期</label>
+                        <select id="period" name="C01">
                             <option value="今すぐ導入したい">今すぐ導入したい</option>
-                            <option value="１〜2ヶ月以内">１〜2ヶ月以内</option>
-                            <option value="３〜6ヶ月以内">３〜6ヶ月以内</option>
-                            <option value="未定">未定</option>
+                            <option value="１〜2ヶ月以内">前向きに導入を検討している</option>
+                            <option value="３〜6ヶ月以内">話を聞いてから検討したい</option>
                         </select>
                     </div>
 
-                    <div class="edit-input">
-                        <p class="edit-title">部署名</p>
+                    <!-- <div class="edit-input">
+                        <label for="office" class="edit-title">部署名</label>
                         <input type="text" id="office" name="office">
+                    </div> -->
+
+                    <div class="edit-input">
+                        <label for="content" class="edit-title">お問い合わせ・ご相談内容</label>
+                        <textarea id="content" name="C02"></textarea>
                     </div>
 
                     <div class="edit-input">
-                        <p class="edit-title">お問い合わせ・ご相談内容</p>
-                        <textarea id="content" name="content"></textarea>
-                    </div>
-
-                    <div class="edit-input">
-                        <button type="submit">送信する</button>
+                        <input type="submit" value="送信する">
                     </div>
                 </form>
             </div>

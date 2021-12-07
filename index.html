@@ -15,7 +15,6 @@
     
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="./assets/css/animate.css" rel="stylesheet">
     <link href="./assets/css/style.css" rel="stylesheet">
 </head>
 
@@ -25,8 +24,7 @@
         <div class="logo-wrapper">
             <a href="#">
                 <picture>
-                    <source media="(max-width: 374px) and (min-width: 266px)" srcset="./assets/img/mawasell_logo_text.png">
-                    <source media="(max-width: 265px)" srcset="./assets/img/mawasell_logo_icon.png">
+                    <source media="(max-width: 319px)" srcset="./assets/img/mawasell_logo_icon.png">
                     <img src="./assets/img/mawasell_logo.png" alt="mawasell">
                 </picture>
             </a>
@@ -77,7 +75,7 @@
                     <h2 class="text2 wow fadeIn"  data-wow-duration="1" data-wow-delay=".7s">最短３ヶ月で自社に<br>
                         SNS広告運用のプロを作る</h2>
                     <div class="text3 wow fadeIn"  data-wow-duration="1" data-wow-delay=".9s">
-                        <h1 class="sub-title">オンラインビジネス特化型</h1>
+                        <span class="sub-title">オンラインビジネス特化型</span>
                         <h1 class="main-title">
                             SNS広告運用<br>
                             インハウス化支援サービス
@@ -88,21 +86,23 @@
                     </div>
                     <div class="medal-img-wrap wow fadeIn"  data-wow-duration="1" data-wow-delay="1.1s">
                         <img src="./assets/img/mawasell_medal.png" alt="mawasell">
+                        <dl class="comment wow fadeIn"  data-wow-duration="1" data-wow-delay="1.1s">
+                            <dt>調査方法</dt><dd>：インターネットアンケート調査</dd>
+                            <dt>調査期間</dt><dd>：2021年12月</dd>
+                            <dt>対象者</dt><dd>：オンラインビジネスを行う経営者、個人事業主</dd>
+                        </dl>
                     </div>
-                    <p class="comment wow fadeIn"  data-wow-duration="1" data-wow-delay="1.1s">調査方法：インターネットアンケート調査<br>
-                       調査期間：2021年12月<br>
-                       対象者　 :オンラインビジネスを行う経営者、個人事業主</p>
+                    <h4 class="text4 wow fadeIn"  data-wow-duration="1" data-wow-delay="1.3s">
+                        マワセルは社内でSNS広告運用担当者を育てたい
+                        <br class="d-none d-xl-block">
+                        企業様・個人事業主様向け内製化支援サービスです。<br class="d-none d-xl-block">
+                        最短３ヶ月でSNS広告の運用スキルが身につきます。
+                    </h4>
                 </div>
                 <div class="img-wrap pc wow bounceIn"  data-wow-duration="1" data-wow-delay="1.5s">
                     <img src="./assets/img/mawasell_sec1.png" alt="sns.png">
                 </div>
             </div>
-            <h4 class="text4 wow fadeIn"  data-wow-duration="1" data-wow-delay="1.3s">
-                マワセルは社内でSNS広告運用担当者を育てたい
-                <!-- <br class="d-none d-xl-block"> -->
-                企業様・個人事業主様向け内製化支援サービスです。<br class="d-none d-xl-block">
-                最短３ヶ月でSNS広告の運用スキルが身につきます。
-            </h4>
             <div class="download-btn-wrap wow fadeIn"  data-wow-duration="1" data-wow-delay="1.3s">
                 <a href="/contact.html" class="download-btn">
                     <span>お問い合わせ</span>
@@ -590,7 +590,7 @@
                     <div class="step-item">
                         <div class="step-desp">
                             <span class="circle-num">1</span>
-                            <h1 class="s__title">サービスのご<br>説明ご契約</h1>
+                            <h1 class="s__title">サービスのご<br class="d-sm-none">説明ご契約</h1>
                             <img src="./assets/img/mawasell_step_1.png" alt="mawasell">
                         </div>
                         <h2 class="step-abs">START</h2>
@@ -758,14 +758,14 @@
         </section>
 
         <section id="modal">
-            <div class="modal fade container" id="service_modal_1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                <div class="modal-dialog">
+            <div class="modal fade" id="service_modal_1" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
                   <div class="modal-content">
                     <div class="modal-header">
+                        <p class="text-center w-100"><span class="m__title">1ヶ月目</span></p>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <div class="text-center"><span class="m__title">1ヶ月目</span></div>
                         <div class="modal-service-content">
                             <div class="modal-service-pane">
                                 <h3 class="m__sub__title"><span class="txt-red">研修1回目</span><br>
@@ -921,14 +921,14 @@
                 </div>
             </div>
 
-            <div class="modal fade container" id="service_modal_2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                <div class="modal-dialog">
+            <div class="modal fade" id="service_modal_2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog  modal-dialog-centered">
                   <div class="modal-content">
                     <div class="modal-header">
+                        <p class="text-center w-100"><span class="m__title">2ヶ月目</span></p>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <div class="text-center"><span class="m__title">2ヶ月目</span></div>
                         <div class="modal-service-content">
                             <div class="modal-service-pane">
                                 <h3 class="m__sub__title"><span class="txt-red">研修3回目</span><br>
@@ -1062,14 +1062,14 @@
                 </div>
             </div>
 
-            <div class="modal fade container" id="service_modal_3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-                <div class="modal-dialog">
+            <div class="modal fade" id="service_modal_3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog  modal-dialog-centered">
                   <div class="modal-content">
-                    <div class="modal-header">
+                      <div class="modal-header">
+                        <p class="text-center w-100"><span class="m__title">3ヶ月目</span></p>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <div class="text-center"><span class="m__title">3ヶ月目</span></div>
                         <div class="modal-service-content">
                             <div class="modal-service-pane">
                                 <h3 class="m__sub__title"><span class="txt-red">研修5回目</span><br>
@@ -1155,7 +1155,7 @@
     <footer>
         <div class="img-wrap">
             <picture>
-                <source media="(max-width: 450px)" srcset="./assets/img/mawasell_logo_col.jpg">
+                <source media="(max-width: 450px)" srcset="./assets/img/mawasell_logo_col.png">
                 <img src="./assets/img/mawasell_logo.png" alt="Mawasell" decoding="async">
             </picture>
         </div>
@@ -1165,7 +1165,6 @@
                 <li><a class="item-link" href="http://mawasell.com/policy/">プライバシーポリシー</a></li>
                 <li><a class="item-link" href="http://mawasell.com/check2/">特定商取引法について</a></li>
             </ul>
-            <p>詳しい研修内容はこちらのポップアップが入っていない</p>
         </div>
     </footer>
 

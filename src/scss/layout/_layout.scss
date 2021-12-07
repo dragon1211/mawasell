@@ -5,6 +5,10 @@
     padding-right: px-vw(300);
     max-width: 100%;
     margin: 0;
+    @include media-breakpoint-down(lg){
+        padding-left: px-vw(200);
+        padding-right: px-vw(200);
+    }
     @include media-breakpoint-down(sm){
         padding-left: 20px;
         padding-right: 20px;
