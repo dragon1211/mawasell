@@ -1120,7 +1120,7 @@ section#cost-cut{
     }
 
     @include media-breakpoint-down(sm){
-        padding-top: 90px;
+        padding-top: 60px;
         padding-bottom: 50px;
         .cost-cut-detail{
             margin-top: 42px;
@@ -2071,6 +2071,53 @@ section#modal{
     }
 }
 
+
+section#check2{
+    padding-top: px-vw(150);
+    .title{
+        font-weight: bold;
+    }
+    table{
+        margin-top: 30px;
+        td, th{
+            padding: 5px;
+        }
+        th{ width: 200px;}
+    }
+    @include media-breakpoint-down(lg){
+        padding-top: 100px;
+        padding-bottom: 90px;
+        table th{width: 160px;}
+    }
+
+    @include media-breakpoint-down(sm){
+        .title{font-size: 20px;}
+        table th{width: 120px;}
+    }
+}
+
+section#policy{
+    padding-top: px-vw(150);
+    padding-bottom: 120px;
+    .title{
+        font-weight: bold;
+    }
+    h2{font-size: 23px;}
+    p{
+        margin-bottom: 20px;
+    }
+    .policy-content{
+        margin-top: 20px;
+    }
+    @include media-breakpoint-down(lg){
+        padding-top: 90px;
+    }
+    @include media-breakpoint-down(sm){
+        .title{font-size: 22px;}
+        h2{ font-size: 20px;}
+        li{font-size: 15px;}
+    }
+}
 
 
 @media (max-width: 374px) {

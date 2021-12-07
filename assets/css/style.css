@@ -18898,7 +18898,7 @@ section#cost-cut .download-btn-wrap .download-btn {
 
 @media (max-width: 575.98px) {
   section#cost-cut {
-    padding-top: 90px;
+    padding-top: 60px;
     padding-bottom: 50px;
   }
   section#cost-cut .cost-cut-detail {
@@ -20063,6 +20063,84 @@ section#modal .modal-service-content .modal-service-pane .modal-service-list .it
   section#modal .modal {
     padding-left: 15px;
     padding-right: 15px;
+  }
+}
+
+section#check2 {
+  padding-top: 7.8125vw;
+}
+
+section#check2 .title {
+  font-weight: bold;
+}
+
+section#check2 table {
+  margin-top: 30px;
+}
+
+section#check2 table td, section#check2 table th {
+  padding: 5px;
+}
+
+section#check2 table th {
+  width: 200px;
+}
+
+@media (max-width: 991.98px) {
+  section#check2 {
+    padding-top: 100px;
+    padding-bottom: 90px;
+  }
+  section#check2 table th {
+    width: 160px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  section#check2 .title {
+    font-size: 20px;
+  }
+  section#check2 table th {
+    width: 120px;
+  }
+}
+
+section#policy {
+  padding-top: 7.8125vw;
+  padding-bottom: 120px;
+}
+
+section#policy .title {
+  font-weight: bold;
+}
+
+section#policy h2, section#policy .h2 {
+  font-size: 23px;
+}
+
+section#policy p {
+  margin-bottom: 20px;
+}
+
+section#policy .policy-content {
+  margin-top: 20px;
+}
+
+@media (max-width: 991.98px) {
+  section#policy {
+    padding-top: 90px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  section#policy .title {
+    font-size: 22px;
+  }
+  section#policy h2, section#policy .h2 {
+    font-size: 20px;
+  }
+  section#policy li {
+    font-size: 15px;
   }
 }
 
