@@ -79,16 +79,17 @@
                     1～2営業日中にスタッフよりご連絡させて頂きます。<br>
                     <span class="txt-red">＊は必須項目です。</span>
                 </h5>
-                <form class="contact-form" method="post" action="https://ai-tenbai.com/fy">
+                <form class="contact-form" method="post" action="https://maroon-ex.jp/fy">
                     <input type="hidden" name="Publisher_Id" value="101450" />
                     <input type="hidden" name="Form_Cd" value="bfM0q0" />
                     <input type="hidden" name="charcode" value="auto" />
 
                     <div class="edit-input">
-                        <label for="email" class="edit-title necessary">メールアドレス</label>
-                        <input type="email" id="email" name="Mail" placeholder="例）info@abcd.com" required>
+                        <label for="company" class="edit-title necessary">会社名</label>
+                        <input type="text" id="company" name="Company_Name" placeholder="例）ABCD株式会社" required>
                     </div>
 
+                 
                     <div class="row">
                         <div class="col-12 col-lg-6">
                             <div class="edit-input">
@@ -105,37 +106,22 @@
                     </div>
 
                     <div class="edit-input">
-                        <label for="company" class="edit-title necessary">会社名</label>
-                        <input type="text" id="company" name="Company_Name" placeholder="例）ABCD株式会社" required>
+                        <label for="email" class="edit-title necessary">メールアドレス</label>
+                        <input type="email" id="email" name="Mail" placeholder="例）info@abcd.com" required>
                     </div>
 
-                    
-                    <div class="edit-input">
-                        <label for="Department_Name" class="edit-title">部署名</label>
-                        <input type="text" id="Department_Name" name="Department_Name">
-                    </div>
 
                     <div class="edit-input">
                         <label for="tel" class="edit-title necessary">電話番号</label>
-                        <div class="row">
-                            <div class="col-12 col-sm-2 mb-2 mb-sm-0">
-                                <input type="text" id="tel" name="Tel0" placeholder="03" required>
-                            </div>
-                            <div class="col-12 col-sm-5 mb-2 mb-sm-0">
-                                <input type="text" id="tel" name="Tel1" placeholder="1234" required>
-                            </div>
-                            <div class="col-12 col-sm-5">
-                                <input type="text" id="tel" name="Tel2" placeholder="1234" required>
-                            </div>
-                        </div>
+                        <input type="text" id="tel" name="C03" placeholder="例）01-2345-6789" required>
                     </div>
 
                     <div class="edit-input">
                         <label for="period" class="edit-title">サービス導入検討時期</label>
                         <select id="period" name="C01">
                             <option value="今すぐ導入したい">今すぐ導入したい</option>
-                            <option value="１〜2ヶ月以内">前向きに導入を検討している</option>
-                            <option value="３〜6ヶ月以内">話を聞いてから検討したい</option>
+                            <option value="前向きに導入を検討している">前向きに導入を検討している</option>
+                            <option value="話を聞いてから検討したい">話を聞いてから検討したい</option>
                         </select>
                     </div>
 
@@ -146,7 +132,7 @@
                     </div>
 
                     <div class="edit-input">
-                        <input type="submit" value="送信する">
+                        <input type="submit" name="submit" value="送信する">
                     </div>
                 </form>
             </div>
