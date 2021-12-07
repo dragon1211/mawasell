@@ -24,11 +24,11 @@
         display: flex;
         align-items: center;
         img{ max-height: 70px; }
-        @media screen and (max-width: 374px) {
+        @media screen and (max-width: 319px) {
             max-width: none !important;
             img{ 
                 margin-left: 15px;
-                height: 50px;
+                height: 45px;
                 object-fit: contain;
             }
         }
@@ -286,51 +286,63 @@ section#top{
     background-color: $blue;
 
     .text1{
-        @extend .txt_25, .txt-sm_14, .bold; 
-        margin-top: px-vh(45);
-        @extend .mt-sm_25;
+        @extend .txt_25, .txt-sm_18, .bold; 
+        margin-top: px-vh(30);
+        @extend .mt-sm_14;
     }
 
     .text2{
-        @extend .txt_28, .txt-sm_18, .txt-white, .bold, .lh_45, .lh-sm_init;
-        @extend .mt-sm_17; 
-        margin-top: px-vh(40);
+        @extend .txt_25, .txt-sm_18, .txt-white, .bold;
+        @extend .mt-sm_14; 
+        line-height: initial;
+        margin-top: px-vh(25);
     }
 
     .text3{
-        margin-top: px-vh(40);
+        margin-top: px-vh(25);
     }
 
     .text4{
-        @extend .txt_20, .txt-sm_14, .txt-white, .bold, .lh_35, .lh-sm_init;
-        margin-top: px-vh(60);
+        @extend .txt_20, .txt-sm_14;
+        @extend .txt-white, .bold;
+        line-height: initial;
+        margin-top: px-vh(40);
+        @extend .mt-sm_14; 
     }
 
-    .comment{font-size: 14px; text-align: center;}
+    .comment{
+        font-size: 10px; 
+        display: flex;
+        justify-content: space-around;
+        span{
+            max-width: 135px;
+            width: 33.33%;
+            text-align: center;
+        }
+    }
 
     .sns{
         display: flex;
         justify-content: space-between;
         .sns-description{
             .sub-title{
-                margin-top: px-vh(40);
                 color: $blue;
-                max-width: 500px;
                 background-color: white;
+                padding: 0 15px;
                 @extend .txt_35, .txt-sm_20;
                 @extend .bold;
-                font-family: 'Noto Sans CJK JP', sans-serif;
+                font-family: 'Hiragino Sans', sans-serif;
             }
             .main-title{
                 @extend .txt_45, .txt-sm_25;
                 @extend .txt-white;
                 line-height: 1.2;
-                @extend .lh-sm_init, .bold;
-                font-family: 'Noto Sans CJK JP', sans-serif;
+                @extend .bold;
+                font-family: 'Hiragino Sans', sans-serif;
             }
         }
         .img-wrap{
-            max-width: px-vw(550);
+            max-width: px-vw(450);
             width: 100%;
             float: right;
             display: flex;
@@ -343,13 +355,13 @@ section#top{
         }
 
         .medal-img-wrap{
-            margin-top: 25px;
+            margin-top: 5px;
             img{ max-width: 550px; width: 100%;}
         }
     }
 
     .download-btn-wrap{
-        margin-top: px-vh(80);
+        margin-top: px-vh(40);
         @include media-breakpoint-down(sm){
             margin-top: 30px;
         }
@@ -364,7 +376,6 @@ section#top{
                 width: 100%;
                 .sub-title{
                     max-width: 100%;
-                    margin: 0px 30px;
                 }
             }
             .img-wrap{
@@ -380,6 +391,7 @@ section#top{
             }
             .medal-img-wrap{margin-top: 0;}
         }
+        .text1 br{display: block !important;}
     }
     @include media-breakpoint-down(sm){
         min-height: initial;
@@ -393,16 +405,22 @@ section#top{
                 object-fit: contain;
             }
         }
-        .comment{font-size: 13px;}
-        .text3{ margin-top: 20px;}
-        .text4{margin-top: 20px;}
+        
+        .main-title{ 
+            margin-top: 5px !important;
+            line-height: 1.3 !important;
+        }    
+         
+    }
+    @media (max-width: 319px){
+        .text1 br{display: none !important;}
     }
 }
 
 
 section#issue{
-    padding-top: px-vw(150);
-    padding-bottom: px-vw(200);
+    padding-top: px-vw(120);
+    padding-bottom: px-vw(120);
     background-color: #E9F3FF;
     @include media-breakpoint-down(sm){
         padding-top: 33px;
@@ -476,7 +494,7 @@ section#issue{
      
     }
     .txt-solve{
-        margin-top: 120px;
+        margin-top: 90px;
         @extend .txt_40, .txt-sm_22;
         @extend .text-center, .bold; 
         font-family: 'Noto Sans CJK JP', sans-serif;
@@ -491,7 +509,7 @@ section#issue{
         }
     }
     @include media-breakpoint-down(sm){
-        padding-top: 90px;
+        padding-top: 60px;
         padding-bottom: 50px;
         .quiz{
             margin: 25px 15px 0 15px;
@@ -542,8 +560,8 @@ section#issue{
 
 section#about{
     background-color: #FBFBF8;
-    padding-top: px-vw(150);
-    padding-bottom: px-vw(200);
+    padding-top: px-vw(120);
+    padding-bottom: px-vw(180);
     .about-content{
         margin-top: 90px;
         display: flex;
@@ -554,12 +572,16 @@ section#about{
                 @extend .txt_30;
                 @extend .txt-sm_20;
                 @extend .bold;
+                margin-left: 12px;
+                margin-right: 12px;
             }
             .ttl-t2, .ttl-t3, .ttl-t4{
                 @extend .txt_20;
                 @extend .txt-sm_16;
                 @extend .lh_38;
                 @extend .bold;
+                margin-left: 12px;
+                margin-right: 12px;
             }
             @include media-breakpoint-down(xxxl){
                 .ttl-t2 br{display: none;}
@@ -621,8 +643,8 @@ section#about{
 
 
 section#reason{
-    padding-top: px-vw(150);
-    padding-bottom: px-vw(200);
+    padding-top: px-vw(120);
+    padding-bottom: px-vw(180);
     background-color: #E9F3FF;
 
     .reason-content{
@@ -762,8 +784,8 @@ section#reason{
 
 
 section#service{
-    padding-top: px-vw(150);
-    padding-bottom: px-vw(200);
+    padding-top: px-vw(120);
+    padding-bottom: px-vw(180);
     background-color: #FBFBF8;
 
     .abstract{
@@ -950,6 +972,7 @@ section#service{
                     }
                     .p__sub_title{ margin-top: 15px; }
                     p{ margin-top: 10px; }
+                    .p__link{ font-size: 14px; }
                 }
                 .period-img-container img{
                     max-height: 150px;
@@ -1015,8 +1038,8 @@ section#cost-cut{
     background-image: url('../img/mawasell_grid.png');
     background-repeat: repeat;
 
-    padding-top: px-vw(150);
-    padding-bottom: 115px;
+    padding-top: px-vw(120);
+    padding-bottom: 70px;
 
     .cost-cut-detail{
         margin-top: 60px;
@@ -1053,7 +1076,7 @@ section#cost-cut{
         }
     }
     .download-btn-wrap{
-        margin-top: 100px;
+        margin-top: 80px;
         display: flex;
         justify-content: space-evenly;
         img{ 
@@ -1088,7 +1111,7 @@ section#cost-cut{
 
 
 section#grant{
-    padding-top: px-vw(150);
+    padding-top: px-vw(80);
     padding-bottom: px-vw(200);
     background-color: #E9F3FF;
     .g__title{
@@ -1212,8 +1235,8 @@ section#grant{
 
 
 section#case{
-    padding-top: px-vw(150);
-    padding-bottom: px-vw(200);
+    padding-top: px-vw(120);
+    padding-bottom: px-vw(180);
     background-color: #FBFBF8;
 
     .case-content{
@@ -1365,8 +1388,8 @@ section#case{
 
 
 section#step{
-    padding-top: px-vw(150);
-    padding-bottom: px-vw(200);
+    padding-top: px-vw(120);
+    padding-bottom: px-vw(90);
     background-image: url('../img/mawasell_grid.png');
     background-repeat: repeat;
     
@@ -1395,6 +1418,7 @@ section#step{
             flex-direction: column;
             align-items: center;
             position: relative;
+            min-height: 350px;
             .circle-num{
                 width: 40px;
                 height: 40px;
@@ -1433,7 +1457,7 @@ section#step{
             padding: 10px 20px;
             color: white;
             background-color: rgba(14,150,201, .6);
-            margin-top: 30px;
+            margin-top: 20px;
             text-align: center;
             position: relative;
             @extend .txt_20, .txt-sm_16;
@@ -1448,6 +1472,9 @@ section#step{
                 top: 50%;
                 transform: translate(-50%, -50%);
             }
+            @media (max-width: 1310px) {
+                font-size: 18px;
+            }
         }
         &:last-child{
             .step-desp::after{display: none;}
@@ -1458,7 +1485,7 @@ section#step{
     .arrow-period{
         text-align: center;
         position: relative;
-        margin-top: 10px;
+        margin-top: 20px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -1498,7 +1525,7 @@ section#step{
     }
 
     .download-btn-wrap{
-        margin-top: 85px;
+        margin-top: 50px;
     }
     @include media-breakpoint-down(lg){
         .step-content {
@@ -1509,16 +1536,19 @@ section#step{
                 flex-direction: column;
                 align-items: center;
                 .step-item{
+                    display: flex;
+                    flex-direction: column-reverse;
                     max-width: 600px;
                     width: 100%;
                     margin-left: 0;
                     margin-right: 0;
                     &:not(:last-child){ margin-bottom: 30px; }
                     .step-desp{
+                        min-height: initial;
                         &:after{display: none;}
                     }
                     .step-abs{
-                        margin-top: 15px;
+                        margin-top: 0;
                         font-size: 20px;
                         &:after{
                             border-color: rgba(14,150,201, .6) transparent transparent transparent;
@@ -1545,7 +1575,7 @@ section#step{
                     text-orientation:upright;
                     letter-spacing: 10px;
                 }
-                margin-right: 15px;
+                margin-right: 5px;
                 .line {
                     width: 4px;
                     background: rgba(14,150,201, .6);
@@ -1589,13 +1619,15 @@ section#step{
         .download-btn-wrap{
             margin-top: 48px;
         }
+        .s__title{ font-size: 16px !important;}
+        .step-abs{font-size: 16px !important;}
     }
 }
 
 
 section#faq{
-    padding-top: px-vw(150);
-    padding-bottom: px-vw(200);
+    padding-top: px-vw(90);
+    padding-bottom: px-vw(180);
     background-color: #E9F3FF;
 
     .faq-content{
@@ -1682,7 +1714,7 @@ section#faq{
 
 
 footer{
-    height: 150px;
+    height: 100px;
     padding: 0 px-vw(50) 0 px-vw(50);
     background-color: #FBFBF8;
     display: flex;
@@ -1697,7 +1729,7 @@ footer{
             display: flex;
             align-items: center;
             padding: 0;
-            margin-bottom: 10px;
+            margin-bottom: 0;
             font-size: 16px;
             li{
                 list-style: none;
@@ -1731,19 +1763,20 @@ footer{
         p{ color: black; font-weight: bold;}
     }
     @include media-breakpoint-down(lg){
-        padding: 30px 20px 60px;
+        padding: 10px 20px 30px;
         flex-direction: column;
         height: auto;
         .img-wrap img{max-height: 100px;}
         .r-content{
-            margin-top: 20px;
+            margin-top: 10px;
             ul{
                 flex-direction: column;
                 li{
+                    font-size: 15px;
                     &:not(:last-child){
                         margin-right: 0px;
                     }
-                    margin: 5px 0px;
+                    margin: 2px 0px;
                 }
             }
             p{
@@ -1757,8 +1790,8 @@ footer{
 
 
 section#contact{
-    padding-top: px-vw(150);
-    padding-bottom: px-vw(200);
+    padding-top: px-vw(120);
+    padding-bottom: px-vw(180);
     background-color: #FBFBF8;
     .contact-content{
         margin-top: 30px;
@@ -1780,7 +1813,7 @@ section#contact{
 
         .edit-input{
             padding-top: 30px;
-            input, select, textarea{
+            input:not(input[type="submit"]), select, textarea{
                 width: 100%;
                 height: 50px;
                 padding: 15px 25px;
@@ -1815,13 +1848,15 @@ section#contact{
                     }
                 }
             }
+            br{ display: none;}
             .edit-sub-title{
+                display: block;
                 margin-bottom: 3px;
                 @extend .txt_16, .txt-sm_14;
                 @extend .txt-blue;
             }
 
-            button{
+            input[type="submit"]{
                 padding: 7px 50px;
                 margin-bottom: 30px;
                 border: none;
@@ -1878,6 +1913,11 @@ section#contact{
 
 section#modal{
 
+    .modal{
+        padding-left: px-vw(350);
+        padding-right: px-vw(350);
+    }
+
     .modal-header{
         border-bottom: none;
     }
@@ -1889,6 +1929,7 @@ section#modal{
     }
 
     .m__title{
+        margin: auto;
         padding: 0 50px;
         text-align: center;
         background-color: $blue;
@@ -1900,11 +1941,11 @@ section#modal{
     .modal-service-content{
         display: flex;
         justify-content: center;
-        margin: 30px 20px;
+        margin: 10px 20px 30px;
         .modal-service-pane{
-            padding: 30px px_vw(40) 40px px_vw(30);
+            padding: 20px px_vw(40) 30px px_vw(30);
             border: 2px solid $blue;
-            max-width: 480px;
+            max-width: 400px;
             width: 100%;
             &:first-child{
                 margin-right: px_vw(40);
@@ -1912,21 +1953,20 @@ section#modal{
             border-radius: 20px;
             .m__sub__title{
                 text-align: center;
-                @extend .txt_22, .txt-sm_18;
+                @extend .txt_18, .txt-sm_16;
                 @extend .bold;
             }
             .m__sub__desp{
-                margin-top: 30px;
-                @extend .txt_18, .txt-sm_15;
+                margin-top: 15px;
+                @extend .txt_16, .txt-sm_14;
                 @extend .bold;
             }
 
             .modal-service-list{
-                margin-top: 30px;
+                margin-top: 15px;
                 .item{
-                    @extend .txt_16, .txt-sm_15;
-                    @extend .bold;
-                    margin-bottom: 5px;
+                    @extend .txt_15, .txt-sm_13;
+                    margin-bottom: 1px;
                     dt{float: left;}
                     dd{
                         margin-bottom: 0;
@@ -1958,6 +1998,10 @@ section#modal{
     }
 
     @include media-breakpoint-down(sm){
+        .modal{
+            padding-left: 30px;
+            padding-right: 30px;
+        }
         .modal-dialog{
             margin-right: 0;
             margin-left: 0;
@@ -1965,12 +2009,19 @@ section#modal{
         .modal-service-content{
             margin-left: 0;
             margin-right: 0;
-            margin-top: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
             .modal-service-pane{
                 border-radius: 10px;
                 .m__sub__desp{margin-top: 15px;}
                 .modal-service-list{margin-top: 15px;}
             }
+        }
+    }
+    @media (max-width: 374px){
+        .modal{
+            padding-left: 15px;
+            padding-right: 15px;
         }
     }
 }

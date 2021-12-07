@@ -14886,18 +14886,18 @@ fieldset:disabled .btn {
   font-size: 20px !important;
 }
 
-.bold, section#top .text1, section#top .text2, section#top .text4, section#top .sns .sns-description .sub-title, section#top .sns .sns-description .main-title, section#issue .txt-solve, section#about .about-content .l-content .ttl-t1, section#about .about-content .l-content .ttl-t2, section#about .about-content .l-content .ttl-t3, section#about .about-content .l-content .ttl-t4, section#reason .reason-content .reason-item .reason-desp h1, section#reason .reason-content .reason-item .reason-desp .h1, section#service .abstract-item p, section#service .period-item .period-desp .p__title span, section#service .period-item .period-desp .p__sub_title, section#service .period-item .period-desp .p__link, section#price .price-content .txt-wrap h2, section#price .price-content .txt-wrap .h2, section#price .price-content .txt-wrap p, section#cost-cut .cost-cut-more h1, section#cost-cut .cost-cut-more .h1, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2, section#grant .g__title, section#grant .grant-content .grant-desp h1, section#grant .grant-content .grant-desp .h1, section#grant .grant-content .grant-desp h1 span.bg-blue, section#grant .grant-content .grant-desp .h1 span.bg-blue, section#grant .grant-content h1.bg-blue, section#grant .grant-content .bg-blue.h1, section#grant .grant-content h2, section#grant .grant-content .h2, section#step .step-item .step-desp .s__title, section#step .step-item .step-abs, section#step .arrow-period span, section#contact .contact-content .c__title, section#contact .contact-content .edit-input .edit-title, section#contact .contact-content .edit-input .edit-title.necessary::after, section#modal .m__title, section#modal .modal-service-content .modal-service-pane .m__sub__title, section#modal .modal-service-content .modal-service-pane .m__sub__desp, section#modal .modal-service-content .modal-service-pane .modal-service-list .item {
+.bold, section#top .text1, section#top .text2, section#top .text4, section#top .sns .sns-description .sub-title, section#top .sns .sns-description .main-title, section#issue .txt-solve, section#about .about-content .l-content .ttl-t1, section#about .about-content .l-content .ttl-t2, section#about .about-content .l-content .ttl-t3, section#about .about-content .l-content .ttl-t4, section#reason .reason-content .reason-item .reason-desp h1, section#reason .reason-content .reason-item .reason-desp .h1, section#service .abstract-item p, section#service .period-item .period-desp .p__title span, section#service .period-item .period-desp .p__sub_title, section#service .period-item .period-desp .p__link, section#price .price-content .txt-wrap h2, section#price .price-content .txt-wrap .h2, section#price .price-content .txt-wrap p, section#cost-cut .cost-cut-more h1, section#cost-cut .cost-cut-more .h1, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2, section#grant .g__title, section#grant .grant-content .grant-desp h1, section#grant .grant-content .grant-desp .h1, section#grant .grant-content .grant-desp h1 span.bg-blue, section#grant .grant-content .grant-desp .h1 span.bg-blue, section#grant .grant-content h1.bg-blue, section#grant .grant-content .bg-blue.h1, section#grant .grant-content h2, section#grant .grant-content .h2, section#step .step-item .step-desp .s__title, section#step .step-item .step-abs, section#step .arrow-period span, section#contact .contact-content .c__title, section#contact .contact-content .edit-input .edit-title, section#contact .contact-content .edit-input .edit-title.necessary::after, section#modal .m__title, section#modal .modal-service-content .modal-service-pane .m__sub__title, section#modal .modal-service-content .modal-service-pane .m__sub__desp {
   font-weight: bold;
 }
 
 @media (min-width: 1400px) {
-  .lh_45, section#top .text2 {
+  .lh_45 {
     line-height: 45px;
   }
 }
 
 @media (max-width: 1399.98px) {
-  .lh_45, section#top .text2 {
+  .lh_45 {
     line-height: initial;
   }
 }
@@ -14927,13 +14927,13 @@ fieldset:disabled .btn {
 }
 
 @media (min-width: 1400px) {
-  .lh_35, section#top .text4 {
+  .lh_35 {
     line-height: 35px;
   }
 }
 
 @media (max-width: 1399.98px) {
-  .lh_35, section#top .text4 {
+  .lh_35 {
     line-height: initial;
   }
 }
@@ -14951,7 +14951,7 @@ fieldset:disabled .btn {
 }
 
 @media (max-width: 575.98px) {
-  .lh-sm_init, section#top .text2, section#top .text4, section#top .sns .sns-description .main-title {
+  .lh-sm_init {
     line-height: initial;
   }
 }
@@ -15077,7 +15077,7 @@ fieldset:disabled .btn {
 }
 
 @media (max-width: 575.98px) {
-  .mt-sm_14 {
+  .mt-sm_14, section#top .text1, section#top .text2, section#top .text4 {
     margin-top: 14px !important;
   }
 }
@@ -15095,7 +15095,7 @@ fieldset:disabled .btn {
 }
 
 @media (max-width: 575.98px) {
-  .mt-sm_17, section#top .text2 {
+  .mt-sm_17 {
     margin-top: 17px !important;
   }
 }
@@ -15143,7 +15143,7 @@ fieldset:disabled .btn {
 }
 
 @media (max-width: 575.98px) {
-  .mt-sm_25, section#top .text1 {
+  .mt-sm_25 {
     margin-top: 25px !important;
   }
 }
@@ -15379,73 +15379,73 @@ fieldset:disabled .btn {
 }
 
 @media (min-width: 1200px) {
-  .txt_15 {
+  .txt_15, section#modal .modal-service-content .modal-service-pane .modal-service-list .item {
     font-size: 15px;
   }
 }
 
 @media (max-width: 1199.98px) {
-  .txt_15 {
+  .txt_15, section#modal .modal-service-content .modal-service-pane .modal-service-list .item {
     font-size: 14px;
   }
 }
 
 @media (max-width: 991.98px) {
-  .txt_15 {
+  .txt_15, section#modal .modal-service-content .modal-service-pane .modal-service-list .item {
     font-size: 13px;
   }
 }
 
 @media (max-width: 767.98px) {
-  .txt_15 {
+  .txt_15, section#modal .modal-service-content .modal-service-pane .modal-service-list .item {
     font-size: 12px;
   }
 }
 
 @media (min-width: 1200px) {
-  .txt_16, #header #pc-nav .item-link, section#issue .quiz-item .quiz-desp, section#price .price-content .txt-wrap p, section#grant .grant-content p, section#contact .contact-content .edit-input .edit-sub-title, section#modal .modal-service-content .modal-service-pane .modal-service-list .item {
+  .txt_16, #header #pc-nav .item-link, section#issue .quiz-item .quiz-desp, section#price .price-content .txt-wrap p, section#grant .grant-content p, section#contact .contact-content .edit-input .edit-sub-title, section#modal .modal-service-content .modal-service-pane .m__sub__desp {
     font-size: 16px;
   }
 }
 
 @media (max-width: 1199.98px) {
-  .txt_16, #header #pc-nav .item-link, section#issue .quiz-item .quiz-desp, section#price .price-content .txt-wrap p, section#grant .grant-content p, section#contact .contact-content .edit-input .edit-sub-title, section#modal .modal-service-content .modal-service-pane .modal-service-list .item {
+  .txt_16, #header #pc-nav .item-link, section#issue .quiz-item .quiz-desp, section#price .price-content .txt-wrap p, section#grant .grant-content p, section#contact .contact-content .edit-input .edit-sub-title, section#modal .modal-service-content .modal-service-pane .m__sub__desp {
     font-size: 15px;
   }
 }
 
 @media (max-width: 991.98px) {
-  .txt_16, #header #pc-nav .item-link, section#issue .quiz-item .quiz-desp, section#price .price-content .txt-wrap p, section#grant .grant-content p, section#contact .contact-content .edit-input .edit-sub-title, section#modal .modal-service-content .modal-service-pane .modal-service-list .item {
+  .txt_16, #header #pc-nav .item-link, section#issue .quiz-item .quiz-desp, section#price .price-content .txt-wrap p, section#grant .grant-content p, section#contact .contact-content .edit-input .edit-sub-title, section#modal .modal-service-content .modal-service-pane .m__sub__desp {
     font-size: 15px;
   }
 }
 
 @media (max-width: 767.98px) {
-  .txt_16, #header #pc-nav .item-link, section#issue .quiz-item .quiz-desp, section#price .price-content .txt-wrap p, section#grant .grant-content p, section#contact .contact-content .edit-input .edit-sub-title, section#modal .modal-service-content .modal-service-pane .modal-service-list .item {
+  .txt_16, #header #pc-nav .item-link, section#issue .quiz-item .quiz-desp, section#price .price-content .txt-wrap p, section#grant .grant-content p, section#contact .contact-content .edit-input .edit-sub-title, section#modal .modal-service-content .modal-service-pane .m__sub__desp {
     font-size: 14px;
   }
 }
 
 @media (min-width: 1200px) {
-  .txt_18, section#issue .quiz-item .quiz-mark, section#reason .reason-content .reason-item .reason-desp p, section#service .period-item .period-desp p, section#case .case-content .case-item .case-company, section#case .case-content .case-item dl, section#case .case-content .case-item .before .bg-blue, section#case .case-content .case-item .after .bg-red, section#case .case-content .case-item .after p, section#faq .faq-content .faq-item .question, section#faq .faq-content .faq-item .answer, section#contact .contact-content .edit-input .edit-title, section#contact .contact-content .edit-input button, section#modal .modal-service-content .modal-service-pane .m__sub__desp {
+  .txt_18, section#issue .quiz-item .quiz-mark, section#reason .reason-content .reason-item .reason-desp p, section#service .period-item .period-desp p, section#case .case-content .case-item .case-company, section#case .case-content .case-item dl, section#case .case-content .case-item .before .bg-blue, section#case .case-content .case-item .after .bg-red, section#case .case-content .case-item .after p, section#faq .faq-content .faq-item .question, section#faq .faq-content .faq-item .answer, section#contact .contact-content .edit-input .edit-title, section#contact .contact-content .edit-input input[type="submit"], section#modal .modal-service-content .modal-service-pane .m__sub__title {
     font-size: 18px;
   }
 }
 
 @media (max-width: 1199.98px) {
-  .txt_18, section#issue .quiz-item .quiz-mark, section#reason .reason-content .reason-item .reason-desp p, section#service .period-item .period-desp p, section#case .case-content .case-item .case-company, section#case .case-content .case-item dl, section#case .case-content .case-item .before .bg-blue, section#case .case-content .case-item .after .bg-red, section#case .case-content .case-item .after p, section#faq .faq-content .faq-item .question, section#faq .faq-content .faq-item .answer, section#contact .contact-content .edit-input .edit-title, section#contact .contact-content .edit-input button, section#modal .modal-service-content .modal-service-pane .m__sub__desp {
+  .txt_18, section#issue .quiz-item .quiz-mark, section#reason .reason-content .reason-item .reason-desp p, section#service .period-item .period-desp p, section#case .case-content .case-item .case-company, section#case .case-content .case-item dl, section#case .case-content .case-item .before .bg-blue, section#case .case-content .case-item .after .bg-red, section#case .case-content .case-item .after p, section#faq .faq-content .faq-item .question, section#faq .faq-content .faq-item .answer, section#contact .contact-content .edit-input .edit-title, section#contact .contact-content .edit-input input[type="submit"], section#modal .modal-service-content .modal-service-pane .m__sub__title {
     font-size: 17px;
   }
 }
 
 @media (max-width: 991.98px) {
-  .txt_18, section#issue .quiz-item .quiz-mark, section#reason .reason-content .reason-item .reason-desp p, section#service .period-item .period-desp p, section#case .case-content .case-item .case-company, section#case .case-content .case-item dl, section#case .case-content .case-item .before .bg-blue, section#case .case-content .case-item .after .bg-red, section#case .case-content .case-item .after p, section#faq .faq-content .faq-item .question, section#faq .faq-content .faq-item .answer, section#contact .contact-content .edit-input .edit-title, section#contact .contact-content .edit-input button, section#modal .modal-service-content .modal-service-pane .m__sub__desp {
+  .txt_18, section#issue .quiz-item .quiz-mark, section#reason .reason-content .reason-item .reason-desp p, section#service .period-item .period-desp p, section#case .case-content .case-item .case-company, section#case .case-content .case-item dl, section#case .case-content .case-item .before .bg-blue, section#case .case-content .case-item .after .bg-red, section#case .case-content .case-item .after p, section#faq .faq-content .faq-item .question, section#faq .faq-content .faq-item .answer, section#contact .contact-content .edit-input .edit-title, section#contact .contact-content .edit-input input[type="submit"], section#modal .modal-service-content .modal-service-pane .m__sub__title {
     font-size: 17px;
   }
 }
 
 @media (max-width: 767.98px) {
-  .txt_18, section#issue .quiz-item .quiz-mark, section#reason .reason-content .reason-item .reason-desp p, section#service .period-item .period-desp p, section#case .case-content .case-item .case-company, section#case .case-content .case-item dl, section#case .case-content .case-item .before .bg-blue, section#case .case-content .case-item .after .bg-red, section#case .case-content .case-item .after p, section#faq .faq-content .faq-item .question, section#faq .faq-content .faq-item .answer, section#contact .contact-content .edit-input .edit-title, section#contact .contact-content .edit-input button, section#modal .modal-service-content .modal-service-pane .m__sub__desp {
+  .txt_18, section#issue .quiz-item .quiz-mark, section#reason .reason-content .reason-item .reason-desp p, section#service .period-item .period-desp p, section#case .case-content .case-item .case-company, section#case .case-content .case-item dl, section#case .case-content .case-item .before .bg-blue, section#case .case-content .case-item .after .bg-red, section#case .case-content .case-item .after p, section#faq .faq-content .faq-item .question, section#faq .faq-content .faq-item .answer, section#contact .contact-content .edit-input .edit-title, section#contact .contact-content .edit-input input[type="submit"], section#modal .modal-service-content .modal-service-pane .m__sub__title {
     font-size: 16px;
   }
 }
@@ -15475,73 +15475,73 @@ fieldset:disabled .btn {
 }
 
 @media (min-width: 1200px) {
-  .txt_22, section#modal .modal-service-content .modal-service-pane .m__sub__title {
+  .txt_22 {
     font-size: 22px;
   }
 }
 
 @media (max-width: 1199.98px) {
-  .txt_22, section#modal .modal-service-content .modal-service-pane .m__sub__title {
+  .txt_22 {
     font-size: 20px;
   }
 }
 
 @media (max-width: 991.98px) {
-  .txt_22, section#modal .modal-service-content .modal-service-pane .m__sub__title {
+  .txt_22 {
     font-size: 20px;
   }
 }
 
 @media (max-width: 767.98px) {
-  .txt_22, section#modal .modal-service-content .modal-service-pane .m__sub__title {
+  .txt_22 {
     font-size: 18px;
   }
 }
 
 @media (min-width: 1200px) {
-  .txt_25, section#top .text1, section#price .price-content .txt-wrap h2, section#price .price-content .txt-wrap .h2, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2, section#step .arrow-period span {
+  .txt_25, section#top .text1, section#top .text2, section#price .price-content .txt-wrap h2, section#price .price-content .txt-wrap .h2, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2, section#step .arrow-period span {
     font-size: 25px;
   }
 }
 
 @media (max-width: 1199.98px) {
-  .txt_25, section#top .text1, section#price .price-content .txt-wrap h2, section#price .price-content .txt-wrap .h2, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2, section#step .arrow-period span {
+  .txt_25, section#top .text1, section#top .text2, section#price .price-content .txt-wrap h2, section#price .price-content .txt-wrap .h2, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2, section#step .arrow-period span {
     font-size: 23px;
   }
 }
 
 @media (max-width: 991.98px) {
-  .txt_25, section#top .text1, section#price .price-content .txt-wrap h2, section#price .price-content .txt-wrap .h2, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2, section#step .arrow-period span {
+  .txt_25, section#top .text1, section#top .text2, section#price .price-content .txt-wrap h2, section#price .price-content .txt-wrap .h2, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2, section#step .arrow-period span {
     font-size: 21px;
   }
 }
 
 @media (max-width: 767.98px) {
-  .txt_25, section#top .text1, section#price .price-content .txt-wrap h2, section#price .price-content .txt-wrap .h2, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2, section#step .arrow-period span {
+  .txt_25, section#top .text1, section#top .text2, section#price .price-content .txt-wrap h2, section#price .price-content .txt-wrap .h2, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2, section#step .arrow-period span {
     font-size: 19px;
   }
 }
 
 @media (min-width: 1200px) {
-  .txt_28, section#top .text2 {
+  .txt_28 {
     font-size: 28px;
   }
 }
 
 @media (max-width: 1199.98px) {
-  .txt_28, section#top .text2 {
+  .txt_28 {
     font-size: 25px;
   }
 }
 
 @media (max-width: 991.98px) {
-  .txt_28, section#top .text2 {
+  .txt_28 {
     font-size: 25px;
   }
 }
 
 @media (max-width: 767.98px) {
-  .txt_28, section#top .text2 {
+  .txt_28 {
     font-size: 22px;
   }
 }
@@ -15871,25 +15871,25 @@ fieldset:disabled .btn {
 }
 
 @media (max-width: 575.98px) {
-  .txt-sm_13 {
+  .txt-sm_13, section#modal .modal-service-content .modal-service-pane .modal-service-list .item {
     font-size: 13px;
   }
 }
 
 @media (max-width: 575.98px) {
-  .txt-sm_14, #header #pc-nav .item-link, section#top .text1, section#top .text4, section#grant .grant-content p, section#contact .contact-content .edit-input .edit-sub-title {
+  .txt-sm_14, #header #pc-nav .item-link, section#top .text4, section#grant .grant-content p, section#contact .contact-content .edit-input .edit-sub-title, section#modal .modal-service-content .modal-service-pane .m__sub__desp {
     font-size: 14px;
   }
 }
 
 @media (max-width: 575.98px) {
-  .txt-sm_15, .download-btn span, section#modal .modal-service-content .modal-service-pane .m__sub__desp, section#modal .modal-service-content .modal-service-pane .modal-service-list .item {
+  .txt-sm_15, .download-btn span {
     font-size: 15px;
   }
 }
 
 @media (max-width: 575.98px) {
-  .txt-sm_16, section#issue .quiz-item .quiz-mark, section#issue .quiz-item .quiz-desp, section#about .about-content .l-content .ttl-t2, section#about .about-content .l-content .ttl-t3, section#about .about-content .l-content .ttl-t4, section#reason .reason-content .reason-item .reason-desp p, section#service .period-item .period-desp p, section#cost-cut .cost-cut-more h3, section#cost-cut .cost-cut-more .h3, section#case .case-content .case-item .before .bg-blue, section#case .case-content .case-item .after .bg-red, section#case .case-content .case-item .after p, section#step .step-item .step-abs, section#faq .faq-content .faq-item .question, section#faq .faq-content .faq-item .answer, section#contact .contact-content .c__title, section#contact .contact-content .edit-input .edit-title, section#contact .contact-content .edit-input button {
+  .txt-sm_16, section#issue .quiz-item .quiz-mark, section#issue .quiz-item .quiz-desp, section#about .about-content .l-content .ttl-t2, section#about .about-content .l-content .ttl-t3, section#about .about-content .l-content .ttl-t4, section#reason .reason-content .reason-item .reason-desp p, section#service .period-item .period-desp p, section#cost-cut .cost-cut-more h3, section#cost-cut .cost-cut-more .h3, section#case .case-content .case-item .before .bg-blue, section#case .case-content .case-item .after .bg-red, section#case .case-content .case-item .after p, section#step .step-item .step-abs, section#faq .faq-content .faq-item .question, section#faq .faq-content .faq-item .answer, section#contact .contact-content .c__title, section#contact .contact-content .edit-input .edit-title, section#contact .contact-content .edit-input input[type="submit"], section#modal .modal-service-content .modal-service-pane .m__sub__title {
     font-size: 16px;
   }
 }
@@ -15901,7 +15901,7 @@ fieldset:disabled .btn {
 }
 
 @media (max-width: 575.98px) {
-  .txt-sm_18, section#top .text2, section#reason .reason-content .reason-item .reason-desp h1, section#reason .reason-content .reason-item .reason-desp .h1, section#service .abstract-item p, section#service .period-item .period-desp .p__title span, section#service .period-item .period-desp .p__sub_title, section#price .price-content .txt-wrap p, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2, section#grant .grant-content .grant-desp h1 span.bg-blue, section#grant .grant-content .grant-desp .h1 span.bg-blue, section#grant .grant-content h1.bg-blue, section#grant .grant-content .bg-blue.h1, section#case .case-content .case-item .case-company, section#case .case-content .case-item dl, section#step .step-item .step-desp .s__title, section#modal .m__title, section#modal .modal-service-content .modal-service-pane .m__sub__title {
+  .txt-sm_18, section#top .text1, section#top .text2, section#reason .reason-content .reason-item .reason-desp h1, section#reason .reason-content .reason-item .reason-desp .h1, section#service .abstract-item p, section#service .period-item .period-desp .p__title span, section#service .period-item .period-desp .p__sub_title, section#price .price-content .txt-wrap p, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2, section#grant .grant-content .grant-desp h1 span.bg-blue, section#grant .grant-content .grant-desp .h1 span.bg-blue, section#grant .grant-content h1.bg-blue, section#grant .grant-content .bg-blue.h1, section#case .case-content .case-item .case-company, section#case .case-content .case-item dl, section#step .step-item .step-desp .s__title, section#modal .m__title {
     font-size: 18px;
   }
 }
@@ -16186,73 +16186,73 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
 }
 
 @media (min-width: 1200px) {
-  .txt_15 {
+  .txt_15, section#modal .modal-service-content .modal-service-pane .modal-service-list .item {
     font-size: 15px;
   }
 }
 
 @media (max-width: 1199.98px) {
-  .txt_15 {
+  .txt_15, section#modal .modal-service-content .modal-service-pane .modal-service-list .item {
     font-size: 14px;
   }
 }
 
 @media (max-width: 991.98px) {
-  .txt_15 {
+  .txt_15, section#modal .modal-service-content .modal-service-pane .modal-service-list .item {
     font-size: 13px;
   }
 }
 
 @media (max-width: 767.98px) {
-  .txt_15 {
+  .txt_15, section#modal .modal-service-content .modal-service-pane .modal-service-list .item {
     font-size: 12px;
   }
 }
 
 @media (min-width: 1200px) {
-  .txt_16, #header #pc-nav .item-link, section#issue .quiz-item .quiz-desp, section#price .price-content .txt-wrap p, section#grant .grant-content p, section#contact .contact-content .edit-input .edit-sub-title, section#modal .modal-service-content .modal-service-pane .modal-service-list .item {
+  .txt_16, #header #pc-nav .item-link, section#issue .quiz-item .quiz-desp, section#price .price-content .txt-wrap p, section#grant .grant-content p, section#contact .contact-content .edit-input .edit-sub-title, section#modal .modal-service-content .modal-service-pane .m__sub__desp {
     font-size: 16px;
   }
 }
 
 @media (max-width: 1199.98px) {
-  .txt_16, #header #pc-nav .item-link, section#issue .quiz-item .quiz-desp, section#price .price-content .txt-wrap p, section#grant .grant-content p, section#contact .contact-content .edit-input .edit-sub-title, section#modal .modal-service-content .modal-service-pane .modal-service-list .item {
+  .txt_16, #header #pc-nav .item-link, section#issue .quiz-item .quiz-desp, section#price .price-content .txt-wrap p, section#grant .grant-content p, section#contact .contact-content .edit-input .edit-sub-title, section#modal .modal-service-content .modal-service-pane .m__sub__desp {
     font-size: 15px;
   }
 }
 
 @media (max-width: 991.98px) {
-  .txt_16, #header #pc-nav .item-link, section#issue .quiz-item .quiz-desp, section#price .price-content .txt-wrap p, section#grant .grant-content p, section#contact .contact-content .edit-input .edit-sub-title, section#modal .modal-service-content .modal-service-pane .modal-service-list .item {
+  .txt_16, #header #pc-nav .item-link, section#issue .quiz-item .quiz-desp, section#price .price-content .txt-wrap p, section#grant .grant-content p, section#contact .contact-content .edit-input .edit-sub-title, section#modal .modal-service-content .modal-service-pane .m__sub__desp {
     font-size: 15px;
   }
 }
 
 @media (max-width: 767.98px) {
-  .txt_16, #header #pc-nav .item-link, section#issue .quiz-item .quiz-desp, section#price .price-content .txt-wrap p, section#grant .grant-content p, section#contact .contact-content .edit-input .edit-sub-title, section#modal .modal-service-content .modal-service-pane .modal-service-list .item {
+  .txt_16, #header #pc-nav .item-link, section#issue .quiz-item .quiz-desp, section#price .price-content .txt-wrap p, section#grant .grant-content p, section#contact .contact-content .edit-input .edit-sub-title, section#modal .modal-service-content .modal-service-pane .m__sub__desp {
     font-size: 14px;
   }
 }
 
 @media (min-width: 1200px) {
-  .txt_18, section#issue .quiz-item .quiz-mark, section#reason .reason-content .reason-item .reason-desp p, section#service .period-item .period-desp p, section#case .case-content .case-item .case-company, section#case .case-content .case-item dl, section#case .case-content .case-item .before .bg-blue, section#case .case-content .case-item .after .bg-red, section#case .case-content .case-item .after p, section#faq .faq-content .faq-item .question, section#faq .faq-content .faq-item .answer, section#contact .contact-content .edit-input .edit-title, section#contact .contact-content .edit-input button, section#modal .modal-service-content .modal-service-pane .m__sub__desp {
+  .txt_18, section#issue .quiz-item .quiz-mark, section#reason .reason-content .reason-item .reason-desp p, section#service .period-item .period-desp p, section#case .case-content .case-item .case-company, section#case .case-content .case-item dl, section#case .case-content .case-item .before .bg-blue, section#case .case-content .case-item .after .bg-red, section#case .case-content .case-item .after p, section#faq .faq-content .faq-item .question, section#faq .faq-content .faq-item .answer, section#contact .contact-content .edit-input .edit-title, section#contact .contact-content .edit-input input[type="submit"], section#modal .modal-service-content .modal-service-pane .m__sub__title {
     font-size: 18px;
   }
 }
 
 @media (max-width: 1199.98px) {
-  .txt_18, section#issue .quiz-item .quiz-mark, section#reason .reason-content .reason-item .reason-desp p, section#service .period-item .period-desp p, section#case .case-content .case-item .case-company, section#case .case-content .case-item dl, section#case .case-content .case-item .before .bg-blue, section#case .case-content .case-item .after .bg-red, section#case .case-content .case-item .after p, section#faq .faq-content .faq-item .question, section#faq .faq-content .faq-item .answer, section#contact .contact-content .edit-input .edit-title, section#contact .contact-content .edit-input button, section#modal .modal-service-content .modal-service-pane .m__sub__desp {
+  .txt_18, section#issue .quiz-item .quiz-mark, section#reason .reason-content .reason-item .reason-desp p, section#service .period-item .period-desp p, section#case .case-content .case-item .case-company, section#case .case-content .case-item dl, section#case .case-content .case-item .before .bg-blue, section#case .case-content .case-item .after .bg-red, section#case .case-content .case-item .after p, section#faq .faq-content .faq-item .question, section#faq .faq-content .faq-item .answer, section#contact .contact-content .edit-input .edit-title, section#contact .contact-content .edit-input input[type="submit"], section#modal .modal-service-content .modal-service-pane .m__sub__title {
     font-size: 17px;
   }
 }
 
 @media (max-width: 991.98px) {
-  .txt_18, section#issue .quiz-item .quiz-mark, section#reason .reason-content .reason-item .reason-desp p, section#service .period-item .period-desp p, section#case .case-content .case-item .case-company, section#case .case-content .case-item dl, section#case .case-content .case-item .before .bg-blue, section#case .case-content .case-item .after .bg-red, section#case .case-content .case-item .after p, section#faq .faq-content .faq-item .question, section#faq .faq-content .faq-item .answer, section#contact .contact-content .edit-input .edit-title, section#contact .contact-content .edit-input button, section#modal .modal-service-content .modal-service-pane .m__sub__desp {
+  .txt_18, section#issue .quiz-item .quiz-mark, section#reason .reason-content .reason-item .reason-desp p, section#service .period-item .period-desp p, section#case .case-content .case-item .case-company, section#case .case-content .case-item dl, section#case .case-content .case-item .before .bg-blue, section#case .case-content .case-item .after .bg-red, section#case .case-content .case-item .after p, section#faq .faq-content .faq-item .question, section#faq .faq-content .faq-item .answer, section#contact .contact-content .edit-input .edit-title, section#contact .contact-content .edit-input input[type="submit"], section#modal .modal-service-content .modal-service-pane .m__sub__title {
     font-size: 17px;
   }
 }
 
 @media (max-width: 767.98px) {
-  .txt_18, section#issue .quiz-item .quiz-mark, section#reason .reason-content .reason-item .reason-desp p, section#service .period-item .period-desp p, section#case .case-content .case-item .case-company, section#case .case-content .case-item dl, section#case .case-content .case-item .before .bg-blue, section#case .case-content .case-item .after .bg-red, section#case .case-content .case-item .after p, section#faq .faq-content .faq-item .question, section#faq .faq-content .faq-item .answer, section#contact .contact-content .edit-input .edit-title, section#contact .contact-content .edit-input button, section#modal .modal-service-content .modal-service-pane .m__sub__desp {
+  .txt_18, section#issue .quiz-item .quiz-mark, section#reason .reason-content .reason-item .reason-desp p, section#service .period-item .period-desp p, section#case .case-content .case-item .case-company, section#case .case-content .case-item dl, section#case .case-content .case-item .before .bg-blue, section#case .case-content .case-item .after .bg-red, section#case .case-content .case-item .after p, section#faq .faq-content .faq-item .question, section#faq .faq-content .faq-item .answer, section#contact .contact-content .edit-input .edit-title, section#contact .contact-content .edit-input input[type="submit"], section#modal .modal-service-content .modal-service-pane .m__sub__title {
     font-size: 16px;
   }
 }
@@ -16282,73 +16282,73 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
 }
 
 @media (min-width: 1200px) {
-  .txt_22, section#modal .modal-service-content .modal-service-pane .m__sub__title {
+  .txt_22 {
     font-size: 22px;
   }
 }
 
 @media (max-width: 1199.98px) {
-  .txt_22, section#modal .modal-service-content .modal-service-pane .m__sub__title {
+  .txt_22 {
     font-size: 20px;
   }
 }
 
 @media (max-width: 991.98px) {
-  .txt_22, section#modal .modal-service-content .modal-service-pane .m__sub__title {
+  .txt_22 {
     font-size: 20px;
   }
 }
 
 @media (max-width: 767.98px) {
-  .txt_22, section#modal .modal-service-content .modal-service-pane .m__sub__title {
+  .txt_22 {
     font-size: 18px;
   }
 }
 
 @media (min-width: 1200px) {
-  .txt_25, section#top .text1, section#price .price-content .txt-wrap h2, section#price .price-content .txt-wrap .h2, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2, section#step .arrow-period span {
+  .txt_25, section#top .text1, section#top .text2, section#price .price-content .txt-wrap h2, section#price .price-content .txt-wrap .h2, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2, section#step .arrow-period span {
     font-size: 25px;
   }
 }
 
 @media (max-width: 1199.98px) {
-  .txt_25, section#top .text1, section#price .price-content .txt-wrap h2, section#price .price-content .txt-wrap .h2, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2, section#step .arrow-period span {
+  .txt_25, section#top .text1, section#top .text2, section#price .price-content .txt-wrap h2, section#price .price-content .txt-wrap .h2, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2, section#step .arrow-period span {
     font-size: 23px;
   }
 }
 
 @media (max-width: 991.98px) {
-  .txt_25, section#top .text1, section#price .price-content .txt-wrap h2, section#price .price-content .txt-wrap .h2, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2, section#step .arrow-period span {
+  .txt_25, section#top .text1, section#top .text2, section#price .price-content .txt-wrap h2, section#price .price-content .txt-wrap .h2, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2, section#step .arrow-period span {
     font-size: 21px;
   }
 }
 
 @media (max-width: 767.98px) {
-  .txt_25, section#top .text1, section#price .price-content .txt-wrap h2, section#price .price-content .txt-wrap .h2, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2, section#step .arrow-period span {
+  .txt_25, section#top .text1, section#top .text2, section#price .price-content .txt-wrap h2, section#price .price-content .txt-wrap .h2, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2, section#step .arrow-period span {
     font-size: 19px;
   }
 }
 
 @media (min-width: 1200px) {
-  .txt_28, section#top .text2 {
+  .txt_28 {
     font-size: 28px;
   }
 }
 
 @media (max-width: 1199.98px) {
-  .txt_28, section#top .text2 {
+  .txt_28 {
     font-size: 25px;
   }
 }
 
 @media (max-width: 991.98px) {
-  .txt_28, section#top .text2 {
+  .txt_28 {
     font-size: 25px;
   }
 }
 
 @media (max-width: 767.98px) {
-  .txt_28, section#top .text2 {
+  .txt_28 {
     font-size: 22px;
   }
 }
@@ -16678,25 +16678,25 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
 }
 
 @media (max-width: 575.98px) {
-  .txt-sm_13 {
+  .txt-sm_13, section#modal .modal-service-content .modal-service-pane .modal-service-list .item {
     font-size: 13px;
   }
 }
 
 @media (max-width: 575.98px) {
-  .txt-sm_14, #header #pc-nav .item-link, section#top .text1, section#top .text4, section#grant .grant-content p, section#contact .contact-content .edit-input .edit-sub-title {
+  .txt-sm_14, #header #pc-nav .item-link, section#top .text4, section#grant .grant-content p, section#contact .contact-content .edit-input .edit-sub-title, section#modal .modal-service-content .modal-service-pane .m__sub__desp {
     font-size: 14px;
   }
 }
 
 @media (max-width: 575.98px) {
-  .txt-sm_15, .download-btn span, section#modal .modal-service-content .modal-service-pane .m__sub__desp, section#modal .modal-service-content .modal-service-pane .modal-service-list .item {
+  .txt-sm_15, .download-btn span {
     font-size: 15px;
   }
 }
 
 @media (max-width: 575.98px) {
-  .txt-sm_16, section#issue .quiz-item .quiz-mark, section#issue .quiz-item .quiz-desp, section#about .about-content .l-content .ttl-t2, section#about .about-content .l-content .ttl-t3, section#about .about-content .l-content .ttl-t4, section#reason .reason-content .reason-item .reason-desp p, section#service .period-item .period-desp p, section#cost-cut .cost-cut-more h3, section#cost-cut .cost-cut-more .h3, section#case .case-content .case-item .before .bg-blue, section#case .case-content .case-item .after .bg-red, section#case .case-content .case-item .after p, section#step .step-item .step-abs, section#faq .faq-content .faq-item .question, section#faq .faq-content .faq-item .answer, section#contact .contact-content .c__title, section#contact .contact-content .edit-input .edit-title, section#contact .contact-content .edit-input button {
+  .txt-sm_16, section#issue .quiz-item .quiz-mark, section#issue .quiz-item .quiz-desp, section#about .about-content .l-content .ttl-t2, section#about .about-content .l-content .ttl-t3, section#about .about-content .l-content .ttl-t4, section#reason .reason-content .reason-item .reason-desp p, section#service .period-item .period-desp p, section#cost-cut .cost-cut-more h3, section#cost-cut .cost-cut-more .h3, section#case .case-content .case-item .before .bg-blue, section#case .case-content .case-item .after .bg-red, section#case .case-content .case-item .after p, section#step .step-item .step-abs, section#faq .faq-content .faq-item .question, section#faq .faq-content .faq-item .answer, section#contact .contact-content .c__title, section#contact .contact-content .edit-input .edit-title, section#contact .contact-content .edit-input input[type="submit"], section#modal .modal-service-content .modal-service-pane .m__sub__title {
     font-size: 16px;
   }
 }
@@ -16708,7 +16708,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
 }
 
 @media (max-width: 575.98px) {
-  .txt-sm_18, section#top .text2, section#reason .reason-content .reason-item .reason-desp h1, section#reason .reason-content .reason-item .reason-desp .h1, section#service .abstract-item p, section#service .period-item .period-desp .p__title span, section#service .period-item .period-desp .p__sub_title, section#price .price-content .txt-wrap p, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2, section#grant .grant-content .grant-desp h1 span.bg-blue, section#grant .grant-content .grant-desp .h1 span.bg-blue, section#grant .grant-content h1.bg-blue, section#grant .grant-content .bg-blue.h1, section#case .case-content .case-item .case-company, section#case .case-content .case-item dl, section#step .step-item .step-desp .s__title, section#modal .m__title, section#modal .modal-service-content .modal-service-pane .m__sub__title {
+  .txt-sm_18, section#top .text1, section#top .text2, section#reason .reason-content .reason-item .reason-desp h1, section#reason .reason-content .reason-item .reason-desp .h1, section#service .abstract-item p, section#service .period-item .period-desp .p__title span, section#service .period-item .period-desp .p__sub_title, section#price .price-content .txt-wrap p, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2, section#grant .grant-content .grant-desp h1 span.bg-blue, section#grant .grant-content .grant-desp .h1 span.bg-blue, section#grant .grant-content h1.bg-blue, section#grant .grant-content .bg-blue.h1, section#case .case-content .case-item .case-company, section#case .case-content .case-item dl, section#step .step-item .step-desp .s__title, section#modal .m__title {
     font-size: 18px;
   }
 }
@@ -17177,18 +17177,18 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
   font-size: 20px !important;
 }
 
-.bold, section#top .text1, section#top .text2, section#top .text4, section#top .sns .sns-description .sub-title, section#top .sns .sns-description .main-title, section#issue .txt-solve, section#about .about-content .l-content .ttl-t1, section#about .about-content .l-content .ttl-t2, section#about .about-content .l-content .ttl-t3, section#about .about-content .l-content .ttl-t4, section#reason .reason-content .reason-item .reason-desp h1, section#reason .reason-content .reason-item .reason-desp .h1, section#service .abstract-item p, section#service .period-item .period-desp .p__title span, section#service .period-item .period-desp .p__sub_title, section#service .period-item .period-desp .p__link, section#price .price-content .txt-wrap h2, section#price .price-content .txt-wrap .h2, section#price .price-content .txt-wrap p, section#cost-cut .cost-cut-more h1, section#cost-cut .cost-cut-more .h1, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2, section#grant .g__title, section#grant .grant-content .grant-desp h1, section#grant .grant-content .grant-desp .h1, section#grant .grant-content .grant-desp h1 span.bg-blue, section#grant .grant-content .grant-desp .h1 span.bg-blue, section#grant .grant-content h1.bg-blue, section#grant .grant-content .bg-blue.h1, section#grant .grant-content h2, section#grant .grant-content .h2, section#step .step-item .step-desp .s__title, section#step .step-item .step-abs, section#step .arrow-period span, section#contact .contact-content .c__title, section#contact .contact-content .edit-input .edit-title, section#contact .contact-content .edit-input .edit-title.necessary::after, section#modal .m__title, section#modal .modal-service-content .modal-service-pane .m__sub__title, section#modal .modal-service-content .modal-service-pane .m__sub__desp, section#modal .modal-service-content .modal-service-pane .modal-service-list .item {
+.bold, section#top .text1, section#top .text2, section#top .text4, section#top .sns .sns-description .sub-title, section#top .sns .sns-description .main-title, section#issue .txt-solve, section#about .about-content .l-content .ttl-t1, section#about .about-content .l-content .ttl-t2, section#about .about-content .l-content .ttl-t3, section#about .about-content .l-content .ttl-t4, section#reason .reason-content .reason-item .reason-desp h1, section#reason .reason-content .reason-item .reason-desp .h1, section#service .abstract-item p, section#service .period-item .period-desp .p__title span, section#service .period-item .period-desp .p__sub_title, section#service .period-item .period-desp .p__link, section#price .price-content .txt-wrap h2, section#price .price-content .txt-wrap .h2, section#price .price-content .txt-wrap p, section#cost-cut .cost-cut-more h1, section#cost-cut .cost-cut-more .h1, section#cost-cut .cost-cut-more h2, section#cost-cut .cost-cut-more .h2, section#grant .g__title, section#grant .grant-content .grant-desp h1, section#grant .grant-content .grant-desp .h1, section#grant .grant-content .grant-desp h1 span.bg-blue, section#grant .grant-content .grant-desp .h1 span.bg-blue, section#grant .grant-content h1.bg-blue, section#grant .grant-content .bg-blue.h1, section#grant .grant-content h2, section#grant .grant-content .h2, section#step .step-item .step-desp .s__title, section#step .step-item .step-abs, section#step .arrow-period span, section#contact .contact-content .c__title, section#contact .contact-content .edit-input .edit-title, section#contact .contact-content .edit-input .edit-title.necessary::after, section#modal .m__title, section#modal .modal-service-content .modal-service-pane .m__sub__title, section#modal .modal-service-content .modal-service-pane .m__sub__desp {
   font-weight: bold;
 }
 
 @media (min-width: 1400px) {
-  .lh_45, section#top .text2 {
+  .lh_45 {
     line-height: 45px;
   }
 }
 
 @media (max-width: 1399.98px) {
-  .lh_45, section#top .text2 {
+  .lh_45 {
     line-height: initial;
   }
 }
@@ -17218,13 +17218,13 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
 }
 
 @media (min-width: 1400px) {
-  .lh_35, section#top .text4 {
+  .lh_35 {
     line-height: 35px;
   }
 }
 
 @media (max-width: 1399.98px) {
-  .lh_35, section#top .text4 {
+  .lh_35 {
     line-height: initial;
   }
 }
@@ -17242,7 +17242,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
 }
 
 @media (max-width: 575.98px) {
-  .lh-sm_init, section#top .text2, section#top .text4, section#top .sns .sns-description .main-title {
+  .lh-sm_init {
     line-height: initial;
   }
 }
@@ -17368,7 +17368,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
 }
 
 @media (max-width: 575.98px) {
-  .mt-sm_14 {
+  .mt-sm_14, section#top .text1, section#top .text2, section#top .text4 {
     margin-top: 14px !important;
   }
 }
@@ -17386,7 +17386,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
 }
 
 @media (max-width: 575.98px) {
-  .mt-sm_17, section#top .text2 {
+  .mt-sm_17 {
     margin-top: 17px !important;
   }
 }
@@ -17434,7 +17434,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
 }
 
 @media (max-width: 575.98px) {
-  .mt-sm_25, section#top .text1 {
+  .mt-sm_25 {
     margin-top: 25px !important;
   }
 }
@@ -17527,13 +17527,13 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
   max-height: 70px;
 }
 
-@media screen and (max-width: 374px) {
+@media screen and (max-width: 319px) {
   #header .logo-wrapper {
     max-width: none !important;
   }
   #header .logo-wrapper img {
     margin-left: 15px;
-    height: 50px;
+    height: 45px;
     -o-object-fit: contain;
        object-fit: contain;
   }
@@ -17869,23 +17869,35 @@ section#top {
 }
 
 section#top .text1 {
-  margin-top: 4.16667vh;
+  margin-top: 2.77778vh;
 }
 
 section#top .text2 {
-  margin-top: 3.7037vh;
+  line-height: initial;
+  margin-top: 2.31481vh;
 }
 
 section#top .text3 {
-  margin-top: 3.7037vh;
+  margin-top: 2.31481vh;
 }
 
 section#top .text4 {
-  margin-top: 5.55556vh;
+  line-height: initial;
+  margin-top: 3.7037vh;
 }
 
 section#top .comment {
-  font-size: 14px;
+  font-size: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+section#top .comment span {
+  max-width: 135px;
+  width: 33.33%;
   text-align: center;
 }
 
@@ -17899,20 +17911,19 @@ section#top .sns {
 }
 
 section#top .sns .sns-description .sub-title {
-  margin-top: 3.7037vh;
   color: #0E96C9;
-  max-width: 500px;
   background-color: white;
-  font-family: 'Noto Sans CJK JP', sans-serif;
+  padding: 0 15px;
+  font-family: 'Hiragino Sans', sans-serif;
 }
 
 section#top .sns .sns-description .main-title {
   line-height: 1.2;
-  font-family: 'Noto Sans CJK JP', sans-serif;
+  font-family: 'Hiragino Sans', sans-serif;
 }
 
 section#top .sns .img-wrap {
-  max-width: 28.64583vw;
+  max-width: 23.4375vw;
   width: 100%;
   float: right;
   display: -webkit-box;
@@ -17934,7 +17945,7 @@ section#top .sns .img-wrap.sp {
 }
 
 section#top .sns .medal-img-wrap {
-  margin-top: 25px;
+  margin-top: 5px;
 }
 
 section#top .sns .medal-img-wrap img {
@@ -17943,7 +17954,7 @@ section#top .sns .medal-img-wrap img {
 }
 
 section#top .download-btn-wrap {
-  margin-top: 7.40741vh;
+  margin-top: 3.7037vh;
 }
 
 @media (max-width: 575.98px) {
@@ -17963,7 +17974,6 @@ section#top .download-btn-wrap {
   }
   section#top .sns .sns-description .sub-title {
     max-width: 100%;
-    margin: 0px 30px;
   }
   section#top .sns .img-wrap {
     max-width: initial;
@@ -17984,6 +17994,9 @@ section#top .download-btn-wrap {
   section#top .sns .medal-img-wrap {
     margin-top: 0;
   }
+  section#top .text1 br {
+    display: block !important;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -18001,20 +18014,21 @@ section#top .download-btn-wrap {
     -o-object-fit: contain;
        object-fit: contain;
   }
-  section#top .comment {
-    font-size: 13px;
+  section#top .main-title {
+    margin-top: 5px !important;
+    line-height: 1.3 !important;
   }
-  section#top .text3 {
-    margin-top: 20px;
-  }
-  section#top .text4 {
-    margin-top: 20px;
+}
+
+@media (max-width: 319px) {
+  section#top .text1 br {
+    display: none !important;
   }
 }
 
 section#issue {
-  padding-top: 7.8125vw;
-  padding-bottom: 10.41667vw;
+  padding-top: 6.25vw;
+  padding-bottom: 6.25vw;
   background-color: #E9F3FF;
 }
 
@@ -18102,7 +18116,7 @@ section#issue .quiz-item .arrow-bottom:after {
 }
 
 section#issue .txt-solve {
-  margin-top: 120px;
+  margin-top: 90px;
   font-family: 'Noto Sans CJK JP', sans-serif;
 }
 
@@ -18120,7 +18134,7 @@ section#issue .txt-solve {
 
 @media (max-width: 575.98px) {
   section#issue {
-    padding-top: 90px;
+    padding-top: 60px;
     padding-bottom: 50px;
   }
   section#issue .quiz {
@@ -18171,8 +18185,8 @@ section#issue .txt-solve {
 
 section#about {
   background-color: #FBFBF8;
-  padding-top: 7.8125vw;
-  padding-bottom: 10.41667vw;
+  padding-top: 6.25vw;
+  padding-bottom: 9.375vw;
 }
 
 section#about .about-content {
@@ -18187,6 +18201,16 @@ section#about .about-content {
 
 section#about .about-content .l-content {
   width: 58%;
+}
+
+section#about .about-content .l-content .ttl-t1 {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+section#about .about-content .l-content .ttl-t2, section#about .about-content .l-content .ttl-t3, section#about .about-content .l-content .ttl-t4 {
+  margin-left: 12px;
+  margin-right: 12px;
 }
 
 @media (max-width: 1599.98px) {
@@ -18256,8 +18280,8 @@ section#about .about-content .r-content.img-wraper {
 }
 
 section#reason {
-  padding-top: 7.8125vw;
-  padding-bottom: 10.41667vw;
+  padding-top: 6.25vw;
+  padding-bottom: 9.375vw;
   background-color: #E9F3FF;
 }
 
@@ -18432,8 +18456,8 @@ section#reason .reason-content .reason-item .reason-img-container img {
 }
 
 section#service {
-  padding-top: 7.8125vw;
-  padding-bottom: 10.41667vw;
+  padding-top: 6.25vw;
+  padding-bottom: 9.375vw;
   background-color: #FBFBF8;
 }
 
@@ -18682,6 +18706,9 @@ section#service .period-item .period-img-container img {
   section#service .period-item .period-desp p {
     margin-top: 10px;
   }
+  section#service .period-item .period-desp .p__link {
+    font-size: 14px;
+  }
   section#service .period-item .period-img-container img {
     max-height: 150px;
     -o-object-fit: contain;
@@ -18743,8 +18770,8 @@ section#price .price-content .txt-wrap p {
 section#cost-cut {
   background-image: url("../img/mawasell_grid.png");
   background-repeat: repeat;
-  padding-top: 7.8125vw;
-  padding-bottom: 115px;
+  padding-top: 6.25vw;
+  padding-bottom: 70px;
 }
 
 section#cost-cut .cost-cut-detail {
@@ -18783,7 +18810,7 @@ section#cost-cut .cost-cut-more h3, section#cost-cut .cost-cut-more .h3 {
 }
 
 section#cost-cut .download-btn-wrap {
-  margin-top: 100px;
+  margin-top: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18826,7 +18853,7 @@ section#cost-cut .download-btn-wrap .download-btn {
 }
 
 section#grant {
-  padding-top: 7.8125vw;
+  padding-top: 4.16667vw;
   padding-bottom: 10.41667vw;
   background-color: #E9F3FF;
 }
@@ -18963,8 +18990,8 @@ section#grant .grant-content h2, section#grant .grant-content .h2 {
 }
 
 section#case {
-  padding-top: 7.8125vw;
-  padding-bottom: 10.41667vw;
+  padding-top: 6.25vw;
+  padding-bottom: 9.375vw;
   background-color: #FBFBF8;
 }
 
@@ -19137,8 +19164,8 @@ section#case .case-content .case-item .after .bg-red {
 }
 
 section#step {
-  padding-top: 7.8125vw;
-  padding-bottom: 10.41667vw;
+  padding-top: 6.25vw;
+  padding-bottom: 4.6875vw;
   background-image: url("../img/mawasell_grid.png");
   background-repeat: repeat;
 }
@@ -19188,6 +19215,7 @@ section#step .step-item .step-desp {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  min-height: 350px;
 }
 
 section#step .step-item .step-desp .circle-num {
@@ -19237,7 +19265,7 @@ section#step .step-item .step-abs {
   padding: 10px 20px;
   color: white;
   background-color: rgba(14, 150, 201, 0.6);
-  margin-top: 30px;
+  margin-top: 20px;
   text-align: center;
   position: relative;
 }
@@ -19254,6 +19282,12 @@ section#step .step-item .step-abs:after {
           transform: translate(-50%, -50%);
 }
 
+@media (max-width: 1310px) {
+  section#step .step-item .step-abs {
+    font-size: 18px;
+  }
+}
+
 section#step .step-item:last-child .step-desp::after {
   display: none;
 }
@@ -19265,7 +19299,7 @@ section#step .step-item:last-child .step-abs::after {
 section#step .arrow-period {
   text-align: center;
   position: relative;
-  margin-top: 10px;
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19318,7 +19352,7 @@ section#step .arrow-period:after {
 }
 
 section#step .download-btn-wrap {
-  margin-top: 85px;
+  margin-top: 50px;
 }
 
 @media (max-width: 991.98px) {
@@ -19344,6 +19378,13 @@ section#step .download-btn-wrap {
             align-items: center;
   }
   section#step .step-content .step-list .step-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     max-width: 600px;
     width: 100%;
     margin-left: 0;
@@ -19352,11 +19393,14 @@ section#step .download-btn-wrap {
   section#step .step-content .step-list .step-item:not(:last-child) {
     margin-bottom: 30px;
   }
+  section#step .step-content .step-list .step-item .step-desp {
+    min-height: initial;
+  }
   section#step .step-content .step-list .step-item .step-desp:after {
     display: none;
   }
   section#step .step-content .step-list .step-item .step-abs {
-    margin-top: 15px;
+    margin-top: 0;
     font-size: 20px;
   }
   section#step .step-content .step-list .step-item .step-abs:after {
@@ -19380,7 +19424,7 @@ section#step .download-btn-wrap {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-right: 15px;
+    margin-right: 5px;
   }
   section#step .step-content .arrow-period span {
     -webkit-writing-mode: vertical-rl;
@@ -19439,11 +19483,17 @@ section#step .download-btn-wrap {
   section#step .download-btn-wrap {
     margin-top: 48px;
   }
+  section#step .s__title {
+    font-size: 16px !important;
+  }
+  section#step .step-abs {
+    font-size: 16px !important;
+  }
 }
 
 section#faq {
-  padding-top: 7.8125vw;
-  padding-bottom: 10.41667vw;
+  padding-top: 4.6875vw;
+  padding-bottom: 9.375vw;
   background-color: #E9F3FF;
 }
 
@@ -19547,7 +19597,7 @@ section#faq .faq-content .faq-item .answer.active {
 }
 
 footer {
-  height: 150px;
+  height: 100px;
   padding: 0 2.60417vw 0 2.60417vw;
   background-color: #FBFBF8;
   display: -webkit-box;
@@ -19575,7 +19625,7 @@ footer .r-content ul {
       -ms-flex-align: center;
           align-items: center;
   padding: 0;
-  margin-bottom: 10px;
+  margin-bottom: 0;
   font-size: 16px;
 }
 
@@ -19628,7 +19678,7 @@ footer .r-content p {
 
 @media (max-width: 991.98px) {
   footer {
-    padding: 30px 20px 60px;
+    padding: 10px 20px 30px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -19639,7 +19689,7 @@ footer .r-content p {
     max-height: 100px;
   }
   footer .r-content {
-    margin-top: 20px;
+    margin-top: 10px;
   }
   footer .r-content ul {
     -webkit-box-orient: vertical;
@@ -19648,7 +19698,8 @@ footer .r-content p {
             flex-direction: column;
   }
   footer .r-content ul li {
-    margin: 5px 0px;
+    font-size: 15px;
+    margin: 2px 0px;
   }
   footer .r-content ul li:not(:last-child) {
     margin-right: 0px;
@@ -19661,8 +19712,8 @@ footer .r-content p {
 }
 
 section#contact {
-  padding-top: 7.8125vw;
-  padding-bottom: 10.41667vw;
+  padding-top: 6.25vw;
+  padding-bottom: 9.375vw;
   background-color: #FBFBF8;
 }
 
@@ -19689,7 +19740,7 @@ section#contact .contact-content .edit-input {
   padding-top: 30px;
 }
 
-section#contact .contact-content .edit-input input, section#contact .contact-content .edit-input select, section#contact .contact-content .edit-input textarea {
+section#contact .contact-content .edit-input input:not(input[type="submit"]), section#contact .contact-content .edit-input select, section#contact .contact-content .edit-input textarea {
   width: 100%;
   height: 50px;
   padding: 15px 25px;
@@ -19698,7 +19749,7 @@ section#contact .contact-content .edit-input input, section#contact .contact-con
   background-color: #F3F4F5;
 }
 
-section#contact .contact-content .edit-input input:focus, section#contact .contact-content .edit-input select:focus, section#contact .contact-content .edit-input textarea:focus {
+section#contact .contact-content .edit-input input:not(input[type="submit"]):focus, section#contact .contact-content .edit-input select:focus, section#contact .contact-content .edit-input textarea:focus {
   outline-offset: 0px !important;
   outline: none !important;
   border: 1px solid #0E96C9 !important;
@@ -19726,11 +19777,16 @@ section#contact .contact-content .edit-input .edit-title.necessary::after {
   top: -5px;
 }
 
+section#contact .contact-content .edit-input br {
+  display: none;
+}
+
 section#contact .contact-content .edit-input .edit-sub-title {
+  display: block;
   margin-bottom: 3px;
 }
 
-section#contact .contact-content .edit-input button {
+section#contact .contact-content .edit-input input[type="submit"] {
   padding: 7px 50px;
   margin-bottom: 30px;
   border: none;
@@ -19741,11 +19797,11 @@ section#contact .contact-content .edit-input button {
   background: linear-gradient(#0E96C9, #00458D);
 }
 
-section#contact .contact-content .edit-input button:hover {
+section#contact .contact-content .edit-input input[type="submit"]:hover {
   background: #0E96C9;
 }
 
-section#contact .contact-content .edit-input button:focus {
+section#contact .contact-content .edit-input input[type="submit"]:focus {
   background: #00458D;
 }
 
@@ -19785,6 +19841,11 @@ section#contact .contact-content .edit-input button:focus {
   }
 }
 
+section#modal .modal {
+  padding-left: 18.22917vw;
+  padding-right: 18.22917vw;
+}
+
 section#modal .modal-header {
   border-bottom: none;
 }
@@ -19796,6 +19857,7 @@ section#modal .modal-body {
 }
 
 section#modal .m__title {
+  margin: auto;
   padding: 0 50px;
   text-align: center;
   background-color: #0E96C9;
@@ -19809,13 +19871,13 @@ section#modal .modal-service-content {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 30px 20px;
+  margin: 10px 20px 30px;
 }
 
 section#modal .modal-service-content .modal-service-pane {
-  padding: 30px 2.08333vw 40px 1.5625vw;
+  padding: 20px 2.08333vw 30px 1.5625vw;
   border: 2px solid #0E96C9;
-  max-width: 480px;
+  max-width: 400px;
   width: 100%;
   border-radius: 20px;
 }
@@ -19829,15 +19891,15 @@ section#modal .modal-service-content .modal-service-pane .m__sub__title {
 }
 
 section#modal .modal-service-content .modal-service-pane .m__sub__desp {
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 section#modal .modal-service-content .modal-service-pane .modal-service-list {
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 section#modal .modal-service-content .modal-service-pane .modal-service-list .item {
-  margin-bottom: 5px;
+  margin-bottom: 1px;
 }
 
 section#modal .modal-service-content .modal-service-pane .modal-service-list .item dt {
@@ -19872,6 +19934,10 @@ section#modal .modal-service-content .modal-service-pane .modal-service-list .it
 }
 
 @media (max-width: 575.98px) {
+  section#modal .modal {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
   section#modal .modal-dialog {
     margin-right: 0;
     margin-left: 0;
@@ -19879,7 +19945,8 @@ section#modal .modal-service-content .modal-service-pane .modal-service-list .it
   section#modal .modal-service-content {
     margin-left: 0;
     margin-right: 0;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   section#modal .modal-service-content .modal-service-pane {
     border-radius: 10px;
@@ -19889,6 +19956,13 @@ section#modal .modal-service-content .modal-service-pane .modal-service-list .it
   }
   section#modal .modal-service-content .modal-service-pane .modal-service-list {
     margin-top: 15px;
+  }
+}
+
+@media (max-width: 374px) {
+  section#modal .modal {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
