@@ -79,7 +79,7 @@
                     1～2営業日中にスタッフよりご連絡させて頂きます。<br>
                     <span class="txt-red">＊は必須項目です。</span>
                 </h5>
-                <form class="contact-form" action="https://ai-tenbai.com/fy">
+                <form class="contact-form" method="post" action="https://ai-tenbai.com/fy">
                     <input type="hidden" name="Publisher_Id" value="101450" />
                     <input type="hidden" name="Form_Cd" value="bfM0q0" />
                     <input type="hidden" name="charcode" value="auto" />
@@ -109,9 +109,25 @@
                         <input type="text" id="company" name="Company_Name" placeholder="例）ABCD株式会社" required>
                     </div>
 
+                    
+                    <div class="edit-input">
+                        <label for="Department_Name" class="edit-title">部署名</label>
+                        <input type="text" id="Department_Name" name="Department_Name">
+                    </div>
+
                     <div class="edit-input">
                         <label for="tel" class="edit-title necessary">電話番号</label>
-                        <input type="text" id="tel" name="Tel0" placeholder="例）03-0000-0000" required>
+                        <div class="row">
+                            <div class="col-12 col-sm-2 mb-2 mb-sm-0">
+                                <input type="text" id="tel" name="Tel0" placeholder="03" required>
+                            </div>
+                            <div class="col-12 col-sm-5 mb-2 mb-sm-0">
+                                <input type="text" id="tel" name="Tel1" placeholder="1234" required>
+                            </div>
+                            <div class="col-12 col-sm-5">
+                                <input type="text" id="tel" name="Tel2" placeholder="1234" required>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="edit-input">
@@ -123,10 +139,6 @@
                         </select>
                     </div>
 
-                    <!-- <div class="edit-input">
-                        <label for="office" class="edit-title">部署名</label>
-                        <input type="text" id="office" name="office">
-                    </div> -->
 
                     <div class="edit-input">
                         <label for="content" class="edit-title">お問い合わせ・ご相談内容</label>
@@ -144,7 +156,7 @@
     <footer>
         <div class="img-wrap">
             <picture>
-                <source media="(max-width: 450px)" srcset="./assets/img/mawasell_logo_col.jpg">
+                <source media="(max-width: 450px)" srcset="./assets/img/mawasell_logo_col.png">
                 <img src="./assets/img/mawasell_logo.png" alt="Mawasell" decoding="async">
             </picture>
         </div>
