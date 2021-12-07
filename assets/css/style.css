@@ -18308,13 +18308,23 @@ section#reason {
 
 section#reason .reason-content {
   margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 section#reason .reason-content .reason-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 90px;
+  max-width: 900px;
   margin-bottom: 42px;
   padding: 20px 0 30px 0;
   min-height: 180px;
@@ -18421,6 +18431,7 @@ section#reason .download-btn-wrap {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    max-width: 400px;
     padding: 90px 30px 60px;
     margin-bottom: 60px;
   }
@@ -18432,8 +18443,9 @@ section#reason .download-btn-wrap {
   }
   section#reason .reason-content .reason-item .circle-num .cir {
     margin-left: 0;
-    width: 75px;
-    height: 75px;
+    width: 60px;
+    margin-top: 10px;
+    height: 60px;
   }
   section#reason .reason-content .reason-item .reason-img-container {
     min-width: 100%;
@@ -18680,6 +18692,7 @@ section#service .period-item .period-img-container img {
     margin-bottom: 0;
   }
   section#service .period-item {
+    max-width: 500px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
@@ -18691,8 +18704,8 @@ section#service .period-item .period-img-container img {
   section#service .period-item:nth-child(odd), section#service .period-item:nth-child(even) {
     border-radius: 0px;
     padding: 90px 30px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
   }
   section#service .period-item:nth-child(even) {
     -webkit-box-orient: vertical;
@@ -18878,6 +18891,9 @@ section#cost-cut .download-btn-wrap .download-btn {
     padding-top: 90px;
     padding-bottom: 90px;
   }
+  section#cost-cut .download-btn-wrap img {
+    display: none;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -18897,9 +18913,6 @@ section#cost-cut .download-btn-wrap .download-btn {
   }
   section#cost-cut .download-btn-wrap {
     margin-top: 30px;
-  }
-  section#cost-cut .download-btn-wrap img {
-    display: none;
   }
 }
 

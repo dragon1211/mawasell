@@ -645,9 +645,12 @@ section#reason{
 
     .reason-content{
         margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         .reason-item{
             display: flex;
-            margin: 0 90px;
+            max-width: 900px;
             margin-bottom: 42px;
             padding: 20px 0 30px 0;
             min-height: 180px;
@@ -727,6 +730,7 @@ section#reason{
         }
         .reason-content .reason-item{
             flex-direction: column-reverse;
+            max-width: 400px;
             padding: 90px 30px 60px;
             margin-bottom: 60px;
             .circle-num{
@@ -736,8 +740,9 @@ section#reason{
                 position: absolute;
                 .cir{
                     margin-left: 0;
-                    width: 75px;
-                    height: 75px;
+                    width: 60px;
+                    margin-top: 10px;
+                    height: 60px;
                 }
             }
             .reason-img-container{
@@ -927,6 +932,7 @@ section#service{
         }
         .period{
             &-item{
+                max-width: 500px;
                 flex-direction: column-reverse; 
                 &:not(:last-child){
                     margin-bottom: 60px;
@@ -934,8 +940,8 @@ section#service{
                 &:nth-child(odd), &:nth-child(even){
                     border-radius: 0px;
                     padding: 90px 30px;
-                    margin-left: 0px;
-                    margin-right: 0px;
+                    margin-left: auto;
+                    margin-right: auto;
                 }
                 &:nth-child(even){
                     flex-direction: column-reverse;
@@ -1108,6 +1114,9 @@ section#cost-cut{
     @include media-breakpoint-down(lg){
         padding-top: 90px;
         padding-bottom: 90px;
+        .download-btn-wrap{
+            img{ display: none; }
+        }
     }
 
     @include media-breakpoint-down(sm){
@@ -1125,7 +1134,6 @@ section#cost-cut{
         } 
         .download-btn-wrap{
             margin-top: 30px;
-            img{ display: none; }
         }
     }
 }
