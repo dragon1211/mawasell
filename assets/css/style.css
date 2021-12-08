@@ -15285,9 +15285,9 @@ fieldset:disabled .btn {
 
 @media (max-width: 575.98px) {
   .download-btn {
-    max-width: 300px;
+    max-width: 400px;
     width: 100%;
-    height: 48px;
+    height: 50px;
     border-radius: 10px;
   }
   .download-btn span {
@@ -16099,9 +16099,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p {
 
 @media (max-width: 575.98px) {
   .download-btn {
-    max-width: 300px;
+    max-width: 400px;
     width: 100%;
-    height: 48px;
+    height: 50px;
     border-radius: 10px;
   }
   .download-btn span {
@@ -18052,13 +18052,6 @@ section#issue {
   background-color: #E9F3FF;
 }
 
-@media (max-width: 575.98px) {
-  section#issue {
-    padding-top: 33px;
-    padding-bottom: 39px;
-  }
-}
-
 section#issue .quiz {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -18141,6 +18134,10 @@ section#issue .txt-solve {
 }
 
 @media (max-width: 991.98px) {
+  section#issue {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
   section#issue .quiz {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -18260,7 +18257,7 @@ section#about .about-content .r-content.img-wraper {
 @media (max-width: 991.98px) {
   section#about {
     padding-top: 90px;
-    padding-bottom: 50px;
+    padding-bottom: 90px;
   }
   section#about .about-content {
     -webkit-box-orient: vertical;
@@ -18288,6 +18285,10 @@ section#about .about-content .r-content.img-wraper {
 }
 
 @media (max-width: 575.98px) {
+  section#about {
+    padding-top: 90px;
+    padding-bottom: 50px;
+  }
   section#about .about-content {
     margin-top: 29px;
   }
@@ -18301,7 +18302,7 @@ section#about .about-content .r-content.img-wraper {
 
 section#reason {
   padding-top: 6.25vw;
-  padding-bottom: 9.375vw;
+  padding-bottom: 7.8125vw;
   background-color: #E9F3FF;
 }
 
@@ -18396,6 +18397,10 @@ section#reason .reason-content .reason-item .reason-img-container img {
   width: 100%;
 }
 
+section#reason .download-btn-wrap {
+  margin-top: 60px;
+}
+
 @media (max-width: 1399.98px) {
   section#reason .reason-content .reason-item {
     margin-left: 0;
@@ -18406,7 +18411,7 @@ section#reason .reason-content .reason-item .reason-img-container img {
 @media (max-width: 991.98px) {
   section#reason {
     padding-top: 90px;
-    padding-bottom: 50px;
+    padding-bottom: 90px;
   }
   section#reason .reason-content {
     margin-top: 75px;
@@ -18444,13 +18449,23 @@ section#reason .reason-content .reason-item .reason-img-container img {
   section#reason .reason-content .reason-item .reason-desp p br {
     display: none;
   }
+  section#reason .download-btn-wrap {
+    margin-top: 60px;
+  }
 }
 
 @media (max-width: 575.98px) {
+  section#reason {
+    padding-bottom: 50px;
+  }
+  section#reason .reason-content {
+    margin-top: 50px;
+  }
   section#reason .reason-content .reason-item {
     padding: 40px 15px 30px;
     margin-left: 15px;
     margin-right: 15px;
+    margin-bottom: 40px;
   }
   section#reason .reason-content .reason-item .circle-num {
     margin: 0 -15px;
@@ -18472,6 +18487,9 @@ section#reason .reason-content .reason-item .reason-img-container img {
     width: 100%;
     -o-object-fit: contain;
        object-fit: contain;
+  }
+  section#reason .download-btn-wrap {
+    margin-top: 40px;
   }
 }
 
@@ -18855,10 +18873,17 @@ section#cost-cut .download-btn-wrap .download-btn {
   }
 }
 
+@media (max-width: 991.98px) {
+  section#cost-cut {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+
 @media (max-width: 575.98px) {
   section#cost-cut {
     padding-top: 90px;
-    padding-bottom: 35px;
+    padding-bottom: 50px;
   }
   section#cost-cut .cost-cut-detail {
     margin-top: 42px;
@@ -18869,6 +18894,12 @@ section#cost-cut .download-btn-wrap .download-btn {
   section#cost-cut .cost-cut-more .bg-blue {
     margin-top: 15px;
     padding: 15px 15px 20px;
+  }
+  section#cost-cut .download-btn-wrap {
+    margin-top: 30px;
+  }
+  section#cost-cut .download-btn-wrap img {
+    display: none;
   }
 }
 
@@ -19377,8 +19408,8 @@ section#step .download-btn-wrap {
 
 @media (max-width: 991.98px) {
   section#step {
-    padding-top: 80px;
-    padding-bottom: 50px;
+    padding-top: 90px;
+    padding-bottom: 90px;
   }
   section#step .step-content {
     margin-top: 30px;
@@ -19449,7 +19480,8 @@ section#step .download-btn-wrap {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-right: 5px;
+    margin-top: 0;
+    margin-right: 10px;
   }
   section#step .step-content .arrow-period span {
     -webkit-writing-mode: vertical-rl;
@@ -19498,6 +19530,10 @@ section#step .download-btn-wrap {
 }
 
 @media (max-width: 575.98px) {
+  section#step {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
   section#step .download-btn-wrap {
     margin-top: 48px;
   }
@@ -20050,6 +20086,9 @@ section#modal .modal-service-content .modal-service-pane .modal-service-list .it
   }
   .cost-cut-more br {
     display: none !important;
+  }
+  section#cost-cut .cost-cut-detail {
+    margin-top: 30px;
   }
   #grant .g__title {
     font-size: 18px !important;

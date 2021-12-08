@@ -269,13 +269,6 @@
 
 
 ////////////////////////////////////
-
-
-
-
-
-
-
 section#top{
     min-height: 100vh;
     padding-top: px-vw(100);
@@ -424,10 +417,7 @@ section#issue{
     padding-top: px-vw(120);
     padding-bottom: px-vw(120);
     background-color: #E9F3FF;
-    @include media-breakpoint-down(sm){
-        padding-top: 33px;
-        padding-bottom: 39px;
-    }
+
     .quiz{
         display: flex;
         margin: 60px 60px 0 60px;
@@ -503,6 +493,8 @@ section#issue{
     }
 
     @include media-breakpoint-down(lg){
+        padding-top: 90px;
+        padding-bottom: 90px;
         .quiz{
             flex-direction: column;
             &-item{
@@ -606,7 +598,7 @@ section#about{
     }
     @include media-breakpoint-down(lg){
         padding-top: 90px;
-        padding-bottom: 50px;
+        padding-bottom: 90px;
         .about-content{
             flex-direction: column-reverse;
             .l-content, .r-content{
@@ -629,6 +621,8 @@ section#about{
         }
     }
     @include media-breakpoint-down(sm){
+        padding-top: 90px;
+        padding-bottom: 50px;
         .about-content{
             margin-top: 29px;
             .l-content{
@@ -646,7 +640,7 @@ section#about{
 
 section#reason{
     padding-top: px-vw(120);
-    padding-bottom: px-vw(180);
+    padding-bottom: px-vw(150);
     background-color: #E9F3FF;
 
     .reason-content{
@@ -714,6 +708,10 @@ section#reason{
         }
     }
 
+    .download-btn-wrap{
+        margin-top: 60px;
+    }
+
     @include media-breakpoint-down(xxl){
         .reason-content .reason-item{
             margin-left: 0;
@@ -723,7 +721,7 @@ section#reason{
 
     @include media-breakpoint-down(lg){
         padding-top: 90px;
-        padding-bottom: 50px;
+        padding-bottom: 90px;
         .reason-content{
             margin-top: 75px;
         }
@@ -753,14 +751,22 @@ section#reason{
                 }
             }
         }
+        .download-btn-wrap{
+            margin-top: 60px;
+        }
     }
 
 
     @include media-breakpoint-down(sm){
+        padding-bottom: 50px;
+        .reason-content{
+            margin-top: 50px;
+        }
         .reason-content .reason-item{
             padding: 40px 15px 30px;
             margin-left: 15px;
             margin-right: 15px;
+            margin-bottom: 40px;
             .circle-num{
                 margin: 0 -15px;
                 top: -20px;
@@ -780,6 +786,9 @@ section#reason{
                 width: 100%;
                 object-fit: contain;
             }
+        }
+        .download-btn-wrap{
+            margin-top: 40px;
         }
     }
 }
@@ -1095,9 +1104,15 @@ section#cost-cut{
             padding-right: 0;
         }
     }
+
+    @include media-breakpoint-down(lg){
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
     @include media-breakpoint-down(sm){
         padding-top: 90px;
-        padding-bottom: 35px;
+        padding-bottom: 50px;
         .cost-cut-detail{
             margin-top: 42px;
         }
@@ -1108,6 +1123,10 @@ section#cost-cut{
                 padding: 15px 15px 20px;
             }
         } 
+        .download-btn-wrap{
+            margin-top: 30px;
+            img{ display: none; }
+        }
     }
 }
 
@@ -1530,8 +1549,8 @@ section#step{
         margin-top: 50px;
     }
     @include media-breakpoint-down(lg){
-        padding-top: 80px;
-        padding-bottom: 50px;
+        padding-top: 90px;
+        padding-bottom: 90px;
         .step-content {
             margin-top: 30px;
             display: flex;
@@ -1580,7 +1599,8 @@ section#step{
                     text-orientation:upright;
                     letter-spacing: 10px;
                 }
-                margin-right: 5px;
+                margin-top: 0;
+                margin-right: 10px;
                 .line {
                     width: 4px;
                     background: rgba(14,150,201, .6);
@@ -1616,6 +1636,8 @@ section#step{
         }
     }
     @include media-breakpoint-down(sm){
+        padding-top: 80px;
+        padding-bottom: 50px;
         .download-btn-wrap{
             margin-top: 48px;
         }
@@ -2082,6 +2104,10 @@ section#modal{
 
     .cost-cut-more{
         br{ display: none !important;}
+    }
+
+    section#cost-cut .cost-cut-detail{
+        margin-top: 30px;
     }
 
     #grant{
